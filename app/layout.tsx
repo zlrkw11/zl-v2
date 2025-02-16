@@ -9,7 +9,7 @@ export default function RootLayout({
       <body>
         <div className="">
           <div className="flex justify-between border-2 border-gray-600 p-2">
-            <h1 className="">zl's diary</h1>
+            <h1 className="">v2</h1>
 
             <div className="">
               <button className="">X</button>
