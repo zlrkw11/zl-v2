@@ -1,7 +1,7 @@
 "use client";
-
+import Footer from "../components/footer";
 const About = () => {
-  return <div>about</div>;
+  return <div className="">about</div>;
 };
 
 export default About;
