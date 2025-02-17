@@ -3,8 +3,8 @@ export default function Home() {
   return (
     <div className="">
       <h1 id="home-title" className=""></h1>
-      <div className="ml-2 flex justify-center md:justify-normal md:text-base text-lg mt-4 md:mt-0">
-        <ul className="flex flex-col md:gap-0 gap-4">
+      <div className="ml-4 flex justify-center md:justify-normal md:text-3xl text-xl mt-4 md:mt-0">
+        <ul className="flex flex-col md:gap-2 gap-4">
           <li className="group underline-offset-4">
             <Link href="/about">
               <span className="hover:underline">About</span>
