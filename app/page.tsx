@@ -3,7 +3,7 @@ export default function Home() {
   return (
     <div className="">
       <h1 id="home-title" className=""></h1>
-      <div className="ml-2">
+      <div className="ml-2 flex justify-center md:justify-normal">
         <ul className="">
           <li className="group relative underline-offset-4">
             <Link href="/about">
