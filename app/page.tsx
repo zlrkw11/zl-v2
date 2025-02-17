@@ -1,4 +1,6 @@
 import Link from "next/link";
+import Image from "next/image";
+import Globe from "../public/assets/globe.svg";
 export default function Home() {
   return (
     <div className="">
@@ -24,6 +26,9 @@ export default function Home() {
             <span className="opacity-0 ml-4 group-hover:opacity-100 ">◂</span>
           </li>
         </ul>
+        <Link href="/about">
+          <Image src={Globe} alt="globe_icon" width={50} height={50} />
+        </Link>
       </div>
     </div>
   );
