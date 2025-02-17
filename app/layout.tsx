@@ -1,5 +1,11 @@
 import "./globals.css";
 import Footer from "./components/footer";
+import { Crimson_Text } from "next/font/google";
+
+const crimsonFont = Crimson_Text({
+  subsets: ["latin"],
+  weight: "400",
+});
 
 export default function RootLayout({
   children,
@@ -8,7 +14,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="min-h-screen flex flex-col">
+      <body className={`min-h-screen flex flex-col ${crimsonFont.className}`}>
         <div className="flex justify-between border-b border-black p-8 mb-4">
           <h1 className="">[zl]</h1>
         </div>
