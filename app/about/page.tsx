@@ -39,13 +39,16 @@ const About = () => {
             parts of this paragraph).
           </p>
         </div>{" "}
-        <h1 className="font-bold text-2xl underline underline-offset-4">
-          why did I make this website
-        </h1>
+        <h1 className="mt-4 font-bold text-2xl">why did I make this website</h1>
+        <Line />
         <p className="text-lg">
           I always wanted to make a website that is not just simply a portfolio
           for the companies to look at. But instead a website that resembles a
-          personal space. Where someone can express their individuality.
+          personal space. Where someone can express their individuality. I
+          always think back to the early 2000s where writing your own blogs on
+          some HTML page was thing. But it seems like everyone now (including
+          myself) is too busy & addicted to Instagram reels. So, brick by brick,
+          need to build it like how I built my algorithm.
         </p>
       </div>
     </div>
