@@ -20,13 +20,13 @@ export default function RootLayout({
         <div className="grid grid-cols-10 p-4 mb-4 ">
           <Link href="/" className="flex justify-center">
             <h1
-              className="text-center md:text-2xl w-[100px]  text-lg hover:bg-red-600 hover:text-white"
+              className="text-center md:text-2xl w-[100px] text-sm hover:bg-red-600 items-center justify-center flex hover:text-white"
               id="title"
             >
               {`<ZL />`}
             </h1>
           </Link>
-          <div className="col-span-4  flex justify-center">
+          <div className="w-full col-span-4 flex justify-center">
             <Nav />
           </div>
         </div>
