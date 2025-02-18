@@ -16,10 +16,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`min-h-screen flex flex-col ${crimsonFont.className}`}>
-        <div className="flex justify-between p-8 mb-4">
-          <Link href="/">
+        <div className="grid grid-cols-10 p-8 mb-4 ">
+          <Link href="/" className="flex justify-center">
             <h1
-              className="md:text-2xl text-lg hover:bg-red-600 hover:text-white"
+              className="text-center md:text-2xl w-[100px]  text-lg hover:bg-red-600 hover:text-white"
               id="title"
             >
               {`<ZL />`}
