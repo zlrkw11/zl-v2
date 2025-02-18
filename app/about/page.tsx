@@ -61,11 +61,11 @@ const About = () => {
                 could be confident enough. But I always end up wasting too much
                 time on procrastination.
               </p>
-              <ol className="list-disc pl-5 ">
+              <ul id="list" className="list-disc pl-6 ">
                 <li>wants to be a dev, not so much of a computer scientist</li>
                 <li>more heavy on the frontend</li>
                 <li></li>
-              </ol>
+              </ul>
             </div>
           </div>
         </div>

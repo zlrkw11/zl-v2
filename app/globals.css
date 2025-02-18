@@ -17,3 +17,7 @@ body {
   background-color: #e53935;
   color: #fff;
 }
+
+#list {
+  border-left: 2px solid #e53935;
+}
