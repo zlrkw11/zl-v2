@@ -28,7 +28,7 @@ const About = () => {
             image here
           </div>
           <div>
-            <p className={`${ArimoFont.className}`}>
+            <p className={`${ArimoFont.className} text-gray-800`}>
               Hello, I'm Ray Zhao. a third year compsi student (yea) at{" "}
               <Link href="https://www.auckland.ac.nz/en.html">
                 <span className="text-red-500 font-bold hover:text-red-300">
@@ -64,7 +64,7 @@ const About = () => {
               <ul id="list" className="list-disc pl-6 ">
                 <li>wants to be a dev, not so much of a computer scientist</li>
                 <li>more heavy on the frontend</li>
-                <li></li>
+                <li>some texts here</li>
               </ul>
             </div>
           </div>
@@ -85,7 +85,7 @@ const About = () => {
           </p>
         </div>
       </div>
-      <Link href="../personal">
+      <Link href="../about/personal">
         <div className="border-black border-b-2 text-center w-[100px] mt-12 transition hover:border-red-600 hover:text-red-600">
           see more
         </div>
