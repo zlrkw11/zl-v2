@@ -11,3 +11,7 @@
     transform: rotateY(360deg);
   }
 }
+
+.about {
+  font: 16px Helvetica, Arial, sans-serif;
+}

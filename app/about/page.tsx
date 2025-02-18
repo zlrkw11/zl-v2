@@ -3,6 +3,14 @@ import Footer from "../components/footer";
 import Sona from "../../public/assets/sona.jpeg";
 import Image from "next/image";
 import Link from "next/link";
+import { Arimo } from "next/font/google";
+import "../globals.css";
+
+const ArimoFont = Arimo({
+  subsets: ["latin"],
+  weight: "400",
+});
+
 const Line = () => {
   return <div className="border border-black w-full h-0"></div>;
 };
@@ -20,7 +28,7 @@ const About = () => {
             image here
           </div>
           <div>
-            <p className="text-lg">
+            <p className={`${ArimoFont.className}`}>
               Hello, I'm Ray Zhao. a third year compsi student (yea) at{" "}
               <Link href="https://www.auckland.ac.nz/en.html">
                 <span className="text-red-500 font-bold hover:text-red-300">
@@ -44,7 +52,7 @@ const About = () => {
         <div className="flex flex-col gap-4">
           <h1 className="font-bold text-2xl">why did I make this website</h1>
           <Line />
-          <p className="text-lg">
+          <p className={`${ArimoFont.className}`}>
             I always wanted to make a website that is not just simply a
             portfolio for the companies to look at. But instead a website that
             resembles a personal space. Where someone can express their
