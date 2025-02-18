@@ -15,7 +15,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`min-h-screen flex flex-col ${crimsonFont.className}`}>
-        <div className="flex justify-between border-b border-black p-8 mb-4">
+        <div className="flex justify-between p-8 mb-4">
           <h1 className="md:text-2xl text-lg" id="title">
             ZL
           </h1>

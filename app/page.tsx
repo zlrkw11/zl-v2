@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import Globe from "../public/assets/globe.svg";
+import Bulb from "../public/assets/bulb.svg";
 import styles from "../app/styles/Home.module.css";
 export default function Home() {
   return (
@@ -39,7 +40,9 @@ export default function Home() {
         </ul>{" "}
       </div>
 
-      <h1 className="flex ml-auto mr-24 mt-56">Welcome to my personal space</h1>
+      <h1 className="flex ml-auto mr-24 mt-48 text-2xl">
+        Welcome to my personal space.
+      </h1>
     </div>
   );
 }
