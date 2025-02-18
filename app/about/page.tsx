@@ -4,7 +4,7 @@ import Sona from "../../public/assets/sona.jpeg";
 import Image from "next/image";
 import Link from "next/link";
 const Line = () => {
-  return <div className="border-2 border-black w-full h-0"></div>;
+  return <div className="border border-black w-full h-0"></div>;
 };
 const About = () => {
   return (
