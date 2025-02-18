@@ -48,7 +48,27 @@ const About = () => {
               AI(including parts of this paragraph).
             </p>
           </div>
-        </div>{" "}
+        </div>
+        <div className={`flex flex-col gap-4`}>
+          <h1 id="about-title-1" className="font-bold text-2xl">
+            more about me
+          </h1>
+          <Line />
+          <div className={`flex gap-4 ${ArimoFont.className} `}>
+            <div className="flex flex-col gap-4">
+              <p>
+                I always wanted to be extremely competitve in a way that so I
+                could be confident enough. But I always end up wasting too much
+                time on procrastination.
+              </p>
+              <ol className="list-disc pl-5 ">
+                <li>wants to be a dev, not so much of a computer scientist</li>
+                <li>more heavy on the frontend</li>
+                <li></li>
+              </ol>
+            </div>
+          </div>
+        </div>
         <div className="flex flex-col gap-4">
           <h1 className="font-bold text-2xl">why did I make this website</h1>
           <Line />
