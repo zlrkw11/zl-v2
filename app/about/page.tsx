@@ -4,6 +4,7 @@ import Sona from "../../public/assets/sona.jpeg";
 import Image from "next/image";
 import Link from "next/link";
 import { Arimo } from "next/font/google";
+import Nav from "../components/nav";
 import "../globals.css";
 
 const ArimoFont = Arimo({

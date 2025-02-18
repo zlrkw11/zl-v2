@@ -2,6 +2,7 @@ import "./globals.css";
 import Footer from "./components/footer";
 import { Crimson_Text } from "next/font/google";
 import Link from "next/link";
+import Nav from "./components/nav";
 
 const crimsonFont = Crimson_Text({
   subsets: ["latin"],
@@ -16,7 +17,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`min-h-screen flex flex-col ${crimsonFont.className}`}>
-        <div className="grid grid-cols-10 p-8 mb-4 ">
+        <div className="grid grid-cols-10 p-4 mb-4 ">
           <Link href="/" className="flex justify-center">
             <h1
               className="text-center md:text-2xl w-[100px]  text-lg hover:bg-red-600 hover:text-white"
@@ -25,6 +26,9 @@ export default function RootLayout({
               {`<ZL />`}
             </h1>
           </Link>
+          <div className="col-span-4  flex justify-center">
+            <Nav />
+          </div>
         </div>
         <div className="flex-grow">{children}</div>
         <Footer />
