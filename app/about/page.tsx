@@ -57,9 +57,11 @@ const About = () => {
           </p>
         </div>
       </div>
-      <div className="border-black border-b-2 text-center w-[100px] mt-12 transition duration-400 hover:border-red-600">
-        see more
-      </div>
+      <Link href="../personal">
+        <div className="border-black border-b-2 text-center w-[100px] mt-12 transition hover:border-red-600 hover:text-red-600">
+          see more
+        </div>
+      </Link>
     </div>
   );
 };
