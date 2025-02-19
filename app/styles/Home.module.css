@@ -13,7 +13,7 @@
 }
 
 .move-up-down {
-  animation: moveUpDown 8s ease-in-out infinite;
+  animation: moveUpDown 6s ease-in-out infinite;
 }
 
 @keyframes moveUpDown {
@@ -22,7 +22,7 @@
   }
 
   50% {
-    transform: translateY(-50px);
+    transform: translateY(-30px);
   }
 
   100% {

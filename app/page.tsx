@@ -47,7 +47,7 @@ export default function Home() {
         <div className="col-start-6 md:col-start-7 col-span-1 flex ">
           {" "}
           <button className="border border-gray-300 p-2 rounded-lg hover:text-red-600 hover:border-red-600">
-            search
+            <Link href="/about">search</Link>
           </button>
         </div>
         <div className="w-12 col-start-8 col-span-1 flex items-center justify-center">
@@ -62,7 +62,29 @@ export default function Home() {
             />
           </Link>
         </div>{" "}
-        <div className={`${styles["move-up-down"]}`}>x</div>
+        <div className="col-span-7 gap-4 flex flex-col text-7xl font-bold">
+          {" "}
+          <div
+            className={`${styles["move-up-down"]} col-span-4 w-200px justify-center h-[100px] flex items-center border border-gray-300 rounded-lg`}
+          >
+            <p>Web develeoper</p>
+          </div>
+          <div
+            className={`${styles["move-up-down"]} w-200px h-[100px] justify-center flex items-center border border-gray-300 rounded-lg`}
+          >
+            <p>Frontend</p>
+          </div>
+          <div
+            className={`${styles["move-up-down"]} w-200px h-[100px] justify-center flex items-center border border-gray-300 rounded-lg`}
+          >
+            <p>Project-focused</p>
+          </div>
+          <div
+            className={`${styles["move-up-down"]} w-200px h-[100px] justify-center flex items-center border border-gray-300 rounded-lg`}
+          >
+            <p>Innovative</p>
+          </div>
+        </div>
       </div>
     </div>
   );
