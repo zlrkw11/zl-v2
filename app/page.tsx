@@ -38,7 +38,7 @@ export default function Home() {
           {/* <h1 className="flex text-5xl">Welcome to my personal space.</h1> */}
           <div className="gap-4">
             <div className="flex border border-gray-300 rounded-lg p-2 ">
-              <p>www.zl.digital.domain</p>
+              <p>Ray Zhao</p>
             </div>{" "}
           </div>
         </div>
@@ -86,42 +86,42 @@ export default function Home() {
         <div
           className={`${styles["move-up-down2"]} col-span-2 w-200px justify-center h-[100px] flex items-center border border-gray-200 rounded-lg`}
         >
-          <p>Web developer</p>
+          <p>Visual Appeal</p>
         </div>
         <div
           className={`${styles["move-up-down2"]} col-span-2 w-200px justify-center h-[100px] flex items-center border border-gray-200 rounded-lg`}
         >
-          <p>Frontend</p>
+          <p>User Experience</p>
         </div>
         <div
           className={`${styles["move-up-down"]} col-span-2 w-200px h-[100px] justify-center flex items-center border border-gray-200 rounded-lg`}
         >
-          <p>Project-focused</p>
+          <p>User Interface</p>
         </div>
         <div
           className={`${styles["move-up-down"]} col-span-2 w-200px h-[100px] justify-center flex items-center border border-gray-200 rounded-lg`}
         >
-          <p>Innovative</p>
+          <p>Responsive</p>
         </div>
         <div
           className={`${styles["move-up-down2"]} col-span-2 w-200px justify-center h-[100px] flex items-center border border-gray-200 rounded-lg`}
         >
-          <p>Web developer</p>
+          <p>Next.JS</p>
         </div>
         <div
           className={`${styles["move-up-down2"]} col-span-2 w-200px justify-center h-[100px] flex items-center border border-gray-200 rounded-lg`}
         >
-          <p>Frontend</p>
+          <p>JavaScript</p>
         </div>
         <div
           className={`${styles["move-up-down2"]} col-span-2 w-200px h-[100px] justify-center flex items-center border border-gray-200 rounded-lg`}
         >
-          <p>Project-focused</p>
+          <p>TypeScript</p>
         </div>
         <div
           className={`${styles["move-up-down"]} col-span-2 w-200px h-[100px] justify-center flex items-center border border-gray-200 rounded-lg`}
         >
-          <p>Innovative</p>
+          <p>CSS</p>
         </div>
       </div>
     </div>
