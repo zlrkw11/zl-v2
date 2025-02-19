@@ -9,7 +9,7 @@ import "../globals.css";
 
 const ArimoFont = Arimo({
   subsets: ["latin"],
-  weight: "400",
+  weight: "500",
 });
 
 const Line = () => {
@@ -29,7 +29,7 @@ const About = () => {
             image here
           </div>
           <div>
-            <p className={`${ArimoFont.className} text-gray-800`}>
+            <p className={`${ArimoFont.className} text-gray-700`}>
               Hello, I'm Ray Zhao. a third year compsi student (yea) at{" "}
               <Link href="https://www.auckland.ac.nz/en.html">
                 <span className="text-red-500 font-bold hover:text-red-300">
@@ -55,7 +55,7 @@ const About = () => {
             more about me
           </h1>
           <Line />
-          <div className={`flex gap-4 ${ArimoFont.className} `}>
+          <div className={`flex gap-4 ${ArimoFont.className} text-gray-700`}>
             <div className="flex flex-col gap-4">
               <p>
                 I always wanted to be extremely competitve in a way that so I
@@ -73,7 +73,7 @@ const About = () => {
         <div className="flex flex-col gap-4">
           <h1 className="font-bold text-2xl">why did I make this website</h1>
           <Line />
-          <p className={`${ArimoFont.className}`}>
+          <p className={`${ArimoFont.className} text-gray-700`}>
             I always wanted to make a website that is not just simply a
             portfolio for the companies to look at. But instead a website that
             resembles a personal space. Where someone can express their
