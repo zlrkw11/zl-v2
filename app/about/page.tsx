@@ -35,9 +35,9 @@ const About = () => {
                 <span className="text-red-500 font-bold hover:text-red-300">
                   UOA
                 </span>
-              </Link>
-              . Even though I have been spending a bit of time grinding solo-duo
-              ranked in{" "}
+              </Link>{" "}
+              and a self-taught web-developer. Even though I have been spending
+              a bit of time grinding solo-duo ranked in{" "}
               <Link href="https://www.leagueoflegends.com/en-au/">
                 <span className="text-orange-500 font-bold hover:text-orange-300">
                   League of Legends
@@ -59,14 +59,23 @@ const About = () => {
             <div className="flex flex-col gap-4">
               <p>
                 I always wanted to be extremely competitve in a way that so I
-                could be confident enough. But I always end up wasting too much
-                time on procrastination.
+                could be confident enough. But I always end up
+                procrastinating...
               </p>
+              <p>In the software / web industry, I:</p>
               <ul id="list" className="list-disc pl-6 ">
-                <li>wants to be a dev, not so much of a computer scientist</li>
-                <li>more heavy on the frontend</li>
-                <li>some texts here</li>
+                <li>want to be a dev, not so much of a computer scientist</li>
+                <li>
+                  am more heavy on the frontend (but secrectly I really want to
+                  practice and do well in algorithm competitions)
+                </li>
+                <li>
+                  learn things from others very fast (just not books
+                  unfortunately)
+                </li>
               </ul>
+              <p className="font-bold">Fun fact:</p>
+              <p>my favourite food is watermelon</p>
             </div>
           </div>
         </div>

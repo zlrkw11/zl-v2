@@ -20,7 +20,7 @@ export default function RootLayout({
         <div className="grid grid-cols-10 p-4 mb-4 ">
           <Link href="/" className="flex justify-center">
             <h1
-              className="text-center md:text-2xl w-[100px] text-sm hover:bg-red-600 items-center justify-center flex hover:text-white"
+              className="text-center md:text-2xl w-[100px] text-sm font-bold hover:bg-red-600 items-center justify-center flex hover:text-white"
               id="title"
             >
               {`<ZL />`}
