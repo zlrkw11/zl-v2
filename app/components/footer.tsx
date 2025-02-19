@@ -1,10 +1,8 @@
 "use client";
 const Footer = () => {
   return (
-    <div>
-      <div className="border-t border-black w-full h-8">
-        This is a fake HTML + CSS website.{" "}
-      </div>
+    <div className="flex ml-auto m-2">
+      <div className=" w-full h-8 ">Copyright © 2025 zl</div>
     </div>
   );
 };
