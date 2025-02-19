@@ -4,6 +4,10 @@ import Globe from "../public/assets/globe.svg";
 import Bulb from "../public/assets/bulb.svg";
 import styles from "../app/styles/Home.module.css";
 import { Arimo } from "next/font/google";
+import next from "../public/assets/next.svg";
+import js from "../public/assets/javascript.svg";
+import css from "../public/assets/css.svg";
+import ts from "../public/assets/typescript.svg";
 const ArimoFont = Arimo({
   subsets: ["latin"],
   weight: "500",
@@ -106,22 +110,22 @@ export default function Home() {
         <div
           className={`${styles["move-up-down2"]} col-span-2 w-200px justify-center h-[100px] flex items-center border border-gray-200 rounded-lg`}
         >
-          <p>Next.JS</p>
+          <Image src={next} alt="next_icon" width={50} height={50} />
         </div>
         <div
           className={`${styles["move-up-down2"]} col-span-2 w-200px justify-center h-[100px] flex items-center border border-gray-200 rounded-lg`}
         >
-          <p>JavaScript</p>
+          <Image src={js} alt="next_icon" width={50} height={50} />
         </div>
         <div
           className={`${styles["move-up-down2"]} col-span-2 w-200px h-[100px] justify-center flex items-center border border-gray-200 rounded-lg`}
         >
-          <p>TypeScript</p>
+          <Image src={ts} alt="next_icon" width={50} height={50} />
         </div>
         <div
           className={`${styles["move-up-down"]} col-span-2 w-200px h-[100px] justify-center flex items-center border border-gray-200 rounded-lg`}
         >
-          <p>CSS</p>
+          <Image src={css} alt="next_icon" width={50} height={50} />
         </div>
       </div>
     </div>
