@@ -62,28 +62,26 @@ export default function Home() {
             />
           </Link>
         </div>{" "}
-        <div className="col-span-7 gap-4 flex flex-col text-7xl font-bold">
-          {" "}
-          <div
-            className={`${styles["move-up-down"]} col-span-4 w-200px justify-center h-[100px] flex items-center border border-gray-300 rounded-lg`}
-          >
-            <p>Web develeoper</p>
-          </div>
-          <div
-            className={`${styles["move-up-down"]} w-200px h-[100px] justify-center flex items-center border border-gray-300 rounded-lg`}
-          >
-            <p>Frontend</p>
-          </div>
-          <div
-            className={`${styles["move-up-down"]} w-200px h-[100px] justify-center flex items-center border border-gray-300 rounded-lg`}
-          >
-            <p>Project-focused</p>
-          </div>
-          <div
-            className={`${styles["move-up-down"]} w-200px h-[100px] justify-center flex items-center border border-gray-300 rounded-lg`}
-          >
-            <p>Innovative</p>
-          </div>
+        <div className="col-span-8 mb-8"></div>
+        <div
+          className={`${styles["move-up-down2"]} col-span-2 w-200px justify-center h-[100px] flex items-center border border-gray-300 rounded-lg`}
+        >
+          <p>Web developer</p>
+        </div>
+        <div
+          className={`${styles["move-up-down2"]} col-span-2 w-200px justify-center h-[100px] flex items-center border border-gray-300 rounded-lg`}
+        >
+          <p>Frontend</p>
+        </div>
+        <div
+          className={`${styles["move-up-down2"]} col-span-2 w-200px h-[100px] justify-center flex items-center border border-gray-200 rounded-lg`}
+        >
+          <p>Project-focused</p>
+        </div>
+        <div
+          className={`${styles["move-up-down"]} col-span-2 w-200px h-[100px] justify-center flex items-center border border-gray-300 rounded-lg`}
+        >
+          <p>Innovative</p>
         </div>
       </div>
     </div>
