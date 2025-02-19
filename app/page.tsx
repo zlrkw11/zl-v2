@@ -28,17 +28,23 @@ export default function Home() {
           </li>{" "} */}
       <div className="w-[800px] grid grid-cols-8 gap-4">
         <div className="col-start-1 col-span-6 flex flex-col gap-4">
-          <h1 className="flex text-5xl">Welcome to my personal space.</h1>
-          <div className="flex gap-4">
+          {/* <h1 className="flex text-5xl">Welcome to my personal space.</h1> */}
+          <div className="gap-4">
             <div className="flex border border-gray-300 rounded-lg p-2 ">
               <p>direct me into zl's digital room</p>
             </div>{" "}
-            <button className="">search</button>
           </div>
         </div>
         {/* </ul>{" "} */}
-        {/* </div> */}{" "}
+        {/* </div> */}
+        <div className="col-start-7 col-span-1 flex ">
+          {" "}
+          <button className="border border-gray-300 p-2 rounded-lg">
+            search
+          </button>
+        </div>
         <div className="w-12 col-start-8 col-span-1 flex items-center justify-center">
+          {" "}
           <Link href="/" className="">
             <Image
               src={Globe}
