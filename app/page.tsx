@@ -36,7 +36,7 @@ export default function Home() {
             <span className="opacity-0 ml-4 group-hover:opacity-100 ">◂</span>
           </li>{" "} */}
       <div
-        className={`grid grid-cols-2 md:w-[800px] md:grid-cols-8 gap-4 text-gray-700 ${ArimoFont.className}`}
+        className={`m-2 grid md:w-[800px] grid-cols-8 gap-4 text-gray-700 ${ArimoFont.className}`}
       >
         <div className="col-start-1 col-span-5 md:col-span-6 flex flex-col gap-4">
           {/* <h1 className="flex text-5xl">Welcome to my personal space.</h1> */}
@@ -54,7 +54,7 @@ export default function Home() {
             <Link href="/about">search</Link>
           </button>
         </div>
-        <div className="w-12 col-start-7 md:col-start-8 col-span-1 flex items-center justify-center">
+        <div className="w-12 col-start-8 col-span-1 flex items-center justify-center">
           {" "}
           <Link href="/" className="">
             <Image
@@ -75,7 +75,7 @@ export default function Home() {
         <div
           className={`col-span-4 ${styles["move-up-down"]} md:col-span-2 w-200px justify-center h-[100px] flex items-center border border-gray-200 rounded-lg`}
         >
-          <p>Frontend</p>
+          <p>Fullstack</p>
         </div>
         <div
           className={`col-span-4 ${styles["move-up-down2"]} md:col-span-2 w-200px h-[100px] justify-center flex items-center border border-gray-200 rounded-lg`}
@@ -85,7 +85,7 @@ export default function Home() {
         <div
           className={`col-span-4 ${styles["move-up-down"]} md:col-span-2 w-200px h-[100px] justify-center flex items-center border border-gray-200 rounded-lg`}
         >
-          <p>Innovative</p>
+          <p>Frontend</p>
         </div>
         <div
           className={`col-span-4 ${styles["move-up-down2"]} md:col-span-2 w-200px justify-center h-[100px] flex items-center border border-gray-200 rounded-lg`}
