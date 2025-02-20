@@ -36,9 +36,9 @@ export default function Home() {
             <span className="opacity-0 ml-4 group-hover:opacity-100 ">◂</span>
           </li>{" "} */}
       <div
-        className={`w-[800px] grid grid-cols-8 gap-4 text-gray-700 ${ArimoFont.className}`}
+        className={`grid grid-cols-2 md:w-[800px] md:grid-cols-8 gap-4 text-gray-700 ${ArimoFont.className}`}
       >
-        <div className="col-start-1 col-span-6 flex flex-col gap-4">
+        <div className="col-start-1 col-span-5 md:col-span-6 flex flex-col gap-4">
           {/* <h1 className="flex text-5xl">Welcome to my personal space.</h1> */}
           <div className="gap-4">
             <div className="flex border border-gray-300 rounded-lg p-2 ">
@@ -54,7 +54,7 @@ export default function Home() {
             <Link href="/about">search</Link>
           </button>
         </div>
-        <div className="w-12 col-start-8 col-span-1 flex items-center justify-center">
+        <div className="w-12 col-start-7 md:col-start-8 col-span-1 flex items-center justify-center">
           {" "}
           <Link href="/" className="">
             <Image
@@ -68,62 +68,62 @@ export default function Home() {
         </div>{" "}
         <div className="col-span-8 mb-8"></div>
         <div
-          className={`${styles["move-up-down2"]} col-span-2 w-200px justify-center h-[100px] flex items-center border border-gray-200 rounded-lg`}
+          className={`col-span-4 ${styles["move-up-down2"]} md:col-span-2 w-200px justify-center h-[100px] flex items-center border border-gray-200 rounded-lg`}
         >
           <p>Web developer</p>
         </div>
         <div
-          className={`${styles["move-up-down"]} col-span-2 w-200px justify-center h-[100px] flex items-center border border-gray-200 rounded-lg`}
+          className={`col-span-4 ${styles["move-up-down"]} md:col-span-2 w-200px justify-center h-[100px] flex items-center border border-gray-200 rounded-lg`}
         >
           <p>Frontend</p>
         </div>
         <div
-          className={`${styles["move-up-down2"]} col-span-2 w-200px h-[100px] justify-center flex items-center border border-gray-200 rounded-lg`}
+          className={`col-span-4 ${styles["move-up-down2"]} md:col-span-2 w-200px h-[100px] justify-center flex items-center border border-gray-200 rounded-lg`}
         >
           <p>Project-focused</p>
         </div>
         <div
-          className={`${styles["move-up-down"]} col-span-2 w-200px h-[100px] justify-center flex items-center border border-gray-200 rounded-lg`}
+          className={`col-span-4 ${styles["move-up-down"]} md:col-span-2 w-200px h-[100px] justify-center flex items-center border border-gray-200 rounded-lg`}
         >
           <p>Innovative</p>
         </div>
         <div
-          className={`${styles["move-up-down2"]} col-span-2 w-200px justify-center h-[100px] flex items-center border border-gray-200 rounded-lg`}
+          className={`col-span-4 ${styles["move-up-down2"]} md:col-span-2 w-200px justify-center h-[100px] flex items-center border border-gray-200 rounded-lg`}
         >
           <p>Visual Appeal</p>
         </div>
         <div
-          className={`${styles["move-up-down2"]} col-span-2 w-200px justify-center h-[100px] flex items-center border border-gray-200 rounded-lg`}
+          className={`col-span-4 ${styles["move-up-down2"]} md:col-span-2 w-200px justify-center h-[100px] flex items-center border border-gray-200 rounded-lg`}
         >
           <p>User Experience</p>
         </div>
         <div
-          className={`${styles["move-up-down"]} col-span-2 w-200px h-[100px] justify-center flex items-center border border-gray-200 rounded-lg`}
+          className={`col-span-4 ${styles["move-up-down"]} md:col-span-2 w-200px h-[100px] justify-center flex items-center border border-gray-200 rounded-lg`}
         >
           <p>User Interface</p>
         </div>
         <div
-          className={`${styles["move-up-down"]} col-span-2 w-200px h-[100px] justify-center flex items-center border border-gray-200 rounded-lg`}
+          className={`col-span-4 ${styles["move-up-down"]} md:col-span-2 w-200px h-[100px] justify-center flex items-center border border-gray-200 rounded-lg`}
         >
           <p>Responsive</p>
         </div>
         <div
-          className={`${styles["move-up-down2"]} col-span-2 w-200px justify-center h-[100px] flex items-center border border-gray-200 rounded-lg`}
+          className={`col-span-4 ${styles["move-up-down2"]} md:col-span-2 w-200px justify-center h-[100px] flex items-center border border-gray-200 rounded-lg`}
         >
           <Image src={next} alt="next_icon" width={50} height={50} />
         </div>
         <div
-          className={`${styles["move-up-down2"]} col-span-2 w-200px justify-center h-[100px] flex items-center border border-gray-200 rounded-lg`}
+          className={`col-span-4 ${styles["move-up-down2"]} md:col-span-2 w-200px justify-center h-[100px] flex items-center border border-gray-200 rounded-lg`}
         >
           <Image src={js} alt="next_icon" width={50} height={50} />
         </div>
         <div
-          className={`${styles["move-up-down2"]} col-span-2 w-200px h-[100px] justify-center flex items-center border border-gray-200 rounded-lg`}
+          className={`col-span-4 ${styles["move-up-down2"]} md:col-span-2 w-200px h-[100px] justify-center flex items-center border border-gray-200 rounded-lg`}
         >
           <Image src={ts} alt="next_icon" width={50} height={50} />
         </div>
         <div
-          className={`${styles["move-up-down"]} col-span-2 w-200px h-[100px] justify-center flex items-center border border-gray-200 rounded-lg`}
+          className={`col-span-4 ${styles["move-up-down"]} md:col-span-2 w-200px h-[100px] justify-center flex items-center border border-gray-200 rounded-lg`}
         >
           <Image src={css} alt="next_icon" width={50} height={50} />
         </div>
