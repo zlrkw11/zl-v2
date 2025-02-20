@@ -45,8 +45,8 @@ const About = () => {
               </Link>{" "}
               but I still have the passion as always to learn new skills in
               web-development and try to make something cool and original in
-              nowadays' world where everything is instantly made with
-              AI(including parts of this paragraph).
+              nowadays' world where everything is instantly made with AI
+              (including parts of this paragraph).
             </p>
           </div>
         </div>
@@ -64,18 +64,22 @@ const About = () => {
               </p>
               <p>In the software / web industry, I:</p>
               <ul id="list" className="list-disc pl-6 ">
-                <li>want to be a dev, not so much of a computer scientist</li>
+                <li>
+                  want to be a dev, not so much of a computer scientist (skill
+                  issue tbh)
+                </li>
                 <li>
                   am more heavy on the frontend (but secrectly I really want to
                   practice and do well in algorithm competitions)
                 </li>
                 <li>
-                  learn things from others very fast (just not books
-                  unfortunately)
+                  learn things from others quite fast and develop something more
+                  on top of it
                 </li>
               </ul>
-              <p className="font-bold">Fun fact:</p>
-              <p>my favourite food is watermelon</p>
+              <p className="font-bold">Fun facts:</p>
+              <p>my favourite fruit is watermelon</p>
+              <p>still on my way to break my 75kg bench PR</p>
             </div>
           </div>
         </div>
@@ -91,7 +95,7 @@ const About = () => {
             everyone now (including myself) is too busy & addicted to Instagram
             reels. I also refuse to use anything over commercialzed like
             instagram where it is full of Temu ads. So here it is, a website
-            that is made by me, for me.
+            that is made to feel the internet at its purest.
           </p>
         </div>
       </div>
