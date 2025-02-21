@@ -50,9 +50,11 @@ export default function Home() {
         {/* </div> */}
         <div className="col-start-6 md:col-start-7 col-span-1 flex ">
           {" "}
-          <button className="border border-gray-300 p-2 rounded-lg hover:text-red-600 hover:border-red-600">
-            <Link href="/about">search</Link>
-          </button>
+          <Link href="/about">
+            <button className="border border-gray-300 p-2 rounded-lg hover:text-red-600 hover:border-red-600">
+              search
+            </button>
+          </Link>
         </div>
         <div className="w-12 col-start-8 col-span-1 flex items-center justify-center">
           {" "}
