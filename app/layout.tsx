@@ -30,7 +30,7 @@ export default function RootLayout({
             <Nav />
           </div>
         </div>
-        <div className="flex-grow">{children}</div>
+        <div className="items-center flex flex-col">{children}</div>
         <Footer />
       </body>
     </html>

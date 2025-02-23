@@ -6,8 +6,8 @@ import jas from "../../public/assets/jas.png";
 import styles from "../styles/Home.module.css";
 const Footer = () => {
   return (
-    <div className="flex w-full ml-auto justify-center md:justify-end">
-      <div className="flex h-8 mr-4 items-center gap-4 px-4 py-8 ">
+    <div className="flex w-full mt-auto ml-auto justify-center md:justify-end">
+      <div className="flex h-8 items-center gap-4 px-4 py-8 ">
         <Image
           src={jas}
           width={50}
