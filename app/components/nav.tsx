@@ -23,7 +23,7 @@ const Nav = () => {
         <Link className="hover:underline hover:text-gray-600 " href="/">
           Blogs
         </Link>{" "}
-        <Link className="hover:underline hover:text-gray-600" href="/">
+        <Link className="hover:underline hover:text-gray-600" href="/contents">
           Contents
         </Link>
       </div>
