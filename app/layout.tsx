@@ -17,22 +17,23 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`min-h-screen flex flex-col ${crimsonFont.className}`}>
-        <div className="grid grid-cols-10 p-4 mb-4 ">
-          <Link href="/" className="flex justify-center">
-            <h1
-              className="text-center md:text-2xl w-[100px] hidden hover:bg-red-600 items-center justify-center md:flex hover:text-white"
-              id="title"
-            >
-              {`<ZL />`}
-            </h1>
-          </Link>
-          <div className="w-full col-span-4 flex justify-center">
-            <Nav />
-          </div>
+        <Link href="/" className="absolute mr-auto">
+          <h1
+            className="text-center md:text-2xl w-[100px] hidden hover:bg-red-600 items-center justify-center md:flex hover:text-white"
+            id="title"
+          >
+            {`<ZL />`}
+          </h1>
+        </Link>
+        <div className="flex items-center justify-center w-full mb-4">
+          <Nav />
         </div>
         <div className="items-center flex flex-col">{children}</div>
         <Footer />
       </body>
     </html>
   );
+}
+{
+  /*  */
 }

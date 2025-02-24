@@ -9,8 +9,8 @@ const isExpanded = () => {
 
 const Nav = () => {
   return (
-    <div className="w-full grid grid-cols-8 items-center">
-      <div className="col-start-8 col-span-4 flex justify-center md:text-xl text-lg gap-4 ">
+    <div className="flex items-center justify-center">
+      <div className="flex justify-center md:text-xl text-lg gap-4 p-2">
         <Link className="hover:underline hover:text-gray-700" href="/">
           Home
         </Link>
