@@ -14,7 +14,7 @@
   {
     "title": "Next.JS Dynamic Routing",
     "slug": "blog_3",
-    "text": "I learnt some routing from GPT as always, and realised that NEXT.JS sends out its built-in prop: Params to the page.tsx inside of the [slugs] folder (which marks it as a dynamic routing folder). This allows for dynamic routing in Next.js applications.",
+    "text": "I learnt some routing from GPT as always, and realised that NEXT.JS sends out its built-in prop: Params to the page.tsx inside of the [slugs] folder (which marks it as a dynamic routing folder). This allows for dynamic routing in Next.js applications. Basic logic: reads blog from 'blogs' and get the data of the blog: title, date, text.. Then NEXT uses the .slug property to dynamically create the blogs/blog_1.tsx route. When we load into that new page, it uses the slug property to generate and render the contents shown on the page.",
     "date": "2025/02/24",
     "image": ""
   }
