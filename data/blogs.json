@@ -14,7 +14,8 @@
   {
     "title": "Next.JS Dynamic Routing",
     "slug": "blog_3",
-    "text": "This is another blog post.",
-    "date": "2025/02/24"
+    "text": "I learnt some routing from GPT as always, and realised that NEXT.JS sends out its built-in prop: Params to the page.tsx inside of the [slugs] folder (which marks it as a dynamic routing folder). This allows for dynamic routing in Next.js applications.",
+    "date": "2025/02/24",
+    "image": ""
   }
 ]

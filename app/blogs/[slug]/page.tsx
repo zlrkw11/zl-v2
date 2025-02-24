@@ -1,5 +1,11 @@
 import fs from "fs";
 import path from "path";
+import { Arimo } from "next/font/google";
+
+const ArimoFont = Arimo({
+  subsets: ["latin"],
+  weight: "500",
+});
 
 type BlogProps = {
   params: { slug: string };
@@ -15,8 +21,12 @@ const Blog = async ({ params }: BlogProps) => {
     return <p>Blog not found!</p>;
   }
   return (
-    <div className="flex flex-col w-[800px] items-center">
-      <h1>{blog.title}</h1>
+    <div
+      className={`${ArimoFont.className} flex flex-col w-[800px] items-center text-gray-700 gap-4`}
+    >
+      <h1 className="text-lg border-b-2 border-b-red-600 text-black">
+        {blog.title}
+      </h1>
       <p>{blog.date}</p>
       <p>{blog.text}</p>
     </div>
