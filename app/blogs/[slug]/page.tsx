@@ -28,7 +28,10 @@ const Blog = async ({ params }: BlogProps) => {
         {blog.title}
       </h1>
       <p className="text-gray-500">{blog.date}</p>
-      <p dangerouslySetInnerHTML={{ __html: blog.text }}></p>
+      <p
+        className="md:min-w-[700px] w-[420px]"
+        dangerouslySetInnerHTML={{ __html: blog.text }}
+      ></p>
     </div>
   );
 };
