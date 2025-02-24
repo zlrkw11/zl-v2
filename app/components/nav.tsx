@@ -20,7 +20,7 @@ const Nav = () => {
         <Link className="hover:underline hover:text-gray-600 " href="/">
           Projects
         </Link>
-        <Link className="hover:underline hover:text-gray-600 " href="/">
+        <Link className="hover:underline hover:text-gray-600 " href="/blogs">
           Blogs
         </Link>{" "}
         <Link className="hover:underline hover:text-gray-600" href="/contents">
