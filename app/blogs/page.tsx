@@ -35,7 +35,7 @@ const Blogs = async () => {
                 {blog.title}
               </p>
             </Link>
-            <p className="">{blog.date}</p>
+            <p className="text-gray-500">{blog.date}</p>
           </li>
         ))}
       </ul>
