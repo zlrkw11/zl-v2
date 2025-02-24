@@ -28,9 +28,9 @@ const Card = ({
 const Menu = () => {
   return (
     <div
-      className={`flex flex-col justify-center items-center ${ArimoFont.className} text-gray-700 w-[800px]`}
+      className={`flex flex-col justify-center items-center ${ArimoFont.className} text-gray-700`}
     >
-      <div className="w-[800px] flex flex-col items-center gap-4">
+      <div className="md:w-[800px] flex flex-col items-center gap-4">
         <h1 className="text-red-600 underline text-2xl mb-2">Map</h1>
         <p className="mb-4">This page is a road map for this website {`:)`}</p>
         <h1 className="text-lg text-black m-4">./Ground_Level</h1>

@@ -16,7 +16,7 @@ const Blogs = async () => {
 
   return (
     <div
-      className={`flex flex-col w-[800px] ${ArimoFont.className} items-center gap-4 text-gray-700`}
+      className={`flex flex-col md:w-[800px] ${ArimoFont.className} items-center gap-4 text-gray-700`}
     >
       <h1 className="text-2xl text-red-600 underline mb-2">Blogs</h1>
       <p className="mb-2 md:min-w-[600px] w-[420px]">
