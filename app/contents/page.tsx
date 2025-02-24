@@ -59,7 +59,7 @@ const Menu = () => {
         <Card
           title="Patch Notes"
           description="A page which records all the updates and version changes of this website."
-          link="/"
+          link="/contents/patchnotes"
         />
 
         <h1 className="text-lg text-black m-4">./External_Links</h1>
