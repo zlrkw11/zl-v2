@@ -29,13 +29,15 @@ const PatchNotes = () => {
     <div
       className={`flex flex-col md:w-[800px] ${ArimoFont.className} items-center gap-4 text-gray-700`}
     >
-      {/* <h1 className="text-red-600 underline text-2xl">patch notes</h1> */}
-      <ul>
+      <h1 className="text-black text-lg">
+        <span className="text-red-600">{`[`}</span>Patch_Notes
+        <span className="text-red-600">{`]`}</span>
+      </h1>
+      <ul className="gap-4 flex flex-col">
         <Note
           ver="1.0.0"
           date="2025/02/24"
-          des="Completed the basic functionalities of all the main pages and
-      successfully deployed."
+          des="Completed the basic functionalities of all the main pages beside <Projects> and not yet deployed publicly."
         />
       </ul>
     </div>
