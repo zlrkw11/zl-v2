@@ -1,4 +1,5 @@
 import { Arimo } from "next/font/google";
+import Link from "next/link";
 
 const ArimoFont = Arimo({
   subsets: ["latin"],
@@ -27,12 +28,21 @@ const Note = ({
 const PatchNotes = () => {
   return (
     <div
-      className={`flex flex-col md:w-[800px] ${ArimoFont.className} items-center gap-4 text-gray-700`}
+      className={`flex flex-col md:w-[800px] ${ArimoFont.className} gap-8 text-gray-700`}
     >
       <h1 className="text-black text-lg">
         <span className="text-red-600">{`[`}</span>Patch_Notes
         <span className="text-red-600">{`]`}</span>
       </h1>
+      <p>
+        This page records all the version updates and new features being added
+        to this website. For more infomation, please visit the github repo:{" "}
+        <Link href={"https://github.com/zlrkw11/zl-v2"}>
+          <span className="text-gray-500 hover:text-red-600 underline">
+            Take me there
+          </span>
+        </Link>
+      </p>
       <ul className="gap-4 flex flex-col">
         <Note
           ver="1.0.0"
