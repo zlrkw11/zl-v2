@@ -64,10 +64,22 @@ const Menu = () => {
 
         <h1 className="text-lg text-black m-4">./External_Links</h1>
         <Card
-          title="My Github"
+          title="Github"
           description="A link to my Github profile."
           link="https://github.com/zlrkw11"
         />
+        <Card
+          title="LinkedIn"
+          description="A link to my Linkedin profile."
+          link="https://www.linkedin.com/in/ray-zhao-kaede11/"
+        />
+      </div>
+      <div className="text-md mt-12 w-[410px] md:min-w-[600px] flex flex-col gap-4">
+        Emails:
+        <p className="border-l-2 border-red-600 p-2">Ray040406@gmail.com</p>
+        <p className="border-l-2 border-red-600 p-2">
+          lzha641@aucklanduni.ac.nz
+        </p>
       </div>
     </div>
   );
