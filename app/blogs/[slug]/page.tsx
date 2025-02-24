@@ -17,6 +17,7 @@ const Blog = async ({ params }: BlogProps) => {
   return (
     <div className="flex flex-col w-[800px] items-center">
       <h1>{blog.title}</h1>
+      <p>{blog.date}</p>
       <p>{blog.text}</p>
     </div>
   );

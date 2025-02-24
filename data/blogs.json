@@ -2,11 +2,19 @@
   {
     "title": "test1",
     "slug": "blog_1",
-    "text": "This is the content of my first blog."
+    "text": "This is the content of my first blog.",
+    "date": "2025/02/24"
   },
   {
     "title": "test2",
     "slug": "blog_2",
-    "text": "This is another blog post."
+    "text": "This is another blog post.",
+    "date": "2025/02/24"
+  },
+  {
+    "title": "Next.JS Dynamic Routing",
+    "slug": "blog_3",
+    "text": "This is another blog post.",
+    "date": "2025/02/24"
   }
 ]
