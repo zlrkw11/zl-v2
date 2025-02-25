@@ -8,7 +8,7 @@ const ArimoFont = Arimo({
 });
 
 type BlogProps = {
-  params: { slug: string };
+  params: { slug?: string };
   searchParams?: Record<string, string | string[] | undefined>;
 };
 
