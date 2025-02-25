@@ -17,7 +17,7 @@ const Nav = () => {
         <Link className="hover:underline hover:text-gray-600 " href="/about">
           About
         </Link>
-        <Link className="hover:underline hover:text-gray-600 " href="/">
+        <Link className="hover:underline hover:text-gray-600 " href="/projects">
           Projects
         </Link>
         <Link className="hover:underline hover:text-gray-600 " href="/blogs">
