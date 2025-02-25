@@ -11,11 +11,21 @@ type BlogProps = {
   params: { slug: string };
 };
 
-const Blog = async ({ params }: BlogProps) => {
+const getBlogData = () => {
   const filePath = path.join(process.cwd(), "data", "blogs.json");
   const fileData = fs.readFileSync(filePath, "utf-8");
-  const blogs = JSON.parse(fileData);
+  return JSON.parse(fileData);
+};
 
+export async function generateStaticParams() {
+  const blogs = getBlogData();
+  return blogs.map((blog: any) => ({
+    slug: blog.slug,
+  }));
+}
+
+const Blog = ({ params }: BlogProps) => {
+  const blogs = getBlogData();
   const blog = blogs.find((b: any) => b.slug === params.slug);
   if (!blog) {
     return <p>Blog not found!</p>;
