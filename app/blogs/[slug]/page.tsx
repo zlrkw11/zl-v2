@@ -1,17 +1,17 @@
 import fs from "fs";
 import path from "path";
 import { Arimo } from "next/font/google";
-
+import { use } from "react";
 const ArimoFont = Arimo({
   subsets: ["latin"],
   weight: "500",
 });
 
-type BlogProps = {
-  params: { slug: string | any };
-};
-
-const Blog = async ({ params }: BlogProps) => {
+interface Params {
+  rcdId: string;
+  slug: string;
+}
+const Blog = async ({ params }: { params: Params }) => {
   const filePath = path.join(process.cwd(), "data", "blogs.json");
   const fileData = fs.readFileSync(filePath, "utf-8");
   const blogs = JSON.parse(fileData);
