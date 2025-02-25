@@ -7,16 +7,15 @@ const ArimoFont = Arimo({
   weight: "500",
 });
 
-interface BlogProps {
-  params: { slug?: string };
-}
+type BlogProps = {
+  params: { slug: string | any };
+};
 
 const Blog = async ({ params }: BlogProps) => {
   const filePath = path.join(process.cwd(), "data", "blogs.json");
   const fileData = fs.readFileSync(filePath, "utf-8");
   const blogs = JSON.parse(fileData);
-  const { slug } = params;
-  const blog = blogs.find((b: any) => b.slug === slug);
+  const blog = blogs.find((b: any) => b.slug === params.slug);
   if (!blog) {
     return <p>Blog not found!</p>;
   }
