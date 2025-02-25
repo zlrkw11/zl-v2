@@ -9,6 +9,7 @@ const ArimoFont = Arimo({
 
 type BlogProps = {
   params: { slug: string };
+  searchParams?: Record<string, string | string[] | undefined>;
 };
 
 const Blog = async ({ params }: BlogProps) => {
