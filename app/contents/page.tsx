@@ -1,8 +1,15 @@
 import { Arimo } from "next/font/google";
+import { Crimson_Text } from "next/font/google";
 import Link from "next/link";
+
 const ArimoFont = Arimo({
   subsets: ["latin"],
   weight: "500",
+});
+
+const crimsonFont = Crimson_Text({
+  subsets: ["latin"],
+  weight: "400",
 });
 
 const Card = ({
@@ -31,8 +38,15 @@ const Menu = () => {
       className={`flex flex-col justify-center items-center ${ArimoFont.className} text-gray-700`}
     >
       <div className="md:w-[800px] flex flex-col items-center gap-4">
-        <h1 className="text-red-600 underline text-2xl mb-2">Map</h1>
-        <p className="mb-4">This page is a road map for this website {`:)`}</p>
+        <div className={` ${crimsonFont.className} md:min-w-[600px] w-[410px]`}>
+          <h1 className="text-black border-b-2 border-red-600 text-2xl mb-2">
+            Map
+          </h1>
+          <p className="text-black">
+            This page is a road map for this website {`:)`}
+          </p>
+        </div>
+
         <h1 className="text-lg text-black m-4">./Ground_Level</h1>
         <Card title="Home" description="As what the name says.." link="/" />
         <Card
