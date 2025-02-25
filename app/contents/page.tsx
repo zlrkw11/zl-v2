@@ -47,7 +47,9 @@ const Menu = () => {
           </p>
         </div>
 
-        <h1 className="text-lg text-black m-4">./Ground_Level</h1>
+        <h1 className="text-lg text-black m-4">
+          <span className="text-red-600">./</span>Ground_Level
+        </h1>
         <Card title="Home" description="As what the name says.." link="/" />
         <Card
           title="About"
@@ -64,7 +66,9 @@ const Menu = () => {
           description="A free space to express my personal ideas and thoughts."
           link="/blogs"
         />
-        <h1 className="text-lg text-black m-4">./B1</h1>
+        <h1 className="text-lg text-black m-4">
+          <span className="text-red-600">./</span>B1
+        </h1>
         <Card
           title="LeetCode"
           description="This page is an online storage room for all the problems I have solved."
@@ -76,7 +80,9 @@ const Menu = () => {
           link="/contents/patchnotes"
         />
 
-        <h1 className="text-lg text-black m-4">./External_Links</h1>
+        <h1 className="text-lg text-black m-4">
+          <span className="text-red-600">./</span>External_Links
+        </h1>
         <Card
           title="Github"
           description="A link to my Github profile."
