@@ -12,18 +12,18 @@ const ArimoFont = Arimo({
   weight: "500",
 });
 
-const Line = () => {
-  return <div className="border border-black w-full h-0"></div>;
-};
 const About = () => {
   return (
     <div className="flex flex-col items-center m-4 justify-center ">
       <div className="flex flex-col md:w-[800px] gap-8">
         <div className="flex flex-col gap-4">
-          <h1 id="about-title-1" className="font-bold text-2xl">
-            about me
+          <h1
+            id="about-title-1"
+            className="text-3xl font-bold border-b-2 border-b-red-600"
+          >
+            about me<span className="text-3xl text-red-600">:</span>
           </h1>
-          <Line />
+
           <div id="image-section">
             {/* <Image src={Sona} width={100} height={100} alt="a picture of sona" /> */}
             image here
@@ -51,10 +51,13 @@ const About = () => {
           </div>
         </div>
         <div className={`flex flex-col gap-4`}>
-          <h1 id="about-title-1" className="font-bold text-2xl">
-            more about me
+          <h1
+            id="about-title-1"
+            className="text-3xl font-bold border-b-2 border-b-red-600"
+          >
+            more about me<span className="text-3xl text-red-600">:</span>
           </h1>
-          <Line />
+
           <div className={`flex gap-4 ${ArimoFont.className} text-gray-700`}>
             <div className="flex flex-col gap-4">
               <p>
@@ -84,8 +87,10 @@ const About = () => {
           </div>
         </div>
         <div className="flex flex-col gap-4">
-          <h1 className="font-bold text-2xl">why did I make this website</h1>
-          <Line />
+          <h1 className="text-3xl font-bold border-b-2 border-b-red-600">
+            why did I make this website
+            <span className="text-3xl text-red-600">:</span>
+          </h1>
           <p className={`${ArimoFont.className} text-gray-700`}>
             I always wanted to make a website that is not just simply a
             portfolio for the companies to look at. But instead a website that
