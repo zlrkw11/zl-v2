@@ -109,7 +109,7 @@ const Projects = () => {
         showcases my skills, highlights my experiences and additionally, it includes a fully-functioning blogging
         system for me to share my insights."
         link1="https://github.com/zlrkw11/zl-v2"
-        link2=""
+        link2="https://rayzhao.it.com/"
         time="2025.02"
       />
     </div>
