@@ -6,7 +6,7 @@ import Link from "next/link";
 import { Arimo } from "next/font/google";
 import Nav from "../components/nav";
 import "../globals.css";
-import me from "../../public/assets/IMG_20241021_145134.jpg";
+import me from "../../public/assets/r.jpg";
 
 const ArimoFont = Arimo({
   subsets: ["latin"],
