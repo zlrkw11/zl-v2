@@ -75,7 +75,7 @@ const Project = ({
 
 const Projects = () => {
   return (
-    <div className="flex flex-col md:w-[800px] items-center text-gray-700 gap-8">
+    <div className="flex flex-col justify-center md:w-[800px] items-center text-gray-700 gap-8">
       <Project
         name="UASC"
         tech={["React", "TailwindCSS", "TypeScript", "Storybook", "Firebase"]}
