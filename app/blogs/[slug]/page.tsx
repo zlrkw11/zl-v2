@@ -7,11 +7,11 @@ const ArimoFont = Arimo({
   weight: "500",
 });
 
-interface Params {
-  rcdId: string;
-  slug: string;
-}
-const Blog = async ({ params }: { params: Params }) => {
+type BlogProps = {
+  params: { slug: string };
+};
+
+const Blog = async ({ params }: BlogProps) => {
   const filePath = path.join(process.cwd(), "data", "blogs.json");
   const fileData = fs.readFileSync(filePath, "utf-8");
   const blogs = JSON.parse(fileData);
