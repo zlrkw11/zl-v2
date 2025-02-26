@@ -28,7 +28,7 @@ const Note = ({
 const PatchNotes = () => {
   return (
     <div
-      className={`flex flex-col md:w-[800px] ${ArimoFont.className} gap-8 text-gray-700`}
+      className={`flex flex-col md:w-[800px] md:m-0 m-4 ${ArimoFont.className} gap-8 text-gray-700`}
     >
       <h1 className="text-black text-lg">
         <span className="text-red-600">{`[`}</span>Patch_Notes
@@ -48,6 +48,11 @@ const PatchNotes = () => {
           ver="1.0.0"
           date="2025/02/24"
           des="Completed the basic functionalities of all the main pages beside <Projects> and not yet deployed publicly."
+        />
+        <Note
+          ver="1.0.1"
+          date="2025/02/25"
+          des="All (main) pages completed. Fixed the responsiveness and the overflowing issue on mobile viewports."
         />
       </ul>
     </div>
