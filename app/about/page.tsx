@@ -25,8 +25,11 @@ const About = () => {
             about me<span className="text-3xl text-red-600">:</span>
           </h1>
 
-          <div id="image-section">
-            <Image src={me} width={100} height={100} alt="a picture of sona" />
+          <div
+            id="image-section"
+            className="flex flex-col md:items-start items-center"
+          >
+            <Image src={me} width={200} height={200} alt="a picture of sona" />
             <p className={`text-gray-400 ${ArimoFont.className}`}>
               probably a selfie taken for LinkedIn
             </p>
