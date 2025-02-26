@@ -53,6 +53,11 @@ const PatchNotes = () => {
           ver="1.0.1"
           date="2025/02/25"
           des="All (main) pages completed. Fixed the responsiveness and the overflowing issue on mobile viewports."
+        />{" "}
+        <Note
+          ver="1.0.1s"
+          date="2025/02/26"
+          des="Full responsiveness on the mobile viewport by removing limited 'max-width' properties."
         />
       </ul>
     </div>
