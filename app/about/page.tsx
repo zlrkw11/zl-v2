@@ -6,6 +6,7 @@ import Link from "next/link";
 import { Arimo } from "next/font/google";
 import Nav from "../components/nav";
 import "../globals.css";
+import me from "../../public/assets/IMG_20241021_145134.jpg";
 
 const ArimoFont = Arimo({
   subsets: ["latin"],
@@ -25,8 +26,10 @@ const About = () => {
           </h1>
 
           <div id="image-section">
-            {/* <Image src={Sona} width={100} height={100} alt="a picture of sona" /> */}
-            image here
+            <Image src={me} width={100} height={100} alt="a picture of sona" />
+            <p className={`text-gray-400 ${ArimoFont.className}`}>
+              probably a selfie taken for LinkedIn
+            </p>
           </div>
           <div>
             <p className={`${ArimoFont.className} text-gray-700`}>
