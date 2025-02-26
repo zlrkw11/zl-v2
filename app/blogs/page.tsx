@@ -24,7 +24,7 @@ const Blogs = async () => {
         </h1>
       </div>
       <p
-        className={`mb-2 md:min-w-[700px] max-w-[300px] md:m-0 ${ArimoFont.className} `}
+        className={`mb-2 md:min-w-[700px] max-w-[330px] md:m-0 ${ArimoFont.className} `}
       >
         I'm not a person who regularly expresses their thoughts. But I do have a
         lot of them going on. I believe that thoughts are a valuable thing
@@ -36,7 +36,7 @@ const Blogs = async () => {
         {blogs.map((blog: any) => (
           <li
             key={blog.slug}
-            className="p-2 border-2 border-l-red-600 md:min-w-[700px] max-w-[350px]"
+            className="p-2 border-2 border-l-red-600 md:min-w-[700px] w-[345px]"
           >
             <Link href={`/blogs/${blog.slug}`}>
               <p className="text-lg text-black hover:text-red-600">
