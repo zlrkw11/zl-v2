@@ -18,7 +18,7 @@ const Blog = async ({ params }: { params: Promise<{ slug: string }> }) => {
   }
   return (
     <div
-      className={`${ArimoFont.className} flex flex-col max-w-[420px] md:w-[800px] items-center text-gray-700 gap-4`}
+      className={`${ArimoFont.className} flex flex-col max-w-[420px] md:w-[800px] items-center text-gray-700 gap-4 m-2`}
     >
       <h1 className="text-lg border-b-2 border-b-red-600 text-black">
         {blog.title}
