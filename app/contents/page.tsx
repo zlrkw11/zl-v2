@@ -35,13 +35,11 @@ const Card = ({
 const Menu = () => {
   return (
     <div
-      className={`flex flex-col justify-center items-center ${ArimoFont.className} text-gray-700`}
+      className={`flex flex-col justify-center md:items-center ${ArimoFont.className} text-gray-700`}
     >
-      <div className="md:w-[800px] max-w-[420px] flex flex-col items-center gap-4">
-        <div
-          className={` ${crimsonFont.className} md:min-w-[600px] min-w-[375px]`}
-        >
-          <h1 className="text-black border-b-2 border-red-600 text-2xl mb-2">
+      <div className="md:w-[800px] flex flex-col items-center gap-4">
+        <div className={` ${crimsonFont.className} md:min-w-[600px]`}>
+          <h1 className="text-black border-b-2 border-red-600 md:min-w-[600px] w-[370px] text-2xl mb-2">
             Map
           </h1>
           <p className="text-black">
@@ -96,7 +94,7 @@ const Menu = () => {
           link="https://www.linkedin.com/in/ray-zhao-kaede11/"
         />
       </div>
-      <div className="text-md mt-12 max-w-[410px] md:min-w-[600px] flex flex-col gap-4">
+      <div className="text-md mt-12 m-2 md:min-w-[600px] w-[370px] flex flex-col gap-4">
         Emails:
         <p className="border-l-2 border-red-600 p-2">Ray040406@gmail.com</p>
         <p className="border-l-2 border-red-600 p-2">
