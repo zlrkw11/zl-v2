@@ -57,7 +57,8 @@ const PatchNotes = () => {
         <Note
           ver="1.0.1s"
           date="2025/02/26"
-          des="Full responsiveness on the mobile viewport by removing limited 'max-width' properties."
+          des="Full responsiveness on the mobile viewport by removing limited 'max-width' properties. pages involved: blogs,
+          individual blog, contents map."
         />
       </ul>
     </div>
