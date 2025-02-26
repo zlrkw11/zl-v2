@@ -28,7 +28,7 @@ const About = () => {
           <div id="image-section" className="flex flex-col items-center">
             <Image src={me} width={200} height={200} alt="a picture of sona" />
             <p className={`text-gray-400 ${ArimoFont.className}`}>
-              probably a selfie taken for LinkedIn
+              this is not me actually
             </p>
           </div>
           <div>
