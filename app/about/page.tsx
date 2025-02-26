@@ -75,7 +75,7 @@ const About = () => {
                   issue tbh)
                 </li>
                 <li>
-                  am more heavy on the frontend (but secrectly I really want to
+                  am more heavy on the frontend (but secretly I really want to
                   practice and do well in algorithm competitions)
                 </li>
                 <li>
