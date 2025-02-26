@@ -22,7 +22,7 @@ const Card = ({
   link: string;
 }) => {
   return (
-    <div className="border-2 border-b-red-600 p-2 gap-2 flex flex-col w-[410px] md:min-w-[600px]">
+    <div className="border-2 border-b-red-600 p-2 m-2 gap-2 flex flex-col w-[370px] md:min-w-[600px]">
       <Link href={link}>
         <h1 className="hover:text-red-600 ">./{title}</h1>
       </Link>
@@ -37,8 +37,10 @@ const Menu = () => {
     <div
       className={`flex flex-col justify-center items-center ${ArimoFont.className} text-gray-700`}
     >
-      <div className="md:w-[800px] flex flex-col items-center gap-4">
-        <div className={` ${crimsonFont.className} md:min-w-[600px] w-[410px]`}>
+      <div className="md:w-[800px] max-w-[420px] flex flex-col items-center gap-4">
+        <div
+          className={` ${crimsonFont.className} md:min-w-[600px] min-w-[375px]`}
+        >
           <h1 className="text-black border-b-2 border-red-600 text-2xl mb-2">
             Map
           </h1>
@@ -94,7 +96,7 @@ const Menu = () => {
           link="https://www.linkedin.com/in/ray-zhao-kaede11/"
         />
       </div>
-      <div className="text-md mt-12 w-[410px] md:min-w-[600px] flex flex-col gap-4">
+      <div className="text-md mt-12 max-w-[410px] md:min-w-[600px] flex flex-col gap-4">
         Emails:
         <p className="border-l-2 border-red-600 p-2">Ray040406@gmail.com</p>
         <p className="border-l-2 border-red-600 p-2">
