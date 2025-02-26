@@ -15,28 +15,26 @@ const Blogs = async () => {
   const blogs = JSON.parse(fileData);
 
   return (
-    <div
-      className={`flex flex-col md:w-[800px] max-w-[330px] jutify-center items-center gap-4 text-gray-700 `}
-    >
-      <div className="md:min-w-[700px] max-w-[330px]">
-        <h1 className="text-3xl max-w-[330px] md:min-w-[700px] text-black border-b-red-600 border-b-2 mb-2 mr-auto">
+    <div className={`flex flex-col md:w-[800px] gap-2 text-gray-700 m-2`}>
+      <div className="md:min-w-[700px] flex flex-col justify-start">
+        <h1 className="text-3xl text-black border-b-red-600 border-b-2 mr-auto">
           Blogs:
         </h1>
       </div>
-      <p
-        className={`mb-2 md:min-w-[700px] max-w-[330px] md:m-0 ${ArimoFont.className} `}
-      >
+
+      <p className={`mb-2 md:max-w-[600px] ${ArimoFont.className} `}>
         I'm not a person who regularly expresses their thoughts. But I do have a
         lot of them going on. I believe that thoughts are a valuable thing
         because they are always real. So, I made this page to write them down.
       </p>
+
       <ul
-        className={`gap-2 flex flex-col ${ArimoFont.className} md:min-w-[700px] max-w-[350px]`}
+        className={`gap-2 flex flex-col ${ArimoFont.className} md:min-w-[700px]`}
       >
         {blogs.map((blog: any) => (
           <li
             key={blog.slug}
-            className="p-2 border-2 border-l-red-600 md:min-w-[700px] w-[345px]"
+            className="p-2 border-2 border-l-red-600 md:min-w-[700px]"
           >
             <Link href={`/blogs/${blog.slug}`}>
               <p className="text-lg text-black hover:text-red-600">
