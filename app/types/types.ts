@@ -7,10 +7,9 @@ export interface Project {
   url: string;
 }
 
-export type Props = {
+export type LeetCodeProps = {
   id: number;
   title: string;
-  slug: string;
   label: string[];
   difficulty: string;
 };
