@@ -72,7 +72,7 @@ const Menu = () => {
         <Card
           title="LeetCode"
           description="This page is an online storage room for all the problems I have solved."
-          link="/"
+          link="/contents/leetcode"
         />
         <Card
           title="Patch Notes"
