@@ -6,3 +6,11 @@ export interface Project {
   image: string;
   url: string;
 }
+
+export type Props = {
+  id: number;
+  title: string;
+  slug: string;
+  label: string[];
+  difficulty: string;
+};

@@ -1,29 +1,6 @@
+import { Props } from "@/app/types/types";
 import Link from "next/link";
-
-type Props = {
-  id: number;
-  title: string;
-  slug: string;
-  label: string[];
-  difficulty: string;
-};
-
-const problems: Props[] = [
-  {
-    id: 1,
-    title: "Two Sum",
-    slug: "two-sum",
-    difficulty: "easy",
-    label: ["array", "string"],
-  },
-  {
-    id: 2,
-    title: "Two Sum",
-    slug: "two-sum",
-    difficulty: "easy",
-    label: ["array", "string"],
-  },
-];
+import { problems } from "@/data/problems";
 
 const Problem = ({ title, slug, label, difficulty }: Props) => {
   return (
