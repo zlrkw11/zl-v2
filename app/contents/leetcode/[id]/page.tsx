@@ -14,8 +14,9 @@ type Props = {
   };
 };
 
-const ProblemPage = ({ params }: Props) => {
-  const problem = problems.find((p) => p.id.toString() === params.id);
+const ProblemPage = async ({ params }: { params: Promise<{ id: string }> }) => {
+  const id = (await params).id;
+  const problem = problems.find((p) => p.id.toString() === id);
   if (!problem) {
     return <div>Problem does not exist~</div>;
   }
@@ -27,9 +28,9 @@ const ProblemPage = ({ params }: Props) => {
         <p>{problem.id}</p>
         <h1>{problem.title}</h1>
         <h1
-          className={`${problem.difficulty == "easy" && `text-green-300`}${
-            problem.difficulty == "medium" && `text-orange-300`
-          }${problem.difficulty == "hard" && `text-red-600`}`}
+          className={`${problem.difficulty === "easy" && `text-green-300`}${
+            problem.difficulty === "medium" && `text-orange-300`
+          }${problem.difficulty === "hard" && `text-red-600`}`}
         >
           {problem.difficulty}
         </h1>
