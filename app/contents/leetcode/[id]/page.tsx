@@ -25,12 +25,12 @@ const ProblemPage = async ({ params }: { params: Promise<{ id: string }> }) => {
       className={`md:w-[800px] m-2 flex flex-col gap-4 ${ArimoFont.className} items-center`}
     >
       <div className="flex gap-4">
-        <h1 className="gap-2 flex">
-          <p>{problem.id}</p>
+        <h1 className="gap-2 flex text-xl">
+          <p>{problem.id}.</p>
           <p>{problem.title}</p>
         </h1>
         <h1
-          className={`${
+          className={`mt-auto ${
             problem.difficulty === "easy"
               ? "text-green-500"
               : problem.difficulty === "medium"
