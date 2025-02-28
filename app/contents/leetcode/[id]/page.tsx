@@ -9,25 +9,29 @@ const ArimoFont = Arimo({
 });
 
 type Props = {
-  slug: string;
-  problem: LeetCodeProps;
+  params: {
+    id: string;
+  };
 };
 
-const ProblemPage = async ({ slug, problem }: Props) => {
-  const { id, title, difficulty } = problem;
+const ProblemPage = ({ params }: Props) => {
+  const problem = problems.find((p) => p.id.toString() === params.id);
+  if (!problem) {
+    return <div>Problem does not exist~</div>;
+  }
   return (
     <div
       className={`md:w-[800px] m-2 flex flex-col gap-4 ${ArimoFont.className}`}
     >
       <div className="flex gap-4">
-        <p>{id}</p>
-        <h1>{title}</h1>
+        <p>{problem.id}</p>
+        <h1>{problem.title}</h1>
         <h1
-          className={`${difficulty == "easy" && `text-green-300`}${
-            difficulty == "medium" && `text-orange-300`
-          }${difficulty == "hard" && `text-red-600`}`}
+          className={`${problem.difficulty == "easy" && `text-green-300`}${
+            problem.difficulty == "medium" && `text-orange-300`
+          }${problem.difficulty == "hard" && `text-red-600`}`}
         >
-          {difficulty}
+          {problem.difficulty}
         </h1>
       </div>
       <div>

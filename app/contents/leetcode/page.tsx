@@ -31,7 +31,7 @@ const Problem = ({ problem, index }: Props) => {
       } bg-gray-50`}
     >
       <Link
-        href={`/leetcode/${id}`}
+        href={`/contents/leetcode/${id}`}
         className="flex justify-between items-center"
       >
         <h1 className="hover:text-red-600 hover:underline">
