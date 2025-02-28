@@ -5,7 +5,7 @@ export const problems: problem[] = [
     title: "Two Sum",
     difficulty: "easy",
     label: ["array", "string"],
-    texts: `Problem statement
+    texts: `<h1>Problem statement</h1>
     Given an array of integers, return indices of the two numbers such that they add up to a specific target.`,
   },
   {

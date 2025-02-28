@@ -42,10 +42,9 @@ const ProblemPage = async ({ params }: { params: Promise<{ id: string }> }) => {
         >
           {problem.difficulty}
         </h1>
-        <p>{problem.texts}</p>
       </div>
       <div>
-        <p></p>
+        <div dangerouslySetInnerHTML={{ __html: problem.texts }} />
       </div>
     </div>
   );
