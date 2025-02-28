@@ -34,7 +34,10 @@ const Problem = ({ problem, index }: Props) => {
         href={`/leetcode/${id}`}
         className="flex justify-between items-center"
       >
-        <h1 className="hover:text-red-600 hover:underline">{title}</h1>
+        <h1 className="hover:text-red-600 hover:underline">
+          <span className="font-bold mr-1">{id}.</span>
+          {title}
+        </h1>
         <div className={`${ArimoFont.className} text-sm`}>
           {difficulty === "easy" && (
             <div className=" text-green-600 rounded-full px-4">EASY</div>
