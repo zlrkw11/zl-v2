@@ -42,6 +42,7 @@ const ProblemPage = async ({ params }: { params: Promise<{ id: string }> }) => {
         >
           {problem.difficulty}
         </h1>
+        <p className="">{problem.texts}</p>
       </div>
       <div>
         <p></p>

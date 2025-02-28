@@ -21,11 +21,4 @@ export const problems: problem[] = [
     label: ["array", "string"],
     texts: "",
   },
-  {
-    id: 288,
-    title: "Product of array except self",
-    difficulty: "medium",
-    label: ["array", "string"],
-    texts: "",
-  },
 ];
