@@ -101,6 +101,11 @@ const Menu = () => {
           lzha641@aucklanduni.ac.nz
         </p>
       </div>
+      <div>
+        <Link href="/contents/credits">
+          <p className="border-b-2 border-red-600">Credits</p>
+        </Link>
+      </div>
     </div>
   );
 };
