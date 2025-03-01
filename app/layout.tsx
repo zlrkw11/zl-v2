@@ -3,7 +3,6 @@ import Footer from "./components/footer";
 import { Crimson_Text } from "next/font/google";
 import Link from "next/link";
 import Nav from "./components/nav";
-import zl from "../public/assets/zl.ico";
 
 const crimsonFont = Crimson_Text({
   subsets: ["latin"],
