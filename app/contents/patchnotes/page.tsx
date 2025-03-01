@@ -66,6 +66,11 @@ const PatchNotes = () => {
           des="LeetCode page made (almost fully complete for the summary page), 
           however each page of the problem still needs further work. Credits page created and finished.
           Added icon & changed name of the site."
+        />{" "}
+        <Note
+          ver="1.0.3"
+          date="2025/03/01"
+          des="restyled the Project component. Implemented Grid for mobile viewports."
         />
       </ul>
     </div>
