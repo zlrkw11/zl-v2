@@ -3,11 +3,17 @@ import Footer from "./components/footer";
 import { Crimson_Text } from "next/font/google";
 import Link from "next/link";
 import Nav from "./components/nav";
+import zl from "../public/assets/zl.ico";
 
 const crimsonFont = Crimson_Text({
   subsets: ["latin"],
   weight: "400",
 });
+
+export const metadata = {
+  title: "rayzhao web",
+  description: "welcome to Ray Zhao's web space!",
+};
 
 export default function RootLayout({
   children,
@@ -16,6 +22,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <link rel="icon" href="/assets/zl.ico" sizes="any" />
+      </head>
       <body className={`min-h-screen flex flex-col ${crimsonFont.className}`}>
         <Link href="/" className="absolute mr-auto">
           <h1
