@@ -59,6 +59,13 @@ const PatchNotes = () => {
           date="2025/02/26"
           des="Full responsiveness on the mobile viewport by removing limited 'max-width' properties. pages involved: blogs,
           individual blog, contents map."
+        />{" "}
+        <Note
+          ver="1.0.2"
+          date="2025/03/01"
+          des="LeetCode page made (almost fully complete for the summary page), 
+          however each page of the problem still needs further work. Credits page created and finished.
+          Added icon & changed name of the site."
         />
       </ul>
     </div>
