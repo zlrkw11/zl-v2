@@ -52,7 +52,7 @@ const PatchNotes = () => {
         <Note
           ver="1.0.1"
           date="2025/02/25"
-          des="All (main) pages completed. Fixed the responsiveness and the overflowing issue on mobile viewports."
+          des="All (main) pages completed and deployed the website. Fixed the responsiveness and the overflowing issue on mobile viewports."
         />{" "}
         <Note
           ver="1.0.1s"
