@@ -1,8 +1,10 @@
-minimalistic personal website by zl, to replace the dogshit website i made half year ago
+## Personal website:
+includes
+- blog system
+- leetcode problems (collected into a library)
+- front end construction combined with unique design
+- projects page showcase
 
-log day 2: 
-home page creation 
-![image](https://github.com/user-attachments/assets/1199e14e-930d-45af-8ce1-a8ba9c0c3496)
-
-most ideas are not yet implemented. 
-
+Fully open-source
+Built with NEXT.JS
+by Ray Zhao
