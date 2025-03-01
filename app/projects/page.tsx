@@ -33,7 +33,7 @@ const Project = ({
   };
   return (
     <div
-      className={`md:min-w-[730px] max-w-[330px] ${ArimoFont.className} flex flex-col border-l-2 border-l-red-600 bg-gradient-to-r from-white to-gray-200`}
+      className={`md:min-w-[730px] max-w-[330px] ${ArimoFont.className} flex flex-col border-l-2 border-l-red-600`}
     >
       <h1 className="border-b-2 border-dashed border-b-red-600 flex text-black text-xl m-2">
         {name}
@@ -42,7 +42,7 @@ const Project = ({
       <ul className="md:flex gap-2 md:m-2">
         {tech.map((s, i) => (
           <li
-            className="border border-gray-300 bg-gradient-to-tr from-gray-200 to-white text-sm rounded-full p-1 text-center md:m-0 m-2"
+            className="border border-gray-300 text-sm rounded-full px-2 text-center md:m-0 m-2"
             key={i}
           >
             {s}
