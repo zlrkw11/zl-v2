@@ -22,7 +22,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <link rel="icon" href="/assets/zl.ico" sizes="any" />
+        <link rel="icon" href="/assets/zlnew.ico" sizes="any" />
       </head>
       <body className={`min-h-screen flex flex-col ${crimsonFont.className}`}>
         <Link href="/" className="absolute mr-auto">
