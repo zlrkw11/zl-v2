@@ -103,7 +103,9 @@ const Menu = () => {
       </div>
       <div>
         <Link href="/contents/credits">
-          <p className="border-b-2 border-red-600">Credits</p>
+          <p className="border-b-2 border-red-600 hover:text-gray-500">
+            Credits
+          </p>
         </Link>
       </div>
     </div>
