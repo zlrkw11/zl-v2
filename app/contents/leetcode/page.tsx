@@ -2,6 +2,7 @@ import { LeetCodeProps } from "@/app/types/types";
 import Link from "next/link";
 import { problems } from "@/data/problems";
 import { Arimo } from "next/font/google";
+import { Crimson_Text } from "next/font/google";
 
 const ArimoFont = Arimo({
   subsets: ["latin"],
@@ -11,6 +12,11 @@ const ArimoFont = Arimo({
 const ArimoFontThick = Arimo({
   subsets: ["latin"],
   weight: "500",
+});
+
+const crimsonFont = Crimson_Text({
+  subsets: ["latin"],
+  weight: "400",
 });
 
 type Props = {
@@ -70,7 +76,9 @@ const LeetCode = () => {
     <div
       className={`${ArimoFontThick.className} md:w-[800px] w-[370px] grid grid-cols-1 gap-2 items-center`}
     >
-      <h1 className="text-2xl col-span-1 items-center flex justify-center">
+      <h1
+        className={`text-2xl col-span-1 items-center flex justify-center ${crimsonFont.className}`}
+      >
         LeetCode Problems
       </h1>
       {problems.map((problem, i) => (
