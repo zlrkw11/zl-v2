@@ -101,7 +101,7 @@ const Menu = () => {
           lzha641@aucklanduni.ac.nz
         </p>
       </div>
-      <div>
+      <div className="flex justify-center mt-4">
         <Link href="/contents/credits">
           <p className="border-b-2 border-red-600 hover:text-gray-500">
             Credits
