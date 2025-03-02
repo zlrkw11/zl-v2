@@ -70,7 +70,7 @@ const PatchNotes = () => {
         <Note
           ver="1.0.3"
           date="2025/03/01"
-          des="restyled the Project component. Implemented Grid for mobile viewports."
+          des="Restyled the Project component. Implemented Grid for mobile viewports."
         />
       </ul>
     </div>

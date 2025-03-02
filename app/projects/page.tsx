@@ -51,17 +51,20 @@ const Project = ({
       </ul>
       <p className="m-2">{des}</p>
       <div className="m-2">
-        <p className="text-black">
-          Github repo:
-          <Link className="text-gray-500 hover:text-red-600 ml-2" href={link1}>
+        <p className="text-black text-nowrap md:flex">
+          <p>Github repo:</p>
+          <Link
+            className="text-gray-500 hover:text-red-600 md:ml-2"
+            href={link1}
+          >
             {link1}
           </Link>
         </p>
         {link2 && (
-          <p className="text-black">
-            Visit:
+          <p className="text-black md:flex">
+            <p>Visit:</p>
             <Link
-              className="text-gray-500 hover:text-red-600 ml-2"
+              className="text-gray-500 hover:text-red-600 md:ml-2"
               href={link2}
             >
               {link2}
