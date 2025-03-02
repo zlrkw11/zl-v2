@@ -1,11 +1,16 @@
 import Link from "next/link";
 import { LeetCodeProps } from "@/app/types/types";
-import { Arimo } from "next/font/google";
+import { Arimo, Crimson_Text } from "next/font/google";
 import { problems } from "@/data/problems";
 
 const ArimoFont = Arimo({
   subsets: ["latin"],
   weight: "500",
+});
+
+const crimsonFont = Crimson_Text({
+  subsets: ["latin"],
+  weight: "400",
 });
 
 type Props = {
@@ -24,19 +29,21 @@ const ProblemPage = async ({ params }: { params: Promise<{ id: string }> }) => {
     <div
       className={`md:w-[800px] m-2 flex flex-col gap-4 ${ArimoFont.className} items-center`}
     >
-      <div className="flex flex-col gap-4">
-        <h1 className="gap-2 flex text-xl">
+      <div className="flex gap-4">
+        <h1 className={`gap-2 flex text-xl ${crimsonFont.className}`}>
           <p>{problem.id}.</p>
           <p>{problem.title}</p>
         </h1>
         <h1
-          className={`mt-auto ${
+          className={`border ${
+            crimsonFont.className
+          } rounded-full px-2 mt-auto ${
             problem.difficulty === "easy"
-              ? "text-green-500"
+              ? "text-green-500 border-green-500"
               : problem.difficulty === "medium"
-              ? "text-orange-500"
+              ? "text-orange-500 border-orange-500"
               : problem.difficulty === "hard"
-              ? "text-red-600"
+              ? "text-red-600 border-red-600"
               : ""
           }`}
         >
