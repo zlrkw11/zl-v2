@@ -51,7 +51,7 @@ const Project = ({
       </ul>
       <p className="m-2">{des}</p>
       <div className="m-2">
-        <p className="text-black text-nowrap md:flex">
+        <div className="text-black text-nowrap md:flex">
           <p>Github repo:</p>
           <Link
             className="text-gray-500 hover:text-red-600 md:ml-2"
@@ -59,9 +59,9 @@ const Project = ({
           >
             {link1}
           </Link>
-        </p>
+        </div>
         {link2 && (
-          <p className="text-black md:flex">
+          <div className="text-black md:flex">
             <p>Visit:</p>
             <Link
               className="text-gray-500 hover:text-red-600 md:ml-2"
@@ -69,7 +69,7 @@ const Project = ({
             >
               {link2}
             </Link>
-          </p>
+          </div>
         )}
       </div>
     </div>
