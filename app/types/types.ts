@@ -14,4 +14,6 @@ export type LeetCodeProps = {
   difficulty: string;
   code: string;
   texts: string;
+  O: string;
+  S: string;
 };

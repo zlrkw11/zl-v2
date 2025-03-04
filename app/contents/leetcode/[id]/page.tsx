@@ -30,10 +30,10 @@ const ProblemPage = async ({ params }: { params: Promise<{ id: string }> }) => {
   }
   return (
     <div
-      className={`md:w-[800px] m-2 flex flex-col gap-4 ${ArimoFont.className} items-center`}
+      className={`md:w-[800px] text-gray-700 m-2 flex flex-col gap-4 ${ArimoFont.className}`}
     >
-      <div className="flex gap-4">
-        <h1 className={`gap-2 flex text-xl ${crimsonFont.className}`}>
+      <div className="flex gap-4 mr-auto">
+        <h1 className={` gap-2 flex text-xl ${crimsonFont.className}`}>
           <p>{problem.id}.</p>
           <p>{problem.title}</p>
         </h1>
@@ -53,14 +53,26 @@ const ProblemPage = async ({ params }: { params: Promise<{ id: string }> }) => {
           {problem.difficulty}
         </h1>
       </div>
-      <div className="flex flex-col gap-2">
-        <div>
+      <div className="flex flex-col gap-2 items-center">
+        <div className="md:w-[800px] w-[370px]">
           <ReactMarkdown rehypePlugins={[rehypeHighlight]}>
             {problem.code}
           </ReactMarkdown>
         </div>
-        <div>{problem.texts}</div>
+        <div className="">{problem.texts}</div>
       </div>
+      <h1
+        className={`border-b-2 mr-auto border-b-red-600 text-base ${crimsonFont.className}`}
+      >
+        Time Complexity:
+      </h1>
+      {problem.O}
+      <h1
+        className={`border-b-2 mr-auto border-b-red-600 text-base ${crimsonFont.className}`}
+      >
+        Spacial Complexity:
+      </h1>
+      {problem.S}
     </div>
   );
 };
