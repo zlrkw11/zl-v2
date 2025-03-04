@@ -71,6 +71,12 @@ const PatchNotes = () => {
           ver="1.0.3"
           date="2025/03/01"
           des="Restyled the Project component. Implemented Grid for mobile viewports."
+        />{" "}
+        <Note
+          ver="1.0.4"
+          date="2025/03/04"
+          des="Functioning LeetCode page made for individual problems. Styled the code section with markdown plugins and
+          adjusted element-positionings to make the page mobile-friendly."
         />
       </ul>
     </div>
