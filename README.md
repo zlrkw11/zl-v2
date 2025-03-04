@@ -6,5 +6,6 @@ includes
 - projects page showcase
 
 Fully open-source
-Built with NEXT.JS
-by Ray Zhao
+Built with **NEXT.JS**
+
+by **Ray Zhao**
