@@ -2,6 +2,9 @@ import Link from "next/link";
 import { LeetCodeProps } from "@/app/types/types";
 import { Arimo, Crimson_Text } from "next/font/google";
 import { problems } from "@/data/problems";
+import ReactMarkdown from "react-markdown";
+import rehypeHighlight from "rehype-highlight";
+import "highlight.js/styles/github.css";
 
 const ArimoFont = Arimo({
   subsets: ["latin"],
@@ -50,8 +53,13 @@ const ProblemPage = async ({ params }: { params: Promise<{ id: string }> }) => {
           {problem.difficulty}
         </h1>
       </div>
-      <div>
-        <div dangerouslySetInnerHTML={{ __html: problem.texts }} />
+      <div className="flex flex-col gap-2">
+        <div>
+          <ReactMarkdown rehypePlugins={[rehypeHighlight]}>
+            {problem.code}
+          </ReactMarkdown>
+        </div>
+        <div>{problem.texts}</div>
       </div>
     </div>
   );
