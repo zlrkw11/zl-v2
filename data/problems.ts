@@ -51,7 +51,7 @@ class Solution:
         if len(arr) % 2 == 1:
             return arr[len(arr)//2]
 
-        return float((arr[len(arr)//2] + arr[len(arr)//2 -1]) / 2)\`\`\``,
+        return float((arr[len(arr)//2] + arr[len(arr)//2 -1]) / 2)`,
     texts: `Interesting problem I did with Nate. The logic is to initilize an empty array of length
     of nums1 plus nums2. Then sort nums1 and nums2 and append the sorted elements until one of them 
     run out of elements. Decide and return the median value based on if the length is odd or even`,
