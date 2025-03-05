@@ -10,6 +10,7 @@ export interface Project {
 export type LeetCodeProps = {
   id: number;
   title: string;
+  date: string;
   label: string[];
   difficulty: string;
   code: string;

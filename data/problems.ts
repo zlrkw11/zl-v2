@@ -4,6 +4,7 @@ export const problems: problem[] = [
   {
     id: 1,
     title: "Two Sum",
+    date: "2025-03-01",
     difficulty: "easy",
     label: ["array", "string"],
     code: `\`\`\`python
@@ -24,6 +25,7 @@ class Solution:
   {
     id: 4,
     title: "Median of Two Sorted Arrays",
+    date: "2025-03-01",
     difficulty: "hard",
     label: ["array", "binary search", "divide and conquer"],
     code: `\`\`\`python
@@ -61,8 +63,20 @@ class Solution:
   {
     id: 268,
     title: "Product of array except self",
+    date: "2025-03-01",
     difficulty: "medium",
     label: ["array", "string"],
+    code: "",
+    texts: "",
+    O: "",
+    S: "",
+  },
+  {
+    id: 167,
+    title: "Two Sum II",
+    date: "2025-03-05",
+    difficulty: "medium",
+    label: ["2 pointers"],
     code: "",
     texts: "",
     O: "",
