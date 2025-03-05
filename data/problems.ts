@@ -96,6 +96,47 @@ class Solution:
     O: "O(n)",
     S: "O(1)",
   },
+  {
+    id: 15,
+    title: "Three Sum",
+    date: "2025-03-05",
+    difficulty: "medium",
+    label: ["2 pointers", "array", "sorting"],
+    code: `\`\`\`python
+class Solution:
+    def threeSum(self, nums: List[int]) -> List[List[int]]:
+        nums.sort()
+        n = len(nums)
+        ans = []
+        for i in range(n - 2):
+            if nums[i] > 0:
+                break
+            if i and nums[i] == nums[i - 1]:
+                continue
+            j, k = i + 1, n - 1
+            while j < k:
+                x = nums[i] + nums[j] + nums[k]
+                if x < 0:
+                    j += 1
+                elif x > 0:
+                    k -= 1
+                else:
+                    ans.append([nums[i], nums[j], nums[k]])
+                    j, k = j + 1, k - 1
+                    while j < k and nums[j] == nums[j - 1]:
+                        j += 1
+                    while j < k and nums[k] == nums[k + 1]:
+                        k -= 1
+        return ans
+    `,
+    texts: `I think this is definitely a harder medium question. An evolved version
+    of two sum II. As usual, sort the array to be able to identify repeating elements.
+    for every nums[i] where 0 <= i < n-2, we set 2 pointers: j = i+1 and k = n-1 in order
+    to find the j and k where nums[i] + nums[j] + nums[k] = 0. Meanwhile, for every nums[i], 
+    we need to skip repeated elements to satisfy the requirement of "No repeated triplets".`,
+    O: "O(n^2)",
+    S: "O(n*logn)",
+  },
 ];
 
 // {
