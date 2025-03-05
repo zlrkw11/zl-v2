@@ -36,7 +36,9 @@ const ProblemPage = async ({ params }: { params: Promise<{ id: string }> }) => {
         <h1 className={` gap-2 flex text-xl ${crimsonFont.className}`}>
           <p>{problem.id}.</p>
           <p>{problem.title}</p>
-          <p className={`text-gray-500 text-lg`}>{problem.date}</p>
+          <p className={`text-gray-500 text-base ml-8 mt-auto text-nowrap`}>
+            {problem.date}
+          </p>
         </h1>
         <h1
           className={`border ${
