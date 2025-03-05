@@ -89,10 +89,12 @@ class Solution:
                 print(numbers[l], numbers[r])
                 l+=1
             else:
-                return [l+1,r+1]
-    \`\`\``,
-    texts: "",
-    O: "",
-    S: "",
+                return [l+1,r+1]`,
+    texts: `My solution simply uses 2 pointers. I think this question is extremely similar with Q.1679 - Max
+    number of k-sum pairs as they are both asking to get the sum from a list. To be honest, I feel like they are 
+    identical... So, setting 2 pointers at the start & end, run a while loop to check if > target: move right pointer 
+    to the left, if < target: move left pointer to the right until we found the answer.`,
+    O: "O(n)",
+    S: "O(1)",
   },
 ];
