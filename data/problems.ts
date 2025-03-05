@@ -29,7 +29,7 @@ class Solution:
     difficulty: "hard",
     label: ["array", "binary search", "divide and conquer"],
     code: `\`\`\`python
-    class Solution(object):
+class Solution(object):
     def findMedianSortedArrays(self, nums1, nums2):
         arr = []*(len(nums1)+len(nums2))
         minimum = min(len(nums1), len(nums2))
@@ -77,7 +77,20 @@ class Solution:
     date: "2025-03-05",
     difficulty: "medium",
     label: ["2 pointers"],
-    code: "",
+    code: `\`\`\`python
+class Solution:
+    def twoSum(self, numbers: List[int], target: int) -> List[int]:
+        l, r = 0, len(numbers)-1
+        while l<r:
+            if numbers[l]+numbers[r] > target:
+                print(numbers[l], numbers[r])
+                r -= 1
+            elif numbers[l]+numbers[r] < target:
+                print(numbers[l], numbers[r])
+                l+=1
+            else:
+                return [l+1,r+1]
+    \`\`\``,
     texts: "",
     O: "",
     S: "",
