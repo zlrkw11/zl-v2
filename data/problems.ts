@@ -111,6 +111,7 @@ class Solution:
         for i in range(n - 2):
             if nums[i] > 0:
                 break
+            # i is not 0 and i is repeated
             if i and nums[i] == nums[i - 1]:
                 continue
             j, k = i + 1, n - 1
@@ -133,7 +134,9 @@ class Solution:
     of two sum II. As usual, sort the array to be able to identify repeating elements.
     for every nums[i] where 0 <= i < n-2, we set 2 pointers: j = i+1 and k = n-1 in order
     to find the j and k where nums[i] + nums[j] + nums[k] = 0. Meanwhile, for every nums[i], 
-    we need to skip repeated elements to satisfy the requirement of "No repeated triplets".`,
+    we need to skip repeated elements to satisfy the requirement of "No repeated triplets". 
+    I think the hardest part of this problem is that to realize the array is sorted, so having 
+    repeated i, j or k values will give the same triplets.`,
     O: "O(n^2)",
     S: "O(n*logn)",
   },
