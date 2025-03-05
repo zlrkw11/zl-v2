@@ -66,8 +66,9 @@ class Solution(object):
     date: "2025-03-01",
     difficulty: "medium",
     label: ["array", "string"],
-    code: "",
-    texts: "",
+    code: `\`\`\`python
+    `,
+    texts: ``,
     O: "",
     S: "",
   },
@@ -96,3 +97,16 @@ class Solution:
     S: "O(1)",
   },
 ];
+
+// {
+//     id: ,
+//     title: "",
+//     date: "2025--",
+//     difficulty: "medium",
+//     label: ["", ""],
+//     code: `\`\`\`python
+//     `,
+//     texts: ``,
+//     O: "",
+//     S: "",
+//   },
