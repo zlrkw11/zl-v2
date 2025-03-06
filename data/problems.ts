@@ -6,7 +6,7 @@ export const problems: problem[] = [
     title: "Two Sum",
     date: "2025-03-01",
     difficulty: "easy",
-    label: ["array", "string"],
+    label: ["array", "string", "hash table"],
     code: `\`\`\`python
 class Solution:
     def twoSum(self, nums: List[int], target: int) -> List[int]:
