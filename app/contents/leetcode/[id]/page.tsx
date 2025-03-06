@@ -65,13 +65,13 @@ const ProblemPage = async ({ params }: { params: Promise<{ id: string }> }) => {
         <div className="">{problem.texts}</div>
       </div>
       <h1
-        className={`border-b-2 mr-auto border-b-red-600 text-base ${crimsonFont.className}`}
+        className={`border-l-2 mr-auto border-l-red-600 p-1 text-base ${ArimoFont.className}`}
       >
         Time Complexity:
       </h1>
       {problem.O}
       <h1
-        className={`border-b-2 mr-auto border-b-red-600 text-base ${crimsonFont.className}`}
+        className={`border-l-2 mr-auto border-l-red-600 p-1 text-base ${ArimoFont.className}`}
       >
         Spacial Complexity:
       </h1>

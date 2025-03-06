@@ -140,6 +140,28 @@ class Solution:
     O: "O(n^2)",
     S: "O(n*logn)",
   },
+  {
+    id: 643,
+    title: "Maximum Average Subarray I",
+    date: "2025-03-06",
+    difficulty: "easy",
+    label: ["sliding window", "array"],
+    code: `\`\`\`python
+class Solution:
+    def findMaxAverage(self, nums: List[int], k: int) -> float:
+        n = len(nums)
+        ans = s = sum(nums[:k])
+        for i in range(k, n):
+            s += nums[i] - nums[i-k]
+            ans = max(ans, s)
+        return ans/k    `,
+    texts: `This question requires a sliding window method where we treat 
+    'k' items as a unit as it moves across the array. Starting by setting the 
+    s to the first k items, using a for-loop, for every item, keeps adding nums[i] and remove the nums[i-k]
+    and updates the max_sum after each iteration.`,
+    O: "O(n)",
+    S: "O(1)",
+  },
 ];
 
 // {
