@@ -162,6 +162,30 @@ class Solution:
     O: "O(n)",
     S: "O(1)",
   },
+  {
+    id: 2390,
+    title: "Remove Stars From a String",
+    date: "2025-03-07",
+    difficulty: "medium",
+    label: ["stack", "string"],
+    code: `\`\`\`python
+class Solution:
+    def removeStars(self, s: str) -> str:
+        ans = []
+        for c in s:
+            if c == '*':
+                ans.pop()
+            else:
+                ans.append(c)
+        return ''.join(ans)
+        `,
+    texts: `This is probably the smartest way to approach this question. Setting up an
+    empty stack - ans, run a for-loop on the string, add the character into the stack if 
+    it is not a '*', otherwise remove the last character in the stack. This method perfectly
+    demonstrated the principle of stack - Last In First Out.`,
+    O: "O(n) *where n = s.length",
+    S: "O(1)",
+  },
 ];
 
 // {
