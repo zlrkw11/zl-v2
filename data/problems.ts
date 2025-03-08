@@ -186,6 +186,32 @@ class Solution:
     O: "O(n) *where n = s.length",
     S: "O(1)",
   },
+  {
+    id: 20,
+    title: "Valid Parentheses",
+    date: "2025-03-09",
+    difficulty: "easy",
+    label: ["stack", "string"],
+    code: `\`\`\`python
+class Solution:
+    def isValid(self, s: str) -> bool:
+        stack = []
+        d = {"()","[]","{}"}
+        for c in s:
+            if c in "([{":
+                stack.append(c)
+            elif not stack or stack.pop() + c not in d:
+                return False
+        return not stack    
+    `,
+    texts: `Reminds me of some CS130 questions. The way to do it is setting up a stack, 
+    run a for-loop to check for every element in the string, if the element 
+    it's a left parentheses, push it into the stack. Otherwise check if the right one is a 
+    match with the left one using stack.pop(), if not then cut off the loop and return false.
+    After the loop finishes, check whether if the stack is empty(True otherwise False).`,
+    O: "O(n) *n = s.length",
+    S: "O(n)",
+  },
 ];
 
 // {
