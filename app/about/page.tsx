@@ -58,8 +58,7 @@ const About = () => {
             <div className="flex flex-col gap-4">
               <p>
                 I always wanted to be extremely competitve in a way that so I
-                could be confident enough. But I always end up
-                procrastinating...
+                could prove myself. But I always end up procrastinating...
               </p>
               <p>In the software / web industry, I:</p>
               <ul id="list" className="list-disc pl-6 ">
@@ -71,9 +70,13 @@ const About = () => {
                   am more heavy on the frontend (but secretly I really like
                   LeetCode want to practice and do well in algorithm
                   competitions){" "}
-                  <span className="text-orange-300">
-                    Here is a path to the LeetCode questions I have done
-                    <Link href="/contents/leetcode">Storage Room</Link>
+                  <span>
+                    <Link
+                      className="text-orange-500 hover:text-orange-300 underline"
+                      href="/contents/leetcode"
+                    >
+                      LeetCode Storage Room
+                    </Link>
                   </span>
                 </li>
                 <li>
