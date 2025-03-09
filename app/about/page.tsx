@@ -33,10 +33,10 @@ const About = () => {
           </div>
           <div>
             <p className={`${ArimoFont.className} text-gray-700`}>
-              Hello, I'm Ray Zhao. a third year compsi student (yea) at{" "}
+              Hello, I'm Ray Zhao. a third year compsi student (yea) at the{" "}
               <Link href="https://www.auckland.ac.nz/en.html">
-                <span className="text-red-500 font-bold hover:text-red-300">
-                  UOA
+                <span className="underline hover:text-gray-400">
+                  University of Auckland
                 </span>
               </Link>{" "}
               and a self-taught web-developer. I dedicate most of my leisure
