@@ -69,8 +69,7 @@ const About = () => {
                 </li>
                 <li>
                   am more heavy on the frontend (but secretly I really like
-                  LeetCode want to practice and do well in algorithm
-                  competitions){" "}
+                  LeetCode and want to do well in algorithm competitions){" "}
                   <span>
                     <Link
                       className="text-orange-500 hover:text-orange-300 underline"
