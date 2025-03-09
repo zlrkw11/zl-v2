@@ -212,6 +212,34 @@ class Solution:
     O: "O(n) *n = s.length",
     S: "O(n)",
   },
+  {
+    id: 704,
+    title: "Binary Search",
+    date: "2025-03-09",
+    difficulty: "easy",
+    label: ["array", "binary search"],
+    code: `\`\`\`python
+class Solution:
+    def search(self, nums: List[int], target: int) -> int:
+        low, high = 0, len(nums)-1
+        while low <= high:
+            mid = (low + high) // 2
+            if nums[mid] == target:
+                return mid
+            elif nums[mid] < target:
+                low = mid+1
+            else:
+                high = mid-1            
+        return -1
+    `,
+    texts: `The basic idea is to divide the array by 2. Start with a while-loop, keep
+    updating the 'mid' value according to low and high. If the mid is the target, return it.
+    Otherwise either: higher the low anchor (if mid < target value), to search for the higher half. Or
+    lower the high anchor (if mid > target value) to search for the lower half. The while loop will stop
+    when low is going over high.`,
+    O: "O(nlogn)",
+    S: "O(1)",
+  },
 ];
 
 // {
