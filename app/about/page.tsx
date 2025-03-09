@@ -42,8 +42,9 @@ const About = () => {
               and a self-taught web-developer. I dedicate most of my leisure
               time to <span className="font-bold">web & software</span>{" "}
               development, not just for financial gain but because I'm driven by{" "}
-              <span className="font-bold">passion</span> to create innovative
-              solutions that can make some impact on the world using my skills.
+              <span className=" border-b-red-600  border-b-2">passion</span> to
+              create innovative solutions that can make some impact on the world
+              using my skills.
             </p>
           </div>
         </div>
