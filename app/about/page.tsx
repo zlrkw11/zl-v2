@@ -39,17 +39,10 @@ const About = () => {
                   UOA
                 </span>
               </Link>{" "}
-              and a self-taught web-developer. Even though I have been spending
-              a bit of time grinding solo-duo ranked in{" "}
-              <Link href="https://www.leagueoflegends.com/en-au/">
-                <span className="text-orange-500 font-bold hover:text-orange-300">
-                  League of Legends
-                </span>
-              </Link>{" "}
-              but I still have the passion as always to learn new skills in
-              web-development and try to make something cool and original in
-              nowadays' world where everything is instantly made with AI
-              (including parts of this paragraph).
+              and a self-taught web-developer. I dedicate most of my leisure
+              time to web & software development, not just for financial gain
+              but because I'm driven by a passion to create innovative solutions
+              that can make some impact on the world using my skills.
             </p>
           </div>
         </div>
@@ -75,8 +68,13 @@ const About = () => {
                   issue tbh)
                 </li>
                 <li>
-                  am more heavy on the frontend (but secretly I really want to
-                  practice and do well in algorithm competitions)
+                  am more heavy on the frontend (but secretly I really like
+                  LeetCode want to practice and do well in algorithm
+                  competitions){" "}
+                  <span className="text-orange-300">
+                    Here is a path to the LeetCode questions I have done
+                    <Link href="/contents/leetcode">Storage Room</Link>
+                  </span>
                 </li>
                 <li>
                   learn things from others quite fast and develop something more
@@ -95,15 +93,17 @@ const About = () => {
             <span className="text-3xl text-red-600">:</span>
           </h1>
           <p className={`${ArimoFont.className} text-gray-700`}>
-            I always wanted to make a website that is not just simply a
-            portfolio for the companies to look at. But instead a website that
-            resembles a personal space. Where someone can express their
-            individuality. I always think back to the early 2000s where writing
-            your own blogs on some HTML page was thing. But it seems like
-            everyone now (including myself) is too busy & addicted to Instagram
-            reels. I also refuse to use anything over commercialzed like
-            instagram where it is full of Temu ads. So here it is, a website
-            that is made to feel the internet at its purest.
+            I’ve always wanted to create a website that's more than just a
+            portfolio for companies to browse — a personal space that reflects
+            individuality. I often think back to the early 2000s, when crafting
+            your own blogs on simple HTML pages was the norm — a raw, unfiltered
+            form of self-expression. Nowadays, it feels like everyone, myself
+            included, is caught up in the endless doom scroll of Instagram
+            reels. I also keep myself away from over-commercialized platforms
+            that are cluttered with Temu ads and unauthorized personal data
+            tracking algorithms. So here it is — a website designed to capture
+            the internet at its purest, a digital space that’s personal,
+            creative, and free.
           </p>
         </div>
       </div>
