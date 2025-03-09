@@ -75,7 +75,7 @@ const About = () => {
                       className="text-orange-500 hover:text-orange-300 underline"
                       href="/contents/leetcode"
                     >
-                      LeetCode Storage Room
+                      {`>`} LeetCode Storage Room
                     </Link>
                   </span>
                 </li>
@@ -85,8 +85,10 @@ const About = () => {
                 </li>
               </ul>
               <p className="font-bold">Fun facts:</p>
-              <p>my favourite fruit is watermelon</p>
-              <p>still on my way to break my 75kg bench PR</p>
+              <ul className="list-disc ml-4">
+                <li>my favourite fruit is watermelon</li>
+                <li>still on my way to break my 75kg bench PR</li>
+              </ul>
             </div>
           </div>
         </div>
