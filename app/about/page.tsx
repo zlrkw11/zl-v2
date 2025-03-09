@@ -40,9 +40,10 @@ const About = () => {
                 </span>
               </Link>{" "}
               and a self-taught web-developer. I dedicate most of my leisure
-              time to web & software development, not just for financial gain
-              but because I'm driven by a passion to create innovative solutions
-              that can make some impact on the world using my skills.
+              time to <span className="font-bold">web & software</span>{" "}
+              development, not just for financial gain but because I'm driven by{" "}
+              <span className="font-bold">passion</span> to create innovative
+              solutions that can make some impact on the world using my skills.
             </p>
           </div>
         </div>
