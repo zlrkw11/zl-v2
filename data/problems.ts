@@ -240,6 +240,65 @@ class Solution:
     O: "O(nlogn)",
     S: "O(1)",
   },
+  {
+    id: 74,
+    title: "Search a 2D Matrix",
+    date: "2025-03-10",
+    difficulty: "medium",
+    label: ["array", "matrix", "binary search"],
+    code: `\`\`\`python
+class Solution:
+    def searchMatrix(self, matrix: List[List[int]], target:int)-> bool: 
+        
+        low, high = 0, len(matrix)-1
+
+        while low <= high:
+            mid1 = low + (high-low)//2
+
+            if matrix[mid1][0] == target:
+                return True
+            elif matrix[mid1][0] < target and matrix[mid1][-1] < target:
+                low = mid1+1
+            elif matrix[mid1][0] > target:
+                high = mid1-1
+            else:
+                break
+        
+        arr = matrix[mid1]
+        low, high = 0, len(arr)-1
+
+        while low <= high:
+            mid2 = low + (high-low)//2
+            if arr[mid2] == target:
+                return True
+            elif arr[mid2] < target:
+                low = mid2+1
+            else:
+                high = mid2-1
+
+        return False
+        arr = matrix[mid1]
+        low, high = 0, len(arr)-1
+
+        while low <= high:
+            mid2 = low + (high-low)//2
+            if arr[mid2] == target:
+                return True
+            elif arr[mid2] < target:
+                low = mid2+1
+            else:
+                high = mid2-1
+
+        return False
+    `,
+    texts: `The method I came up with is simply: running a binary search on the bigger arrays (low and high stand for 
+    the index of the arrays in the matrix) first to decide which array the target value is sitting in. This is 
+    done by comparing the target with the first element of each array. After that, we start another binary search on 
+    the array that contains the target. This time, we will have low and high to represent the index of the values in the 
+    array.`,
+    O: "O(log m + log n)",
+    S: "O(1)",
+  },
 ];
 
 // {
