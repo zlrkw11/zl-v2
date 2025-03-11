@@ -310,6 +310,30 @@ class Solution:
     O: "O(n)",
     S: "O(1)",
   },
+  {
+    id: 206,
+    title: "Reverse a Linked List",
+    date: "2025-03-11",
+    difficulty: "easy",
+    label: ["linked list", "recursion"],
+    code: `\`\`\`python
+class Solution:
+    def reverseList(self, head: Optional[ListNode]) -> Optional[ListNode]:
+        dummy = ListNode()
+        curr = head
+        while curr:
+            next = curr.next 
+            curr.next = dummy.next 
+            dummy.next = curr
+            curr = next
+        return dummy.next`,
+    texts: `Start by setting up a dummy node as the canvas to make the 'reversed version' 
+    of the linked list. We use 'next' to store the next node and use it later. The core of the 
+    method is to do 2 things: a link between (every) next node to the head of the dummy chain and 
+    make the curr node the head of the dummy chain, repeating these steps for every node.`,
+    O: "O(n)",
+    S: "O(1)",
+  },
 ];
 
 // {
