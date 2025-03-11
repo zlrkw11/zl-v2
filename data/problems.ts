@@ -240,30 +240,6 @@ class Solution:
     O: "O(nlogn)",
     S: "O(1)",
   },
-  {
-    id: 121,
-    title: "Best Time to Buy and Sell Stock",
-    date: "2025-03-11",
-    difficulty: "easy",
-    label: ["array", "dynamic programming"],
-    code: `\`\`\`python
-from math import inf
-from typing import List
-class Solution:
-    def maxProfit(self, prices: List[int]) -> int:
-        ans, low = 0, float('inf')
-        for price in prices:
-            ans = max(ans, price-low)
-            low = min(price, low)
-        return ans
-    `,
-    texts: `Straightforward dp question. We initialize the max-earning - ans and 
-    the lowest price seen - low to be 0 and inf. Run a for-loop and update these 
-    2 values. Whenever a higher ans is seen, update it and whenever a lower low
-    is seen, update the low to the new price.`,
-    O: "O(n)",
-    S: "O(1)",
-  },
 ];
 
 // {
