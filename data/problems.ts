@@ -277,19 +277,6 @@ class Solution:
                 high = mid2-1
 
         return False
-        arr = matrix[mid1]
-        low, high = 0, len(arr)-1
-
-        while low <= high:
-            mid2 = low + (high-low)//2
-            if arr[mid2] == target:
-                return True
-            elif arr[mid2] < target:
-                low = mid2+1
-            else:
-                high = mid2-1
-
-        return False
     `,
     texts: `The method I came up with is simply: running a binary search on the bigger arrays (low and high stand for 
     the index of the arrays in the matrix) first to decide which array the target value is sitting in. This is 
