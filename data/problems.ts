@@ -21,6 +21,8 @@ class Solution:
     the 2 indices: x and y. Else, we record d[number] = index.`,
     O: "O(n)",
     S: "O(n)",
+    link1: "",
+    link2: "",
   },
   {
     id: 4,
@@ -71,6 +73,8 @@ class Solution(object):
     texts: ``,
     O: "",
     S: "",
+    link1: "",
+    link2: "",
   },
   {
     id: 167,
@@ -95,6 +99,8 @@ class Solution:
     to the left, if < target: move left pointer to the right until we found the answer.`,
     O: "O(n)",
     S: "O(1)",
+    link1: "",
+    link2: "",
   },
   {
     id: 15,
@@ -139,6 +145,8 @@ class Solution:
     repeated i, j or k values will give the same triplets.`,
     O: "O(n^2)",
     S: "O(n*logn)",
+    link1: "",
+    link2: "",
   },
   {
     id: 643,
@@ -161,6 +169,8 @@ class Solution:
     and updates the max_sum after each iteration.`,
     O: "O(n)",
     S: "O(1)",
+    link1: "",
+    link2: "",
   },
   {
     id: 2390,
@@ -185,6 +195,8 @@ class Solution:
     demonstrated the principle of stack - Last In First Out.`,
     O: "O(n) *where n = s.length",
     S: "O(1)",
+    link1: "",
+    link2: "",
   },
   {
     id: 20,
@@ -211,6 +223,8 @@ class Solution:
     After the loop finishes, check whether if the stack is empty(True otherwise False).`,
     O: "O(n) *n = s.length",
     S: "O(n)",
+    link1: "",
+    link2: "",
   },
   {
     id: 704,
@@ -239,6 +253,8 @@ class Solution:
     when low is going over high.`,
     O: "O(nlogn)",
     S: "O(1)",
+    link1: "",
+    link2: "",
   },
   {
     id: 74,
@@ -285,6 +301,8 @@ class Solution:
     array.`,
     O: "O(log m + log n)",
     S: "O(1)",
+    link1: "",
+    link2: "",
   },
   {
     id: 121,
@@ -309,6 +327,8 @@ class Solution:
     is seen, update the low to the new price.`,
     O: "O(n)",
     S: "O(1)",
+    link1: "",
+    link2: "",
   },
   {
     id: 206,
@@ -333,6 +353,33 @@ class Solution:
     make the curr node the head of the dummy chain, repeating these steps for every node.`,
     O: "O(n)",
     S: "O(1)",
+    link1: "",
+    link2: "",
+  },
+  {
+    id: 141,
+    title: "Linked List Cycle",
+    date: "2025-03-12",
+    difficulty: "easy",
+    label: ["hash table", "linked list", "2 pointers"],
+    code: `\`\`\`python
+class Solution:
+    def hasCycle(self, head: Optional[ListNode]) -> bool:
+        fast = head 
+        while fast and fast.next:
+            head = head.next
+            fast = fast.next.next
+            if fast is head:
+                return True
+        return False
+    `,
+    texts: `Learnt the Tortoise and the Hare algorithm from this question. The concept is simple
+    but genius. Setting up 2 pointers: 1 slow, 1 fast to iterate the linked list starting from head. 
+    When the fast node IS the slow node, we know a cycle must exists in this linked list.`,
+    O: "O(n)",
+    S: "O(1)",
+    link1: "https://leetcode.com/problems/linked-list-cycle/description/",
+    link2: "",
   },
 ];
 

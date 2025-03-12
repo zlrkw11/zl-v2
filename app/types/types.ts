@@ -17,4 +17,6 @@ export type LeetCodeProps = {
   texts: string;
   O: string;
   S: string;
+  link1?: string;
+  link2?: string;
 };

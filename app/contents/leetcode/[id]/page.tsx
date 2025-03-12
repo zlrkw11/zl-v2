@@ -5,6 +5,8 @@ import { problems } from "@/data/problems";
 import ReactMarkdown from "react-markdown";
 import rehypeHighlight from "rehype-highlight";
 import "highlight.js/styles/github.css";
+import lc from "../../../../public/assets/leetcode.svg";
+import Image from "next/image";
 
 const ArimoFont = Arimo({
   subsets: ["latin"],
@@ -40,6 +42,7 @@ const ProblemPage = async ({ params }: { params: Promise<{ id: string }> }) => {
             {problem.date}
           </p>
         </h1>
+
         <h1
           className={`border ${
             crimsonFont.className
@@ -75,7 +78,17 @@ const ProblemPage = async ({ params }: { params: Promise<{ id: string }> }) => {
       >
         Spacial Complexity:
       </h1>
-      {problem.S}
+      {problem.S}{" "}
+      <div className="mt-12 bg-gray-100 py-2 px-1">
+        {problem.link1 && (
+          <Link className="flex items-center gap-2 italic" href={problem.link1}>
+            <Image src={lc} width={30} height={30} alt="LeetCode" />
+            <p className="border-b-2 border-orange-300  hover:text-orange-500">
+              {`Go to problem ${problem.id}`}
+            </p>
+          </Link>
+        )}
+      </div>
     </div>
   );
 };
