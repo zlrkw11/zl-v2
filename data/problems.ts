@@ -21,7 +21,7 @@ class Solution:
     the 2 indices: x and y. Else, we record d[number] = index.`,
     O: "O(n)",
     S: "O(n)",
-    link1: "",
+    link1: "https://leetcode.com/problems/two-sum/",
     link2: "",
   },
   {
@@ -61,9 +61,11 @@ class Solution(object):
     run out of elements. Decide and return the median value based on if the length is odd or even`,
     O: "O(n + m)",
     S: "O(n + m)",
+    link1: "https://leetcode.com/problems/median-of-two-sorted-arrays/",
+    link2: "",
   },
   {
-    id: 268,
+    id: 238,
     title: "Product of array except self",
     date: "2025-03-01",
     difficulty: "medium",
@@ -73,7 +75,7 @@ class Solution(object):
     texts: ``,
     O: "",
     S: "",
-    link1: "",
+    link1: "https://leetcode.com/problems/product-of-array-except-self/",
     link2: "",
   },
   {
@@ -99,7 +101,7 @@ class Solution:
     to the left, if < target: move left pointer to the right until we found the answer.`,
     O: "O(n)",
     S: "O(1)",
-    link1: "",
+    link1: "https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/",
     link2: "",
   },
   {
@@ -145,7 +147,7 @@ class Solution:
     repeated i, j or k values will give the same triplets.`,
     O: "O(n^2)",
     S: "O(n*logn)",
-    link1: "",
+    link1: "https://leetcode.com/problems/3sum/",
     link2: "",
   },
   {
@@ -169,7 +171,7 @@ class Solution:
     and updates the max_sum after each iteration.`,
     O: "O(n)",
     S: "O(1)",
-    link1: "",
+    link1: "https://leetcode.com/problems/maximum-average-subarray-i/",
     link2: "",
   },
   {
@@ -195,7 +197,7 @@ class Solution:
     demonstrated the principle of stack - Last In First Out.`,
     O: "O(n) *where n = s.length",
     S: "O(1)",
-    link1: "",
+    link1: "https://leetcode.com/problems/removing-stars-from-a-string/",
     link2: "",
   },
   {
@@ -223,7 +225,7 @@ class Solution:
     After the loop finishes, check whether if the stack is empty(True otherwise False).`,
     O: "O(n) *n = s.length",
     S: "O(n)",
-    link1: "",
+    link1: "https://leetcode.com/problems/valid-parentheses/",
     link2: "",
   },
   {
@@ -253,7 +255,7 @@ class Solution:
     when low is going over high.`,
     O: "O(nlogn)",
     S: "O(1)",
-    link1: "",
+    link1: "https://leetcode.com/problems/binary-search/",
     link2: "",
   },
   {
@@ -301,7 +303,7 @@ class Solution:
     array.`,
     O: "O(log m + log n)",
     S: "O(1)",
-    link1: "",
+    link1: "https://leetcode.com/problems/search-a-2d-matrix/",
     link2: "",
   },
   {
@@ -327,7 +329,7 @@ class Solution:
     is seen, update the low to the new price.`,
     O: "O(n)",
     S: "O(1)",
-    link1: "",
+    link1: "https://leetcode.com/problems/best-time-to-buy-and-sell-stock/",
     link2: "",
   },
   {
@@ -353,7 +355,7 @@ class Solution:
     make the curr node the head of the dummy chain, repeating these steps for every node.`,
     O: "O(n)",
     S: "O(1)",
-    link1: "",
+    link1: "https://leetcode.com/problems/reverse-linked-list/description/",
     link2: "",
   },
   {
@@ -394,4 +396,6 @@ class Solution:
 //     texts: ``,
 //     O: "",
 //     S: "",
+//     link1: "",
+//     link2: "",
 //   },
