@@ -104,6 +104,17 @@ const LeetCode = () => {
       {paginatedProblems.map((problem, i) => (
         <Problem key={problem.id} problem={problem} index={i} />
       ))}
+      <div className="flex items-center md:w-[800px] w-[370px] mt-4 md:text-lg justify-between">
+        <button className="ml-2 border-red-600 rounded-lg border p-2">
+          Prev
+        </button>
+        <h1>
+          {curr} / {totalPages}
+        </h1>
+        <button className="mr-2 ml-2 border-red-600 rounded-lg border p-2">
+          Next
+        </button>
+      </div>
     </div>
   );
 };
