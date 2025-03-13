@@ -383,6 +383,43 @@ class Solution:
     link1: "https://leetcode.com/problems/linked-list-cycle/description/",
     link2: "",
   },
+  {
+    id: 2,
+    title: "Add Two Numbers",
+    date: "2025-3-14",
+    difficulty: "medium",
+    label: ["linked list", "math", "recursion"],
+    code: `\`\`\`python
+class Solution:
+    def addTwoNumbers(self, l1: Optional[ListNode], l2: Optional[ListNode]) -> Optional[ListNode]:
+        dummy = ListNode()
+        curr = dummy
+        carry = 0
+        
+        while l1 or l2 or carry:
+            val1 = l1.val if l1 else 0
+            val2 = l2.val if l2 else 0
+            total = val1 + val2 + carry
+            carry = total // 10
+            curr.next = ListNode(total % 10)
+            curr = curr.next
+            if l1:
+                l1 = l1.next
+            if l2:
+                l2 = l2.next
+
+        return dummy.next
+    `,
+    texts: `Starting off by setting up a dummy node as canvas (as usual). Initialize a carry value (core) for the 
+    calculation to be 0. Run a while loop with curr as pointer. As long as either l1, l2 or carry(it takes up a space as a list node) is not 0
+    and constantly generate the sum from val1, val2 and carry. Process total by trying to get the new carry (either 1 or 0)
+    then calculate the next node's value (anything < 10) and make curr connect to it. Move curr forward along with both l1 and l2
+    if they are not 'none'.`,
+    O: "O(max(n,m))",
+    S: "O(max(n,m))",
+    link1: "https://leetcode.com/problems/add-two-numbers/",
+    link2: "",
+  },
 ];
 
 // {
