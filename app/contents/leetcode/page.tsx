@@ -89,7 +89,7 @@ const LeetCode = () => {
   };
 
   const Prev = () => {
-    curr > 0 && setCurr(curr - 1);
+    curr >= 2 && setCurr(curr - 1);
   };
 
   return (
@@ -104,21 +104,21 @@ const LeetCode = () => {
       {paginatedProblems.map((problem, i) => (
         <Problem key={problem.id} problem={problem} index={i} />
       ))}
-      <div className="flex items-center md:w-[800px] w-[370px] mt-4 md:text-lg justify-between">
+      <div className="flex items-center md:w-[800px] w-[370px] mt-4 md:text-lg justify-center border-b">
         <button
           onClick={Prev}
-          className="ml-2 border-red-600 rounded-lg border p-2 text-red-600 hover:bg-red-600 hover:text-white"
+          className={`mr-8  ${curr === 1 && `text-gray-300`}`}
         >
-          Prev
+          -1
         </button>
-        <h1>
+        <h1 className=" text-gray-400">
           {curr} / {totalPages}
         </h1>
         <button
           onClick={Next}
-          className="mr-2 ml-2 border-red-600 rounded-lg border p-2 text-red-600"
+          className={`ml-8 ${curr === totalPages && `text-gray-300`}`}
         >
-          Next
+          +1
         </button>
       </div>
     </div>
