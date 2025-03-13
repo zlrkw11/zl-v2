@@ -1,8 +1,10 @@
+"use client";
 import { LeetCodeProps } from "@/app/types/types";
 import Link from "next/link";
 import { problems } from "@/data/problems";
 import { Arimo } from "next/font/google";
 import { Crimson_Text } from "next/font/google";
+import { useState } from "react";
 
 const ArimoFont = Arimo({
   subsets: ["latin"],
@@ -72,6 +74,24 @@ const Problem = ({ problem, index }: Props) => {
 };
 
 const LeetCode = () => {
+  const numberPerPage = 10;
+  const [curr, setCurr] = useState(1);
+
+  const totalPages = Math.ceil(problems.length / numberPerPage);
+
+  const paginatedProblems = problems.slice(
+    (curr - 1) * numberPerPage,
+    curr * numberPerPage
+  );
+
+  const Next = () => {
+    curr < totalPages && setCurr(curr + 1);
+  };
+
+  const Prev = () => {
+    curr > 0 && setCurr(curr - 1);
+  };
+
   return (
     <div
       className={`${ArimoFontThick.className} md:w-[800px] w-[370px] grid grid-cols-1 gap-2 items-center`}
@@ -81,7 +101,7 @@ const LeetCode = () => {
       >
         LeetCode Problems
       </h1>
-      {problems.map((problem, i) => (
+      {paginatedProblems.map((problem, i) => (
         <Problem key={problem.id} problem={problem} index={i} />
       ))}
     </div>
