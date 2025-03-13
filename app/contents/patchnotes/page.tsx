@@ -83,6 +83,12 @@ const PatchNotes = () => {
           date="2025/03/09"
           des="Added a CV page with a pdf viewer, refined About page to be more professional and 
           adjusted the styling on the LeetCode problem page."
+        />{" "}
+        <Note
+          ver="1.0.6"
+          date="2025/03/13"
+          des="Pagination system applied on the LeetCode listing page (reducing loading & rendering time). Added 
+          a redirect component for every LeetCode problem to the official site."
         />
       </ul>
     </div>
