@@ -420,6 +420,44 @@ class Solution:
     link1: "https://leetcode.com/problems/add-two-numbers/",
     link2: "",
   },
+  {
+    id: 19,
+    title: "Remove Nth Node From End of List",
+    date: "2025-03-15",
+    difficulty: "medium",
+    label: ["linked list", "2 pointers"],
+    code: `\`\`\`python
+class Solution:
+    def removeNthFromEnd(self, head: Optional[ListNode], n: int) -> Optional[ListNode]:
+        if head.next == None:
+            return None
+        fast = head
+        slow = head
+        count = 0
+
+        while count < n:
+            fast = fast.next
+
+        if fast == None:
+            return head.next
+        
+        while fast.next != None:
+            fast = fast.next
+            slow = slow.next
+        
+        slow.next = slow.next.next
+        return head
+    `,
+    texts: `A solution Jefferey made. The idea is to traverse the linked list with a fast pointer first
+    for n steps, then start traversing again using both fast and slow pointers. So when the fast pointer
+    reaches the second last node, the slow pointer will be pointing to the node right before target as it is n+1 steps
+    counted back from the end. Then we connect the current node to the node after target (slow.next.next).`,
+    O: "O(L) *length of linked list",
+    S: "O(1)",
+    link1:
+      "https://leetcode.com/problems/remove-nth-node-from-end-of-list/description/",
+    link2: "https://github.com/jeffplays2005",
+  },
 ];
 
 // {
