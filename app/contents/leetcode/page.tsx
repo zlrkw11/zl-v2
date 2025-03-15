@@ -5,6 +5,8 @@ import { problems } from "@/data/problems";
 import { Arimo } from "next/font/google";
 import { Crimson_Text } from "next/font/google";
 import { useState } from "react";
+import lc from "../../../public/assets/leetcode.svg";
+import Image from "next/image";
 
 const ArimoFont = Arimo({
   subsets: ["latin"],
@@ -93,33 +95,36 @@ const LeetCode = () => {
   };
 
   return (
-    <div
-      className={`${ArimoFontThick.className} md:w-[800px] w-[370px] grid grid-cols-1 gap-2 items-center`}
-    >
-      <h1
-        className={`text-2xl col-span-1 items-center flex justify-center ${crimsonFont.className}`}
-      >
-        LeetCode Problems
-      </h1>
-      {paginatedProblems.map((problem, i) => (
-        <Problem key={problem.id} problem={problem} index={i} />
-      ))}
-      <div className="flex items-center md:w-[800px] w-[370px] mt-4 md:text-lg justify-center border-b">
-        <button
-          onClick={Prev}
-          className={`mr-8  ${curr === 1 && `text-gray-300`}`}
-        >
-          -1
-        </button>
-        <h1 className=" text-gray-400">
-          {curr} / {totalPages}
+    <div className="flex flex-col items-center gap-4">
+      <div className="flex gap-2">
+        <Image src={lc} width={30} height={30} alt="LeetCode" />
+        <h1 className={`text-2xl flex ${crimsonFont.className} mt-3`}>
+          LeetCode Problems
         </h1>
-        <button
-          onClick={Next}
-          className={`ml-8 ${curr === totalPages && `text-gray-300`}`}
-        >
-          +1
-        </button>
+      </div>
+      <div
+        className={`${ArimoFontThick.className} md:w-[800px] w-[370px] grid grid-cols-1 gap-2 items-center`}
+      >
+        {paginatedProblems.map((problem, i) => (
+          <Problem key={problem.id} problem={problem} index={i} />
+        ))}
+        <div className="flex items-center md:w-[800px] w-[370px] mt-4 md:text-lg justify-center border-b">
+          <button
+            onClick={Prev}
+            className={`mr-8  ${curr === 1 && `text-gray-300`}`}
+          >
+            -1
+          </button>
+          <h1 className=" text-gray-400">
+            {curr} / {totalPages}
+          </h1>
+          <button
+            onClick={Next}
+            className={`ml-8 ${curr === totalPages && `text-gray-300`}`}
+          >
+            +1
+          </button>
+        </div>
       </div>
     </div>
   );
