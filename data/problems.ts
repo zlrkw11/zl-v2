@@ -457,6 +457,7 @@ class Solution:
     link1:
       "https://leetcode.com/problems/remove-nth-node-from-end-of-list/description/",
     link2: "https://github.com/jeffplays2005",
+    link2name: "Jefferey Ji's GitHub",
   },
 ];
 

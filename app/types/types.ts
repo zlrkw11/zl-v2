@@ -19,4 +19,6 @@ export type LeetCodeProps = {
   S: string;
   link1?: string;
   link2?: string;
+  link2name?: string;
+  des?: string;
 };

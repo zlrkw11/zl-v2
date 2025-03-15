@@ -79,16 +79,25 @@ const ProblemPage = async ({ params }: { params: Promise<{ id: string }> }) => {
         Spacial Complexity:
       </h1>
       {problem.S}{" "}
-      <div className="mt-12 bg-gray-100 py-2 px-1">
-        {problem.link1 && (
+      {problem.link1 && (
+        <div className="mt-4 bg-gray-100 py-2 px-1">
           <Link className="flex items-center gap-2 italic" href={problem.link1}>
             <Image src={lc} width={30} height={30} alt="LeetCode" />
             <p className="border-b-2 border-orange-300  hover:text-orange-500">
               {`Go to problem ${problem.id}`}
             </p>
           </Link>
-        )}
-      </div>
+        </div>
+      )}
+      {problem.link2 && (
+        <Link
+          href={problem.link2}
+          className="italic underline hover:text-orange-600 w-[200px]"
+        >
+          <p>{problem.link2name}</p>
+          <p>{problem.des}</p>
+        </Link>
+      )}
     </div>
   );
 };
