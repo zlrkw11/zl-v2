@@ -10,6 +10,7 @@ import Image from "next/image";
 // Problem data
 import { problems1 } from "@/data/problems/problems1";
 import { problems2 } from "@/data/problems/problems2";
+const allProblems = [...problems1, ...problems2];
 
 const ArimoFont = Arimo({
   subsets: ["latin"],
@@ -81,11 +82,10 @@ const Problem = ({ problem, index }: Props) => {
 const LeetCode = () => {
   const numberPerPage = 10;
   const [curr, setCurr] = useState(1);
-  const [problems, setProblems] = useState<any[]>([]);
 
-  const totalPages = Math.ceil(problems.length / numberPerPage);
+  const totalPages = Math.ceil(allProblems.length / numberPerPage);
 
-  const paginatedProblems = problems.slice(
+  const paginatedProblems = allProblems.slice(
     (curr - 1) * numberPerPage,
     curr * numberPerPage
   );
@@ -97,14 +97,6 @@ const LeetCode = () => {
   const Prev = () => {
     curr >= 2 && setCurr(curr - 1);
   };
-
-  useEffect(() => {
-    const loadProblems = () => {
-      const allProblems = [...problems1, ...problems2];
-      setProblems(allProblems);
-    };
-    loadProblems();
-  }, []);
 
   return (
     <div className="flex flex-col items-center gap-4">
