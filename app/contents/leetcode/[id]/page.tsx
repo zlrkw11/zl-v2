@@ -1,3 +1,4 @@
+"use client";
 import Link from "next/link";
 import { LeetCodeProps } from "@/app/types/types";
 import { Arimo, Crimson_Text } from "next/font/google";
