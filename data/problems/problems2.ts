@@ -7,8 +7,7 @@ export const problems2: problem[] = [
     date: "2025-03-11",
     difficulty: "easy",
     label: ["array", "dynamic programming"],
-    code: `\`\`\`python
-from math import inf
+    code: `from math import inf
 from typing import List
 class Solution:
     def maxProfit(self, prices: List[int]) -> int:
@@ -33,8 +32,7 @@ class Solution:
     date: "2025-03-11",
     difficulty: "easy",
     label: ["linked list", "recursion"],
-    code: `\`\`\`python
-class Solution:
+    code: `class Solution:
     def reverseList(self, head: Optional[ListNode]) -> Optional[ListNode]:
         dummy = ListNode()
         curr = head
@@ -59,8 +57,7 @@ class Solution:
     date: "2025-03-12",
     difficulty: "easy",
     label: ["hash table", "linked list", "2 pointers"],
-    code: `\`\`\`python
-class Solution:
+    code: `class Solution:
     def hasCycle(self, head: Optional[ListNode]) -> bool:
         fast = head 
         while fast and fast.next:
@@ -84,8 +81,7 @@ class Solution:
     date: "2025-3-14",
     difficulty: "medium",
     label: ["linked list", "math", "recursion"],
-    code: `\`\`\`python
-class Solution:
+    code: `class Solution:
     def addTwoNumbers(self, l1: Optional[ListNode], l2: Optional[ListNode]) -> Optional[ListNode]:
         dummy = ListNode()
         curr = dummy
@@ -121,8 +117,7 @@ class Solution:
     date: "2025-03-15",
     difficulty: "medium",
     label: ["linked list", "2 pointers"],
-    code: `\`\`\`python
-class Solution:
+    code: `class Solution:
     def removeNthFromEnd(self, head: Optional[ListNode], n: int) -> Optional[ListNode]:
         if head.next == None:
             return None

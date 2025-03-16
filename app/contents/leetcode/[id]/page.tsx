@@ -6,7 +6,8 @@ import rehypeHighlight from "rehype-highlight";
 import "highlight.js/styles/github.css";
 import lc from "../../../../public/assets/leetcode.svg";
 import Image from "next/image";
-
+import SyntaxHighlighter from "react-syntax-highlighter";
+import { github } from "react-syntax-highlighter/dist/esm/styles/hljs";
 // data import for problems
 import { problems1 } from "@/data/problems/problems1";
 import { problems2 } from "@/data/problems/problems2";
@@ -65,9 +66,9 @@ const ProblemPage = async ({ params }: { params: Promise<{ id: string }> }) => {
       </div>
       <div className="flex flex-col gap-2 items-center">
         <div className="md:w-[800px] w-[370px]">
-          <ReactMarkdown rehypePlugins={[rehypeHighlight]}>
+          <SyntaxHighlighter language="python" style={github}>
             {problem.code}
-          </ReactMarkdown>
+          </SyntaxHighlighter>
         </div>
         <div className="">{problem.texts}</div>
       </div>

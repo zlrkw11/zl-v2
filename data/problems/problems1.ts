@@ -7,8 +7,7 @@ export const problems1: problem[] = [
     date: "2025-03-01",
     difficulty: "easy",
     label: ["array", "string", "hash table"],
-    code: `\`\`\`python
-class Solution:
+    code: `class Solution:
     def twoSum(self, nums: List[int], target: int) -> List[int]:
         d = {}
         for i, x in enumerate(nums):
@@ -30,8 +29,7 @@ class Solution:
     date: "2025-03-01",
     difficulty: "hard",
     label: ["array", "binary search", "divide and conquer"],
-    code: `\`\`\`python
-class Solution(object):
+    code: `class Solution(object):
     def findMedianSortedArrays(self, nums1, nums2):
         arr = []*(len(nums1)+len(nums2))
         minimum = min(len(nums1), len(nums2))
@@ -84,8 +82,7 @@ class Solution(object):
     date: "2025-03-05",
     difficulty: "medium",
     label: ["2 pointers"],
-    code: `\`\`\`python
-class Solution:
+    code: `class Solution:
     def twoSum(self, numbers: List[int], target: int) -> List[int]:
         l, r = 0, len(numbers)-1
         while l<r:
@@ -156,8 +153,7 @@ class Solution:
     date: "2025-03-06",
     difficulty: "easy",
     label: ["sliding window", "array"],
-    code: `\`\`\`python
-class Solution:
+    code: `class Solution:
     def findMaxAverage(self, nums: List[int], k: int) -> float:
         n = len(nums)
         ans = s = sum(nums[:k])
@@ -180,8 +176,7 @@ class Solution:
     date: "2025-03-07",
     difficulty: "medium",
     label: ["stack", "string"],
-    code: `\`\`\`python
-class Solution:
+    code: `class Solution:
     def removeStars(self, s: str) -> str:
         ans = []
         for c in s:
@@ -206,8 +201,7 @@ class Solution:
     date: "2025-03-09",
     difficulty: "easy",
     label: ["stack", "string"],
-    code: `\`\`\`python
-class Solution:
+    code: `class Solution:
     def isValid(self, s: str) -> bool:
         stack = []
         d = {"()","[]","{}"}
@@ -234,8 +228,7 @@ class Solution:
     date: "2025-03-09",
     difficulty: "easy",
     label: ["array", "binary search"],
-    code: `\`\`\`python
-class Solution:
+    code: `class Solution:
     def search(self, nums: List[int], target: int) -> int:
         low, high = 0, len(nums)-1
         while low <= high:
@@ -264,8 +257,7 @@ class Solution:
     date: "2025-03-10",
     difficulty: "medium",
     label: ["array", "matrix", "binary search"],
-    code: `\`\`\`python
-class Solution:
+    code: `class Solution:
     def searchMatrix(self, matrix: List[List[int]], target:int)-> bool: 
         
         low, high = 0, len(matrix)-1
