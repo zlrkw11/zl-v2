@@ -89,6 +89,12 @@ const PatchNotes = () => {
           date="2025/03/13"
           des="Pagination system applied on the LeetCode listing page (reducing loading & rendering time). Added 
           a redirect component for every LeetCode problem to the official site."
+        />{" "}
+        <Note
+          ver="1.0.7"
+          date="2025/03/16"
+          des="Added a folder to store all LeetCode Problems files instead of stuffing every problem into 1. Applied an extra layer to process 
+          the problem data."
         />
       </ul>
     </div>
