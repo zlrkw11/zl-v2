@@ -1,12 +1,13 @@
 import Link from "next/link";
 import { LeetCodeProps } from "@/app/types/types";
 import { Arimo, Crimson_Text } from "next/font/google";
-import { problems } from "@/data/problems";
+import { problems1 } from "@/data/problems/problems1";
 import ReactMarkdown from "react-markdown";
 import rehypeHighlight from "rehype-highlight";
 import "highlight.js/styles/github.css";
 import lc from "../../../../public/assets/leetcode.svg";
 import Image from "next/image";
+import { useState, useEffect } from "react";
 
 const ArimoFont = Arimo({
   subsets: ["latin"],
@@ -25,6 +26,14 @@ type Props = {
 };
 
 const ProblemPage = async ({ params }: { params: Promise<{ id: string }> }) => {
+  const [problems, setProblems] = useState<any[]>([]);
+  useEffect(() => {
+    const loadProblems = () => {
+      const allProblems = [...problems1];
+      setProblems(allProblems);
+    };
+    loadProblems();
+  }, []);
   const id = (await params).id;
   const problem = problems.find((p) => p.id.toString() === id);
   if (!problem) {
