@@ -11,7 +11,6 @@ import Image from "next/image";
 import { problems1 } from "@/data/problems/problems1";
 import { problems2 } from "@/data/problems/problems2";
 const allProblems = [...problems1, ...problems2];
-export { allProblems };
 
 const ArimoFont = Arimo({
   subsets: ["latin"],
