@@ -13,8 +13,7 @@ export const problems1: problem[] = [
         for i, x in enumerate(nums):
             if (y := target - x) in d:
                 return [d[y], i]
-            d[x] = i
-\`\`\``,
+            d[x] = i`,
     texts: `Initilize a hash table, go over nums using enumerate, each value is x
     if we found a value that it equlas target - x in the hash table, we simply return
     the 2 indices: x and y. Else, we record d[number] = index.`,
@@ -68,8 +67,7 @@ export const problems1: problem[] = [
     date: "2025-03-01",
     difficulty: "medium",
     label: ["array", "string"],
-    code: `\`\`\`python
-    `,
+    code: ``,
     texts: ``,
     O: "",
     S: "",
@@ -133,8 +131,7 @@ class Solution:
                         j += 1
                     while j < k and nums[k] == nums[k + 1]:
                         k -= 1
-        return ans
-    `,
+        return ans`,
     texts: `I think this is definitely a harder medium question. An evolved version
     of two sum II. As usual, sort the array to be able to identify repeating elements.
     for every nums[i] where 0 <= i < n-2, we set 2 pointers: j = i+1 and k = n-1 in order
@@ -160,7 +157,7 @@ class Solution:
         for i in range(k, n):
             s += nums[i] - nums[i-k]
             ans = max(ans, s)
-        return ans/k    `,
+        return ans/k`,
     texts: `This question requires a sliding window method where we treat 
     'k' items as a unit as it moves across the array. Starting by setting the 
     s to the first k items, using a for-loop, for every item, keeps adding nums[i] and remove the nums[i-k]
@@ -184,8 +181,7 @@ class Solution:
                 ans.pop()
             else:
                 ans.append(c)
-        return ''.join(ans)
-        `,
+        return ''.join(ans)`,
     texts: `This is probably the smartest way to approach this question. Setting up an
     empty stack - ans, run a for-loop on the string, add the character into the stack if 
     it is not a '*', otherwise remove the last character in the stack. This method perfectly
@@ -210,8 +206,7 @@ class Solution:
                 stack.append(c)
             elif not stack or stack.pop() + c not in d:
                 return False
-        return not stack    
-    `,
+        return not stack`,
     texts: `Reminds me of some CS130 questions. The way to do it is setting up a stack, 
     run a for-loop to check for every element in the string, if the element 
     is a left parentheses, push it into the stack. Otherwise check if the right one is a 
@@ -239,8 +234,7 @@ class Solution:
                 low = mid+1
             else:
                 high = mid-1            
-        return -1
-    `,
+        return -1`,
     texts: `The basic idea is to divide the array by 2. Start with a while-loop, keep
     updating the 'mid' value according to low and high. If the mid is the target, return it.
     Otherwise either: higher the low anchor (if mid < target value), to search for the higher half. Or
@@ -286,8 +280,7 @@ class Solution:
             else:
                 high = mid2-1
 
-        return False
-    `,
+        return False`,
     texts: `The method I came up with is simply: running a binary search on the bigger arrays (low and high stand for 
     the index of the arrays in the matrix) first to decide which array the target value is sitting in. This is 
     done by comparing the target with the first element of each array. After that, we start another binary search on 

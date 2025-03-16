@@ -65,8 +65,7 @@ class Solution:
             fast = fast.next.next
             if fast is head:
                 return True
-        return False
-    `,
+        return False`,
     texts: `Learnt the Tortoise and the Hare algorithm from this question. The concept is simple
     but genius. Setting up 2 pointers: 1 slow, 1 fast to iterate the linked list starting from head. 
     When the fast node IS the slow node, we know a cycle must exists in this linked list.`,
@@ -137,8 +136,7 @@ class Solution:
             slow = slow.next
         
         slow.next = slow.next.next
-        return head
-    `,
+        return head`,
     texts: `A solution Jeffery made. The idea is to traverse the linked list with a fast pointer first
     for n steps, then start traversing again using both fast and slow pointers. So when the fast pointer
     reaches the second last node, the slow pointer will be pointing to the node right before target as it is n+1 steps
