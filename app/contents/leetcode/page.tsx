@@ -34,6 +34,7 @@ type Props = {
 
 const Problem = ({ problem, index }: Props) => {
   const { id, title, label, difficulty } = problem;
+  const labelCount = label.length;
   return (
     <div
       className={`${difficulty === "easy" && "border-l-green-600"} ${
@@ -54,7 +55,7 @@ const Problem = ({ problem, index }: Props) => {
         </h1>
         <div className={`${ArimoFont.className} text-sm`}>
           {difficulty === "easy" && (
-            <div className=" text-green-600 rounded-full px-4">EASY</div>
+            <div className=" text-green-500 rounded-full px-4">EASY</div>
           )}{" "}
           {difficulty === "medium" && (
             <div className=" text-orange-400 rounded-full px-4">MEDIUM</div>
@@ -69,7 +70,9 @@ const Problem = ({ problem, index }: Props) => {
         {label.map((l, i) => (
           <div
             key={i}
-            className={` bg-gray-200 text-gray-700 rounded-full px-2`}
+            className={`bg-gray-200 text-gray-700 rounded-full px-2 md:text-based ${
+              labelCount > 3 && "px-[5px]"
+            }`}
           >
             {l}
           </div>
