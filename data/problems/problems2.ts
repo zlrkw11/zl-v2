@@ -148,4 +148,30 @@ class Solution:
     link2: "https://github.com/jeffplays2005",
     link2name: "Jeffery Ji's GitHub",
   },
+  {
+    id: 287,
+    title: "Find the Duplicate Number",
+    date: "2025-03-16",
+    difficulty: "medium",
+    label: ["array", "2 pointers", "binary search", "bit manipulation"],
+    code: `from typing import List
+class Solution:
+    def findDuplicate(self, nums: List[int]) -> int:
+        d= {nums[i]:0 for i in range(len(nums))}
+    
+        for i in range(len(nums)):
+            if nums[i] in d:
+                d[nums[i]]+=1
+        
+        for key, value in d.items():
+            if value > 1:
+                return key`,
+    texts: `My implementation consists of 3 steps. First, I created a dictionary to store the frequency of each number (default value = 0). Then I 
+    iterated through the list to update the frequency of each number. Finally, I check the dictionary and return the number with a frequency greater than 1.`,
+    O: "O(n)",
+    S: "O(1)",
+    link1:
+      "https://leetcode.com/problems/find-the-duplicate-number/description/",
+    link2: "",
+  },
 ];
