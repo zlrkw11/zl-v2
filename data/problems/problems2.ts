@@ -207,7 +207,7 @@ class Solution:
     process until the heap - pq is empty. Return the dummy.next as the answer linked list.`,
     O: "O(n)",
     S: "O(1)",
-    link1: "",
+    link1: "https://leetcode.com/problems/merge-k-sorted-lists/description/",
     link2:
       "https://github.com/zlrkw11/leetcode/blob/main/linked_list/hard/merge_k_sorted_lists.md",
     link2name: "Check out the explanation",
