@@ -174,4 +174,55 @@ class Solution:
       "https://leetcode.com/problems/find-the-duplicate-number/description/",
     link2: "",
   },
+  {
+    id: 23,
+    title: "Merge k Sorted Lists",
+    date: "2025-03-17",
+    difficulty: "hard",
+    label: ["linked list", "divide and conquer", "heap", "merge sort"],
+    code: `from typing import List, Optional
+import heapq
+
+class ListNode:
+    def __init__(self, val=0, next=None):
+        self.val = val
+        self.next = next
+
+class Solution:
+    def mergeKLists(self, lists: List[Optional[ListNode]]) -> Optional[ListNode]:
+        setattr(ListNode, "__lt__", lambda a,b: a.val < b.val)
+        pq = [head for head in lists if head]
+        heapq.heapify(pq)
+        dummy = curr = ListNode()
+        while pq:
+            node = heapq.heappop(pq)
+            if node.next:
+                heapq.heappush(pq, node.next)
+            curr.next = node
+            curr = curr.next
+        return dummy.next`,
+    texts: `My implementation uses a heap to store the heads of the linked lists. Set up a dummy node as the head for the answer linked list and a curr as the pointer to create the 
+    answer linked list. I then use a while loop to pop the top node from the heap (minimum node). If that node is connected to another node, I push the next node into the heap to make 
+    sure every node is involved in the process of comparison and sorting. Then the pointer will establish a link with the node which is popped from the heap, and move forward. Repeat the
+    process until the heap - pq is empty. Return the dummy.next as the answer linked list.`,
+    O: "O(n)",
+    S: "O(1)",
+    link1: "",
+    link2:
+      "https://github.com/zlrkw11/leetcode/blob/main/linked_list/hard/merge_k_sorted_lists.md",
+    link2name: "Check out the explanation",
+  },
 ];
+// {
+//     id: ,
+//     title: "",
+//     date: "2025--",
+//     difficulty: "medium",
+//     label: ["", ""],
+//     code: ``,
+//     texts: ``,
+//     O: "",
+//     S: "",
+//     link1: "",
+//     link2: "",
+//   },
