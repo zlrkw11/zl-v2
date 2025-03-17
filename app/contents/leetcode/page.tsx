@@ -57,7 +57,7 @@ const Problem = ({ problem, index }: Props) => {
           {difficulty === "easy" && (
             <div className=" text-green-500 rounded-full font-bold">
               <p className="hidden md:inline-block px-4 italic">EASY</p>
-              <p className="md:hidden border-green-300 border-2 px-2.5 py-1.5 text-green-600 rounded-md">
+              <p className="md:hidden border-green-300 border-2 px-2.5 py-1 text-green-600 rounded-md">
                 E
               </p>
             </div>
@@ -65,7 +65,7 @@ const Problem = ({ problem, index }: Props) => {
           {difficulty === "medium" && (
             <div className=" text-orange-400 rounded-full font-bold">
               <p className="hidden md:inline-block italic px-4">MEDIUM</p>
-              <p className="md:hidden border-orange-300 border-2 px-2.5 py-1.5 text-orange-600 rounded-md">
+              <p className="md:hidden border-orange-300 border-2 px-2.5 py-1 text-orange-600 rounded-md">
                 M
               </p>
             </div>
@@ -73,7 +73,7 @@ const Problem = ({ problem, index }: Props) => {
           {difficulty === "hard" && (
             <div className=" text-red-600 rounded-full font-bold">
               <p className="hidden md:inline-block italic px-4">HARD</p>
-              <p className="md:hidden border-red-400 border-2 px-2.5 py-1.5 text-red-600 rounded-md">
+              <p className="md:hidden border-red-400 border-2 px-2.5 py-1 text-red-600 rounded-md">
                 H
               </p>
             </div>
