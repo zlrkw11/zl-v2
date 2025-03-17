@@ -95,6 +95,12 @@ const PatchNotes = () => {
           date="2025/03/16"
           des="Added a folder to store all LeetCode Problems files instead of stuffing every problem into 1. Applied an extra layer to process 
           the problem data."
+        />{" "}
+        <Note
+          ver="1.0.8"
+          date="2025/03/18"
+          des="Replaced the difficulty tags of the LeetCode page with buttons on mobile viewports, restyled appearance on desktop version. 
+          Restyled the code section on individual problem pages (added line numbers & applied Syntax highlight)."
         />
       </ul>
     </div>
