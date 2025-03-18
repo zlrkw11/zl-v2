@@ -212,6 +212,41 @@ class Solution:
       "https://github.com/zlrkw11/leetcode/blob/main/linked_list/hard/merge_k_sorted_lists.md",
     link2name: "Check out the explanation",
   },
+  {
+    id: 226,
+    title: "Invert Binary Tree",
+    date: "2025-03-18",
+    difficulty: "easy",
+    label: [
+      "tree",
+      "depth-first search",
+      "breadth-first search",
+      "binary tree",
+    ],
+    code: `from typing import Optional 
+class TreeNode:
+    def __init__(self, val=0, left=None, right=None):
+        self.val = val
+        self.left = left
+        self.right = right
+
+class Solution:
+    def invertTree(self, root: Optional[TreeNode]) -> Optional[TreeNode]:
+        curr = root 
+        if curr:
+            temp = curr.left 
+            curr.left = curr.right
+            curr.right = temp
+            self.invertTree(curr.left)
+            self.invertTree(curr.right)
+        return root`,
+    texts: `The implementation is to iterate the binary tree with a pointer - curr. For every curr, swap the left and right child of the node, 
+    then recursively call the invertTree() function on the left and right child until all the nodes are processed.`,
+    O: "O(n)",
+    S: "O(1)",
+    link1: "https://leetcode.com/problems/invert-binary-tree/description/",
+    link2: "",
+  },
 ];
 // {
 //     id: ,
