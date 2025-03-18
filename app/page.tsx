@@ -56,18 +56,7 @@ export default function Home() {
             </button>
           </Link>
         </div>
-        <div className="w-12 col-start-8 col-span-1 flex items-center justify-center">
-          {" "}
-          <Link href="/" className="">
-            <Image
-              src={Globe}
-              alt="globe_icon"
-              width={30}
-              height={30}
-              className={`${styles.rotating}`}
-            />
-          </Link>
-        </div>{" "}
+
         <div className="col-span-8 mb-8"></div>
         <div
           className={`col-span-4 ${styles["move-up-down2"]} md:col-span-2 w-200px justify-center h-[100px] flex items-center border border-gray-200 rounded-lg`}
