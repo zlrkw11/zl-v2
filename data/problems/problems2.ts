@@ -217,12 +217,7 @@ class Solution:
     title: "Invert Binary Tree",
     date: "2025-03-18",
     difficulty: "easy",
-    label: [
-      "tree",
-      "depth-first search",
-      "breadth-first search",
-      "binary tree",
-    ],
+    label: ["tree", "dfs", "bfs", "binary tree"],
     code: `from typing import Optional 
 class TreeNode:
     def __init__(self, val=0, left=None, right=None):
