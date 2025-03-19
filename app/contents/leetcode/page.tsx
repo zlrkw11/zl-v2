@@ -75,13 +75,15 @@ const Problem = ({ problem, index }: Props) => {
         </div>
       </Link>
 
-      <div className={`flex gap-2 ${ArimoFont.className} text-sm`}>
+      <div
+        className={`md:flex gap-2 ${ArimoFont.className} text-sm ${
+          labelCount > 3 ? "grid grid-cols-2" : "flex"
+        }`}
+      >
         {label.map((l, i) => (
           <div
             key={i}
-            className={`bg-gray-200 text-gray-700 rounded-full px-2 md:text-based ${
-              labelCount > 3 && "px-[5px]"
-            }`}
+            className={`bg-gray-200 text-gray-700 rounded-none px-2 md:text-based text-center text-nowrap`}
           >
             {l}
           </div>
