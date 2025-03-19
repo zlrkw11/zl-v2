@@ -247,6 +247,40 @@ class Solution:
     link1: "https://leetcode.com/problems/invert-binary-tree/description/",
     link2: "",
   },
+  {
+    id: 543,
+    title: "Diameter of Binary Tree",
+    date: "2025-03-19",
+    difficulty: "easy",
+    label: ["tree", "depth-first search", "binary tree"],
+    code: `from typing import Optional
+class TreeNode:
+    def __init__(self, val=0, left=None, right=None):
+        self.val = val
+        self.left = left
+        self.right = right
+
+class Solution:
+    def diameterOfBinaryTree(self, root: Optional[TreeNode]) -> int:
+        self.diameter = 0
+        def dfs(node):
+            if not node:
+                return 0
+            l = dfs(node.left)
+            r = dfs(node.right)
+            self.diameter = max(self.diameter, l+r)
+            return max(l,r)+1
+        dfs(root)
+
+        return self.diameter`,
+    texts: `My implementation heavily relies on DFS. The main idea is to use a helper function with dfs to recursively calculate the depth of path left and left 
+    for every node until we reach the leaf node, then we return the longest path out of the left / right for each node, return the max path + 1(the node itself) 
+    back to the parent node and update the diameter if we found a greater diameter with a higher sum of (left + right).`,
+    O: "O(n)",
+    S: "O(h) *h = tree.height",
+    link1: "https://leetcode.com/problems/diameter-of-binary-tree/description/",
+    link2: "",
+  },
 ];
 // {
 //     id: ,
