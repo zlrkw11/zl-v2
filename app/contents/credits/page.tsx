@@ -39,8 +39,8 @@ const credits = () => {
         build a unique, professional site sparked several ideas for my own
         design.
       </p>
-      <p className={`text-xl ${crimsonFont.className}`}>
-        Check out Eric's Website:
+      <p className={`text-2xl ${crimsonFont.className}`}>
+        Check out Eric's website!
       </p>
       <Link
         className="underline text-red-600 hover:text-red-400 text-lg"
