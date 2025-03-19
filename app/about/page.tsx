@@ -113,11 +113,11 @@ const About = () => {
           </p>
         </div>
       </div>
-      <Link href="../about/personal">
+      {/* <Link href="../about/personal">
         <div className="border-black border-b-2 text-center w-[100px] mt-12 transition hover:border-red-600 hover:text-red-600">
           see more
         </div>
-      </Link>
+      </Link> */}
     </div>
   );
 };
