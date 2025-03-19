@@ -58,12 +58,8 @@ const About = () => {
 
           <div className={`flex gap-4 ${ArimoFont.className} text-gray-700`}>
             <div className="flex flex-col gap-4">
-              <p>
-                I always wanted to be extremely competitve in a way that so I
-                could prove myself. But I always end up procrastinating...
-              </p>
               <p>In the software / web industry, I:</p>
-              <ul id="list" className="list-disc pl-6 ">
+              <ul className=" border-red-600 list-disc pl-6 ">
                 <li>
                   want to be a dev, not so much of a computer scientist (skill
                   issue tbh)
@@ -73,7 +69,7 @@ const About = () => {
                   LeetCode and want to do well in algorithm competitions){" "}
                   <span>
                     <Link
-                      className="text-orange-500 hover:text-orange-300 underline"
+                      className="text-gray-400 hover:text-gray-300 underline"
                       href="/contents/leetcode"
                     >
                       {`>`} LeetCode Storage Room
@@ -86,9 +82,19 @@ const About = () => {
                 </li>
               </ul>
               <p className="font-bold">Fun facts:</p>
-              <ul className="list-disc ml-4">
-                <li>my favourite fruit is watermelon</li>
-                <li>still on my way to break my 75kg bench PR</li>
+              <ul className="border-r-4 border-red-600 bg-red-100 p-2">
+                <li>
+                  <span className=" text-black">1.</span> my favourite fruit is
+                  watermelon
+                </li>
+                <li>
+                  <span className=" text-black">2.</span> still on my way to
+                  break my 75kg bench PR
+                </li>
+                <li>
+                  <span className=" text-black">3.</span> I always wanted to be
+                  extremely competitve in a way that so I could prove myself
+                </li>
               </ul>
             </div>
           </div>
