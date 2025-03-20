@@ -59,7 +59,7 @@ const About = () => {
           <div className={`flex gap-4 ${ArimoFont.className} text-gray-700`}>
             <div className="flex flex-col gap-4">
               <p>In the software / web industry, I:</p>
-              <ul className=" border-red-600 list-disc pl-6 ">
+              <ul className=" border-red-600 list-disc pl-6 border-l-4 border-red-600">
                 <li>
                   want to be a dev, not so much of a computer scientist (skill
                   issue tbh)
@@ -104,7 +104,9 @@ const About = () => {
             why did I make this website
             <span className="text-3xl text-red-600">:</span>
           </h1>
-          <p className={`${ArimoFont.className} text-gray-700`}>
+          <p
+            className={`${ArimoFont.className} text-gray-600 border-l-8 border-gray-200 px-2`}
+          >
             I’ve always wanted to create a website that's more than just a
             portfolio for companies to browse — a personal space that reflects
             individuality. I often think back to the early 2000s, when crafting
