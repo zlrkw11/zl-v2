@@ -9,6 +9,7 @@ import { atomOneLight } from "react-syntax-highlighter/dist/esm/styles/hljs";
 // data import for problems
 import { problems1 } from "@/data/problems/problems1";
 import { problems2 } from "@/data/problems/problems2";
+import { problems3 } from "@/data/problems/problems3";
 
 const ArimoFont = Arimo({
   subsets: ["latin"],
@@ -26,7 +27,7 @@ type Props = {
   };
 };
 
-const problems = [...problems1, ...problems2];
+const problems = [...problems1, ...problems2, ...problems3];
 const ProblemPage = async ({ params }: { params: Promise<{ id: string }> }) => {
   const id = (await params).id;
   const problem = problems.find((p) => p.id.toString() === id);
