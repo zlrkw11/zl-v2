@@ -100,7 +100,7 @@ const ProblemPage = async ({ params }: { params: Promise<{ id: string }> }) => {
       {problem.link2 && (
         <Link
           href={problem.link2}
-          className="italic underline hover:text-orange-600 w-[200px]"
+          className="underline underline-offset-4 hover:text-gray-500 max-w-[300px]"
         >
           <p>{problem.link2name}</p>
           <p>{problem.des}</p>
