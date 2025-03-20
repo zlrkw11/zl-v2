@@ -606,6 +606,7 @@ class Solution:
     link1: "https://leetcode.com/problems/balanced-binary-tree/",
     link2:
       "https://github.com/zlrkw11/leetcode/blob/main/binary_tree/binary_tree.md",
+    link2name: "zl's LeetCode repo notes on binary tree",
   },
 ];
 
