@@ -10,7 +10,8 @@ import Image from "next/image";
 // Problem data
 import { problems1 } from "@/data/problems/problems1";
 import { problems2 } from "@/data/problems/problems2";
-const allProblems = [...problems1, ...problems2];
+import { problems3 } from "@/data/problems/problems3";
+const allProblems = [...problems1, ...problems2, ...problems3];
 
 const ArimoFont = Arimo({
   subsets: ["latin"],

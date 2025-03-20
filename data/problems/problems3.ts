@@ -1,6 +1,6 @@
 import { LeetCodeProps as problem } from "@/app/types/types";
 
-export const problems2: problem[] = [
+export const problems3: problem[] = [
   {
     id: 110,
     title: "balanced binary tree",
