@@ -42,7 +42,7 @@ const Project = ({
       <ul className="md:flex md:gap-2 md:m-2 grid grid-cols-2 m-2">
         {tech.map((s, i) => (
           <li
-            className="border border-gray-300 text-sm md:rounded-full col-span-1 px-2 text-center md:m-0"
+            className="border border-gray-300 text-sm md:rounded-full col-span-1 px-2 text-center md:m-0 hover:text-red-600 hover:border-red-600"
             key={i}
           >
             {s}
