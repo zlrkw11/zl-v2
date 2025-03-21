@@ -49,8 +49,8 @@ const Project = ({
           </li>
         ))}
       </ul>
-      <p className="m-2">{des}</p>
-      <div className="m-2">
+      <p className="m-2 border-l-8 border-l-gray-200 p-2 bg-gray-50">{des}</p>
+      <div className="m-2 border-l-8 border-l-gray-200 p-2 bg-gray-50">
         <div className="text-black text-nowrap md:flex">
           <p>Github repo:</p>
           <Link
