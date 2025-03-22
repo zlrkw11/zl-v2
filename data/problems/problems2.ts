@@ -42,7 +42,7 @@ class Solution:
     title: "Binary Tree Level Order Traversal",
     date: "2025-03-22",
     difficulty: "medium",
-    label: ["tree", "breath-first search", "binary tree"],
+    label: ["tree", "breadth-first search", "binary tree"],
     code: `from typing import Optional, List
 from collections import deque
 
