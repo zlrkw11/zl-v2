@@ -37,6 +37,53 @@ class Solution:
     link1: "https://leetcode.com/problems/same-tree/description/",
     link2: "",
   },
+  {
+    id: 102,
+    title: "Binary Tree Level Order Traversal",
+    date: "2025-03-22",
+    difficulty: "medium",
+    label: ["tree", "breath-first search", "binary tree"],
+    code: `from typing import Optional, List
+from collections import deque
+
+class TreeNode:
+    def __init__(self, val=0, left=None, right=None):
+        self.val = val
+        self.left = left
+        self.right = right
+
+class Solution:
+    def levelOrder(self, root: Optional[TreeNode]) -> List[List[int]]:
+        return bfs(root)
+
+def bfs(node):
+    if not node:
+        return []
+    ans = []
+    q = deque([node])
+    while q:
+        lvl = []
+        for _ in range(len(q)):
+            node = q.popleft()
+            lvl.append(node.val)
+            if node.left:
+                q.append(node.left)
+            if node.right:
+                q.append(node.right)
+        ans.append(lvl)
+    return ans`,
+    texts: `My implementation uses BFS to traverse the tree by its levels --> Top-down, left to right approach.
+    The core idea is to initialize a queue with the root node as the first level and run a for-loop to process every node
+    and add itself to the current level array, then add its children to the queue for the next level's processing. Until the
+    queue is completely empty.`,
+    O: "O(n)",
+    S: "O(n)",
+    link1:
+      "https://leetcode.com/problems/binary-tree-level-order-traversal/description/",
+    link2:
+      "https://github.com/zlrkw11/leetcode/blob/main/binary_tree/binary_tree.md",
+    link2name: "zl's LeetCode repo notes on BFS",
+  },
 ];
 // {
 //     id: ,
