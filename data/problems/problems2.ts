@@ -118,8 +118,10 @@ def dfs(node,depth,ans):
     dfs(node.left,depth+1,ans)`,
     texts: `Very interesting problem, the main idea is to use DFS to recursively traverse the tree and
     process nodes from right to left while updating the result array and the depth of the recursion, until
-    the base case is met --> when the current node is None. The core idea is that the depth variable is used to 
-    make sure that there is only one node from the level can be added to the result array.`,
+    the base case is met --> when the current node is None. We set up an array to be empty and a depth to be 0
+    at the start. Put the node into the array if the we have not put a node for this level yet. Then we call
+    the dfs function on the right node first and then the left node. As this will make sure that all the rightmost
+    nodes will be processed first because the depth variable is used to make sure that there is only one node from the level can be added to the result array.`,
     O: "O(n)",
     S: "O(h)",
     link1: "https://leetcode.com/problems/binary-tree-right-side-view/",
