@@ -104,20 +104,23 @@ const About = () => {
             why did I make this website
             <span className="text-3xl text-red-600">:</span>
           </h1>
-          <p
-            className={`${ArimoFont.className} text-gray-600 border-l-8 border-gray-200 px-2`}
-          >
+          <p className={`${ArimoFont.className} text-gray-700 `}>
             I’ve always wanted to create a website that's more than just a
             portfolio for companies to browse — a personal space that reflects
-            individuality. I often think back to the early 2000s, when crafting
-            your own blogs on simple HTML pages was the norm — a raw, unfiltered
-            form of self-expression. Nowadays, it feels like everyone, myself
-            included, is caught up in the endless doom scroll of Instagram
-            reels. I also keep myself away from over-commercialized platforms
+            individuality.<br></br>
+            <br></br>{" "}
+            <div className="border-l-8 border-gray-300 p-2 bg-gray-100">
+              I often think back to the early 2000s, when crafting your own
+              blogs on simple HTML pages was the norm — a raw, unfiltered form
+              of self-expression. Nowadays, it feels like everyone, myself
+              included, is caught up in the endless doom scroll of Instagram
+              reels.
+            </div>
+            <br></br> I also keep myself away from over-commercialized platforms
             that are cluttered with Temu ads and unauthorized personal data
             tracking algorithms. So here it is — a website designed to capture
-            the internet at its purest, a digital space that’s personal,
-            creative, and free.
+            the internet at its purest, a <span>digital space</span> that’s
+            personal, creative, and free.
           </p>
         </div>
       </div>
