@@ -84,6 +84,48 @@ def bfs(node):
       "https://github.com/zlrkw11/leetcode/blob/main/binary_tree/binary_tree.md",
     link2name: "zl's LeetCode repo notes on BFS",
   },
+  {
+    id: 199,
+    title: "Binary Tree Right Side View",
+    date: "2025-03-23",
+    difficulty: "medium",
+    label: [
+      "tree",
+      "depth-first search",
+      "breadth-first search",
+      "binary tree",
+    ],
+    code: `from typing import Optional, List
+
+class TreeNode:
+    def __init__(self, val=0, left=None, right=None):
+        self.val = val
+        self.left = left
+        self.right = right
+
+class Solution:
+    def rightSideView(self, root: Optional[TreeNode]) -> List[int]:
+        ans = []
+        dfs(root, 0, ans)
+        return ans
+
+def dfs(node,depth,ans):
+    if node is None:
+        return
+    if len(ans) == depth:
+        ans.append(node.val)
+    dfs(node.right,depth+1,ans)
+    dfs(node.left,depth+1,ans)`,
+    texts: `Very interesting problem, the main idea is to use DFS to recursively traverse the tree and
+    process nodes from right to left while updating the result array and the depth of the recursion, until
+    the base case is met --> when the current node is None.`,
+    O: "O(n)",
+    S: "O(h)",
+    link1: "https://leetcode.com/problems/binary-tree-right-side-view/",
+    link2:
+      "https://github.com/zlrkw11/leetcode/blob/main/binary_tree/binary_tree.md",
+    link2name: "zl's LeetCode repo notes on DFS",
+  },
 ];
 // {
 //     id: ,
