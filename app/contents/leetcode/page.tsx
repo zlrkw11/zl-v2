@@ -3,9 +3,10 @@ import { LeetCodeProps } from "@/app/types/types";
 import Link from "next/link";
 import { Arimo } from "next/font/google";
 import { Crimson_Text } from "next/font/google";
-import { useState, useEffect } from "react";
+import { useState, useEffect, use } from "react";
 import lc from "../../../public/assets/leetcode.svg";
 import Image from "next/image";
+import { useRouter, useSearchParams } from "next/navigation";
 
 // Problem data
 import { problems1 } from "@/data/problems/problems1";
@@ -95,10 +96,17 @@ const Problem = ({ problem, index }: Props) => {
 };
 
 const LeetCode = () => {
+  const router = useRouter();
+  const searchParams = useSearchParams();
   const numberPerPage = 10;
-  const [curr, setCurr] = useState(1);
-
   const totalPages = Math.ceil(allProblems.length / numberPerPage);
+  const initialPage = Number(searchParams.get("page")) || 1;
+  const [curr, setCurr] = useState(initialPage);
+
+  const updatePage = (newPage: number) => {
+    setCurr(newPage);
+    router.push(`?page=${newPage}`, { scroll: false });
+  };
 
   const paginatedProblems = allProblems.slice(
     (curr - 1) * numberPerPage,
@@ -106,11 +114,13 @@ const LeetCode = () => {
   );
 
   const Next = () => {
-    curr < totalPages && setCurr(curr + 1);
+    if (curr < totalPages) {
+      updatePage(curr + 1);
+    }
   };
 
   const Prev = () => {
-    curr >= 2 && setCurr(curr - 1);
+    if (curr > 2) updatePage(curr - 1);
   };
 
   return (
