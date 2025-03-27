@@ -129,6 +129,44 @@ def dfs(node,depth,ans):
       "https://github.com/zlrkw11/leetcode/blob/main/binary_tree/binary_tree.md",
     link2name: "zl's LeetCode repo notes on DFS",
   },
+  {
+    id: 1448,
+    title: "Count Good Nodes in Binary Tree",
+    date: "2025-03-24",
+    difficulty: "medium",
+    label: [
+      "tree",
+      "depth-first search",
+      "breadth-first search",
+      "binary tree",
+    ],
+    code: `class Solution:
+    def goodNodes(self, root: TreeNode) -> int:
+        def dfs(node, mx):
+            if not node:
+                return
+            nonlocal ans
+            if node.val >= mx:
+                mx = node.val
+                ans += 1
+
+            dfs(node.left,mx)
+            dfs(node.right,mx)
+
+        mx = float("-inf")
+        ans = 0
+        dfs(root, mx)
+        return ans`,
+    texts: `The idea for this question is to use DFS to traverse the tree and keep track of the max value. Everytime we 
+    visit a node, if the current node has a value that is greater than the max, we increment the answer by 1 and update the max value to 
+    the current node's value. Then we call the dfs function on the left and right nodes of the current node. Note: the max value is independent
+    on every path because it is passed by value and not by reference. Therefore, we will have 1 mx value on both left and right subtree for every
+    node to keep inherit the previous values and update themselves.`,
+    O: "O(n)",
+    S: "O(h)",
+    link1: "https://leetcode.com/problems/count-good-nodes-in-binary-tree/",
+    link2: "",
+  },
 ];
 // {
 //     id: ,
