@@ -120,7 +120,7 @@ const LeetCode = () => {
   };
 
   const Prev = () => {
-    if (curr > 2) updatePage(curr - 1);
+    if (curr >= 2) updatePage(curr - 1);
   };
 
   return (
