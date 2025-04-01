@@ -43,9 +43,7 @@ const Problem = ({ problem, index }: Props) => {
         difficulty === "medium" && "border-l-orange-400"
       } ${
         difficulty === "hard" && "border-l-red-600"
-      } border-l-2 col-span-1 m-1 p-2 gap-2 flex flex-col h-full ${
-        index % 2 === 1 && "bg-gray-100"
-      } bg-gray-50`}
+      } border-l-2 col-span-1 m-1 p-2 gap-2 flex flex-col h-full bg-gray-100 bg-opacity-60 rounded-r-sm`}
     >
       <Link
         href={`/contents/leetcode/${id}`}
@@ -137,7 +135,7 @@ const LeetCode = () => {
         {paginatedProblems.map((problem, i) => (
           <Problem key={problem.id} problem={problem} index={i} />
         ))}
-        <div className="flex items-center md:w-[800px] w-[370px] mt-4 md:text-lg justify-center border-b">
+        <div className="flex items-center md:w-[800px] w-[370px] mt-4 md:text-lg justify-center">
           <button
             onClick={Prev}
             className={`mr-8  ${curr === 1 && `text-gray-300`}`}

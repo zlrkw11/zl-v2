@@ -101,6 +101,12 @@ const PatchNotes = () => {
           date="2025/03/18"
           des="Replaced the difficulty tags of the LeetCode page with buttons on mobile viewports, restyled appearance on desktop version. 
           Restyled the code section on individual problem pages (added line numbers & applied Syntax highlight)."
+        />{" "}
+        <Note
+          ver="1.0.9"
+          date="2025/04/01"
+          des="Added a new background inspired by Taroj1205. Restyled most of the card-like components on pages: Projects, Contents, LeetCode.
+          Implemented animations for certain elements to move when on hover and shifted the aesthetic of the website to be more modern."
         />
       </ul>
     </div>
