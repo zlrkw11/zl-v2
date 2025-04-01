@@ -22,7 +22,7 @@ const Card = ({
   link: string;
 }) => {
   return (
-    <div className="border-2 border-b-red-600 p-2 m-2 gap-2 flex flex-col w-[370px] md:min-w-[600px]">
+    <div className="border-b-2 border-b-red-600 p-2 m-2 gap-2 flex flex-col w-[370px] md:min-w-[600px] bg-gray-100 bg-opacity-50 rounded-t-md border-2">
       <Link href={link}>
         <h1 className="hover:text-red-600 ">./{title}</h1>
       </Link>
