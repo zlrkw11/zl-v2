@@ -6,7 +6,7 @@ html,
 body {
   margin: 0;
   background-color: rgb(var(--base-bg));
-  background-size: 60px 60px;
+  background-size: 50px 50px;
   background-image: linear-gradient(
       to right,
       rgba(128, 128, 128, 0.08) 1px,

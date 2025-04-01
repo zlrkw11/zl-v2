@@ -104,7 +104,7 @@ const About = () => {
             why did I make this website
             <span className="text-3xl text-red-600">:</span>
           </h1>
-          <p className={`${ArimoFont.className} text-gray-700 `}>
+          <div className={`${ArimoFont.className} text-gray-700 `}>
             I’ve always wanted to create a website that's more than just a
             portfolio for companies to browse — a personal space that reflects
             individuality.<br></br>
@@ -121,7 +121,7 @@ const About = () => {
             tracking algorithms. So here it is — a website designed to capture
             the internet at its purest, a <span>digital space</span> that’s
             personal, creative, and free.
-          </p>
+          </div>
         </div>
       </div>
       {/* <Link href="../about/personal">

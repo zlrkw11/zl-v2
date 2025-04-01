@@ -33,7 +33,8 @@ const Project = ({
   };
   return (
     <div
-      className={`md:min-w-[730px] max-w-[330px] ${ArimoFont.className} flex flex-col border-l-2 border-l-red-600`}
+      className={`md:min-w-[730px] max-w-[330px] ${ArimoFont.className} flex flex-col border-l-2 border-l-red-600 bg-gray-100 bg-opacity-45
+        transition-transform duration-300 hover:translate-y-4`}
     >
       <h1 className="border-b-2 border-dashed border-b-red-600 flex text-black text-xl m-2">
         {name}
@@ -49,8 +50,10 @@ const Project = ({
           </li>
         ))}
       </ul>
-      <p className="m-2 border-l-8 border-l-gray-200 p-2 bg-gray-50">{des}</p>
-      <div className="m-2 border-l-8 border-l-gray-200 p-2 bg-gray-50">
+      <p className="m-2 border-l-8 border-l-gray-300 p-2 bg-gray-200 rounded-r-sm bg-opacity-50">
+        {des}
+      </p>
+      <div className="m-2 border-l-8 border-l-gray-300 p-2 bg-gray-200 rounded-r-sm bg-opacity-50">
         <div className="text-black text-nowrap md:flex">
           <p>Github repo:</p>
           <Link

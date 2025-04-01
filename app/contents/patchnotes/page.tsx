@@ -16,9 +16,9 @@ const Note = ({
   des: string;
 }) => {
   return (
-    <li className="border-l-2 border-l-red-600 pl-2">
+    <li className="border-l-2 border-l-red-600 pl-2 bg-gray-100 py-2 rounded-r-md bg-opacity-35">
       <p className="gap-8 flex">
-        <span className="font-bold">ver {ver}</span>
+        <span className="font-bold italic">ver {ver}</span>
         <span className="text-gray-500">{date}</span>
       </p>
       <p>{des}</p>
