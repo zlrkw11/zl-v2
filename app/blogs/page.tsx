@@ -34,14 +34,14 @@ const Blogs = async () => {
         {blogs.map((blog: any) => (
           <li
             key={blog.slug}
-            className="p-2 border-2 border-l-red-600 md:min-w-[700px]"
+            className="transition hover:translate-x-5 duration-300 p-2 border border-l-4 border-r-2 rounded-r-lg border-l-red-600 bg-gray-100 bg-opacity-60 md:min-w-[700px]"
           >
             <Link href={`/blogs/${blog.slug}`}>
-              <p className="text-lg text-black hover:text-red-600">
+              <p className="text-lg text-gray-700 hover:text-red-600">
                 {blog.title}
               </p>
             </Link>
-            <p className="text-gray-500">{blog.date}</p>
+            <p className="text-gray-400 italic">{blog.date}</p>
           </li>
         ))}
       </ul>
