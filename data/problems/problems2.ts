@@ -167,6 +167,30 @@ def dfs(node,depth,ans):
     link1: "https://leetcode.com/problems/count-good-nodes-in-binary-tree/",
     link2: "",
   },
+  {
+    id: 55,
+    title: "Jump Game",
+    date: "2025-04-04",
+    difficulty: "medium",
+    label: ["array", "dp", "greedy"],
+    code: `from typing import List
+class Solution:
+    def canJump(self, nums: List[int]) -> bool:
+        mx = 0
+        for i,x in enumerate(nums):
+            if mx < i:
+                return False
+            mx = max(mx, i+x)
+        return True`,
+    texts: `Intuitive solution. The main idea is to store a mx = 0 as the max position of index we can reach. enumerate the array and 
+    get index and the value, update the mx after each iteration finishes using i+x (see if it is bigger). If it's smaller than the current
+    index - return false, as it can't reach further positions.`,
+    O: "O(n)",
+    S: "O(1)",
+    link1: "https://leetcode.com/problems/jump-game/description/",
+    link2: "https://github.com/zlrkw11/leetcode/blob/main/greedy/p.55.png",
+    link2name: "visualize it!",
+  },
 ];
 // {
 //     id: ,
