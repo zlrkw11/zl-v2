@@ -172,7 +172,7 @@ def dfs(node,depth,ans):
     title: "Jump Game",
     date: "2025-04-04",
     difficulty: "medium",
-    label: ["array", "dp", "greedy"],
+    label: ["array", "dynamic programming", "greedy"],
     code: `from typing import List
 class Solution:
     def canJump(self, nums: List[int]) -> bool:
