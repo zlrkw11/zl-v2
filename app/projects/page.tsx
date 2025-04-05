@@ -4,6 +4,7 @@ import Link from "next/link";
 import { useState } from "react";
 import Image from "next/image";
 import arrow from "../../public/assets/arrow.svg";
+import { motion } from "motion/react";
 
 const ArimoFont = Arimo({
   subsets: ["latin"],
@@ -81,7 +82,11 @@ const Project = ({
 
 const Projects = () => {
   return (
-    <div className="flex flex-col justify-center md:w-[800px] items-center text-gray-700 gap-8">
+    <motion.div
+      initial={{ opacity: 0, y: -50 }}
+      animate={{ opacity: 1, y: 0 }}
+      className="flex flex-col justify-center md:w-[800px] items-center text-gray-700 gap-8"
+    >
       <Project
         name="UASC Web"
         tech={["React", "TailwindCSS", "TypeScript", "Storybook", "Firebase"]}
@@ -118,7 +123,7 @@ const Projects = () => {
         link2="https://rayzhao.it.com/"
         time="2025.02"
       />
-    </div>
+    </motion.div>
   );
 };
 

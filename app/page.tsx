@@ -6,6 +6,7 @@ import { Arimo } from "next/font/google";
 import Nav from "./components/nav";
 import "../app/globals.css";
 import me from "../public/assets/r.jpg";
+import { motion } from "motion/react";
 
 const ArimoFont = Arimo({
   subsets: ["latin"],
@@ -14,7 +15,11 @@ const ArimoFont = Arimo({
 
 const About = () => {
   return (
-    <div className="flex flex-col items-center m-4 justify-center ">
+    <motion.div
+      initial={{ opacity: 0, y: -50 }}
+      animate={{ opacity: 1, y: 0 }}
+      className="flex flex-col items-center m-4 justify-center "
+    >
       <div className="flex flex-col md:w-[800px] gap-8">
         <div className="flex flex-col gap-4">
           <h1
@@ -58,7 +63,7 @@ const About = () => {
           <div className={`flex gap-4 ${ArimoFont.className} text-gray-700`}>
             <div className="flex flex-col gap-4">
               <p>In the software / web industry, I:</p>
-              <ul className=" border-red-600 list-disc pl-6 border-l-4 border-red-600">
+              <ul className="list-disc pl-6 border-l-4 border-red-600">
                 <li>
                   want to be a dev, not so much of a computer scientist (skill
                   issue tbh)
@@ -128,7 +133,7 @@ const About = () => {
           see more
         </div>
       </Link> */}
-    </div>
+    </motion.div>
   );
 };
 
