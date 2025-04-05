@@ -1,144 +1,135 @@
-import Link from "next/link";
+"use client";
+import Footer from "./components/footer";
 import Image from "next/image";
-import Globe from "../public/assets/globe.svg";
-import Bulb from "../public/assets/bulb.svg";
-import styles from "../app/styles/Home.module.css";
+import Link from "next/link";
 import { Arimo } from "next/font/google";
-import next from "../public/assets/next.svg";
-import js from "../public/assets/javascript.svg";
-import css from "../public/assets/css.svg";
-import ts from "../public/assets/typescript.svg";
-import uoa from "../public/assets/The University of Auckland New Zealand.svg";
+import Nav from "./components/nav";
+import "../app/globals.css";
+import me from "../public/assets/r.jpg";
+
 const ArimoFont = Arimo({
   subsets: ["latin"],
   weight: "500",
 });
-export default function Home() {
+
+const About = () => {
   return (
-    <div className="flex justify-center items-center flex-col m-4">
-      {/* <div className="md:ml-24 flex justify-center md:justify-normal md:text-2xl text-2xl mt-4 md:mt-12"> */}
-      {/* <ul className="flex flex-col md:gap-3 md:text-left">
-          <li className="group underline-offset-4">
-            <Link href="/about">
-              <span className="hover:underline">About</span>
-            </Link>
-            <span className="opacity-0 ml-4 group-hover:opacity-100 ">◂</span>
-          </li>
-          <li className="group underline-offset-4">
-            <span className="hover:underline">Projects</span>
-            <span className="opacity-0 ml-4 group-hover:opacity-100">◂</span>
-          </li>
-          <li className="group underline-offset-4">
-            <span className="hover:underline">Blogs</span>
-            <span className="opacity-0 ml-4 group-hover:opacity-100 ">◂</span>
-          </li>
-          <li className="group underline-offset-4">
-            <span className="hover:underline">Contact</span>
-            <span className="opacity-0 ml-4 group-hover:opacity-100 ">◂</span>
-          </li>{" "} */}
-      {/*
-     
-        
-        <div className="col-start-1 col-span-5 md:col-span-6 flex flex-col gap-4">
-          
-          <div className="gap-4">
-            <div className="flex border border-gray-300 rounded-lg p-2 ">
-              <p>Ray Zhao</p>
-            </div>{" "}
+    <div className="flex flex-col items-center m-4 justify-center ">
+      <div className="flex flex-col md:w-[800px] gap-8">
+        <div className="flex flex-col gap-4">
+          <h1
+            id="about-title-1"
+            className="text-3xl font-bold border-b-2 border-b-red-600"
+          >
+            about me<span className="text-3xl text-red-600">:</span>
+          </h1>
+
+          <div id="image-section" className="flex flex-col items-center">
+            <Image src={me} width={200} height={200} alt="a picture of sona" />
+            <p className={`text-gray-400 ${ArimoFont.className}`}>
+              this is not me actually
+            </p>
+          </div>
+          <div>
+            <p className={`${ArimoFont.className} text-gray-700`}>
+              Hello, I'm Ray Zhao. a third year compsi student (yea) at the{" "}
+              <Link href="https://www.auckland.ac.nz/en.html">
+                <span className="underline hover:text-gray-400">
+                  University of Auckland
+                </span>
+              </Link>{" "}
+              and a self-taught web-developer. I dedicate most of my leisure
+              time to <span className="font-bold">web & software</span>{" "}
+              development, not just for financial gain but because I'm driven by{" "}
+              <span className=" border-b-red-600  border-b-2">passion</span> to
+              create innovative solutions that can make some impact on the world
+              using my skills.
+            </p>
           </div>
         </div>
-    
-        <div className="col-start-6 md:col-start-7 col-span-1 flex ">
-          {" "}
-          <Link href="/about">
-            <button className="border border-gray-300 p-2 rounded-lg hover:text-red-600 hover:border-red-600">
-              search
-            </button>
-          </Link>
-        </div>
+        <div className={`flex flex-col gap-4`}>
+          <h1
+            id="about-title-1"
+            className="text-3xl font-bold border-b-2 border-b-red-600"
+          >
+            more about me<span className="text-3xl text-red-600">:</span>
+          </h1>
 
-        <div className="col-span-8 mb-8"></div>
-        <div
-          className={`col-span-4 ${styles["move-up-down2"]} md:col-span-2 w-200px justify-center h-[100px] flex items-center border border-gray-200 rounded-lg`}
-        >
-          <p>Web developer</p>
+          <div className={`flex gap-4 ${ArimoFont.className} text-gray-700`}>
+            <div className="flex flex-col gap-4">
+              <p>In the software / web industry, I:</p>
+              <ul className=" border-red-600 list-disc pl-6 border-l-4 border-red-600">
+                <li>
+                  want to be a dev, not so much of a computer scientist (skill
+                  issue tbh)
+                </li>
+                <li>
+                  am more heavy on the frontend (but secretly I really like
+                  LeetCode and want to do well in algorithm competitions){" "}
+                  <span>
+                    <Link
+                      className="text-gray-400 hover:text-gray-300 underline"
+                      href="/contents/leetcode"
+                    >
+                      {`>`} LeetCode Storage Room
+                    </Link>
+                  </span>
+                </li>
+                <li>
+                  learn things from others quite fast and develop something more
+                  on top of it
+                </li>
+              </ul>
+              <p className="font-bold">Fun facts:</p>
+              <ul className="border-r-4 border-red-600 bg-red-100 p-2">
+                <li>
+                  <span className=" text-black">1.</span> my favourite fruit is
+                  watermelon
+                </li>
+                <li>
+                  <span className=" text-black">2.</span> still on my way to
+                  break my 75kg bench PR
+                </li>
+                <li>
+                  <span className=" text-black">3.</span> I always wanted to be
+                  extremely competitve in a way that so I could prove myself
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
-        <div
-          className={`col-span-4 ${styles["move-up-down"]} md:col-span-2 w-200px justify-center h-[100px] flex items-center border border-gray-200 rounded-lg`}
-        >
-          <p>Fullstack</p>
-        </div>
-        <div
-          className={`col-span-4 ${styles["move-up-down2"]} md:col-span-2 w-200px h-[100px] justify-center flex items-center border border-gray-200 rounded-lg`}
-        >
-          <p>Project-focused</p>
-        </div>
-        <div
-          className={`col-span-4 ${styles["move-up-down"]} md:col-span-2 w-200px h-[100px] justify-center flex items-center border border-gray-200 rounded-lg`}
-        >
-          <p>Frontend</p>
-        </div>
-        <div
-          className={`col-span-4 ${styles["move-up-down2"]} md:col-span-2 w-200px justify-center h-[100px] flex items-center border border-gray-200 rounded-lg`}
-        >
-          <p>Visual Appeal</p>
-        </div>
-        <div
-          className={`col-span-4 ${styles["move-up-down2"]} md:col-span-2 w-200px justify-center h-[100px] flex items-center border border-gray-200 rounded-lg`}
-        >
-          <p>User Experience</p>
-        </div>
-        <div
-          className={`col-span-4 ${styles["move-up-down"]} md:col-span-2 w-200px h-[100px] justify-center flex items-center border border-gray-200 rounded-lg`}
-        >
-          <p>User Interface</p>
-        </div>
-        <div
-          className={`col-span-4 ${styles["move-up-down"]} md:col-span-2 w-200px h-[100px] justify-center flex items-center border border-gray-200 rounded-lg`}
-        >
-          <p>Responsive</p>
-        </div>
-        <div
-          className={`col-span-4 ${styles["move-up-down2"]} md:col-span-2 w-200px justify-center h-[100px] flex items-center border border-gray-200 rounded-lg`}
-        >
-          <Image src={next} alt="next_icon" width={50} height={50} />
-        </div>
-        <div
-          className={`col-span-4 ${styles["move-up-down2"]} md:col-span-2 w-200px justify-center h-[100px] flex items-center border border-gray-200 rounded-lg`}
-        >
-          <Image src={js} alt="next_icon" width={50} height={50} />
-        </div>
-        <div
-          className={`col-span-4 ${styles["move-up-down2"]} md:col-span-2 w-200px h-[100px] justify-center flex items-center border border-gray-200 rounded-lg`}
-        >
-          <Image src={ts} alt="next_icon" width={50} height={50} />
-        </div>
-        <div
-          className={`col-span-4 ${styles["move-up-down"]} md:col-span-2 w-200px h-[100px] justify-center flex items-center border border-gray-200 rounded-lg`}
-        >
-          <Image src={css} alt="next_icon" width={50} height={50} />
-        </div> 
-      </div>*/}{" "}
-      <div
-        className={`md:w-[800px] flex flex-col items-center justify-center gap-4 text-gray-700 ${ArimoFont.className}`}
-      >
-        <div className="w-[370px] md:w-[600px] border gap-4 flex flex-col h-[250px] bg-gray-200 bg-opacity-25 rounded-sm p-2">
-          <h1 className="text-4xl">Ray Zhao</h1>
-          <p>Determined admist indifference.</p>
-          <p>UNDER CONSTRUCTION...</p>
-        </div>
-        <div className="flex">
-          <Image src={uoa} alt="uoa_logo" width={160} height={160} />
-          <div className="flex flex-col mt-4">
-            {" "}
-            <h1 className="text-xl mt-2 font-bold">University of Auckland</h1>
-            <h1>3rd Year Computer Science Student</h1>
+        <div className="flex flex-col gap-4">
+          <h1 className="text-3xl font-bold border-b-2 border-b-red-600">
+            why did I make this website
+            <span className="text-3xl text-red-600">:</span>
+          </h1>
+          <div className={`${ArimoFont.className} text-gray-700 `}>
+            I’ve always wanted to create a website that's more than just a
+            portfolio for companies to browse — a personal space that reflects
+            individuality.<br></br>
+            <br></br>{" "}
+            <div className="border-l-8 border-gray-300 p-2 bg-gray-100">
+              I often think back to the early 2000s, when crafting your own
+              blogs on simple HTML pages was the norm — a raw, unfiltered form
+              of self-expression. Nowadays, it feels like everyone, myself
+              included, is caught up in the endless doom scroll of Instagram
+              reels.
+            </div>
+            <br></br> I also keep myself away from over-commercialized platforms
+            that are cluttered with Temu ads and unauthorized personal data
+            tracking algorithms. So here it is — a website designed to capture
+            the internet at its purest, a <span>digital space</span> that’s
+            personal, creative, and free.
           </div>
         </div>
       </div>
+      {/* <Link href="../about/personal">
+        <div className="border-black border-b-2 text-center w-[100px] mt-12 transition hover:border-red-600 hover:text-red-600">
+          see more
+        </div>
+      </Link> */}
     </div>
   );
-}
-{
-  /*  */
-}
+};
+
+export default About;

@@ -24,14 +24,6 @@ export default function RootLayout({
         <link rel="icon" href="/assets/zlnew.ico" sizes="any" />
       </head>
       <body className={`min-h-screen flex flex-col ${crimsonFont.className}`}>
-        <Link href="/" className="absolute mr-auto">
-          <h1
-            className="text-center md:text-2xl w-[100px] hidden hover:bg-red-600 items-center justify-center md:flex hover:text-white"
-            id="title"
-          >
-            {`<ZL />`}
-          </h1>
-        </Link>
         <div className="flex items-center justify-center w-full mb-4">
           <Nav />
         </div>
