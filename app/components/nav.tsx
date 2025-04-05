@@ -32,19 +32,22 @@ const Nav = () => {
         <Link className="hover:underline hover:text-gray-600" href="/contents">
           Contents
         </Link>{" "}
-        <Link className="ml-8" href="/cv">
-          <Image src={cv} alt="CV" width={31} height={31} className="" />
-        </Link>
-        <Link className="" href="https://www.linkedin.com/in/ray-zhao-kaede11/">
-          <Image
-            src={linkedin}
-            alt="Linkedin"
-            width={31}
-            height={31}
-            className=""
-          />
-        </Link>
       </div>{" "}
+      <Link className="ml-16" href="/cv">
+        <Image src={cv} alt="CV" width={35} height={35} className="" />
+      </Link>
+      <Link
+        className="ml-4"
+        href="https://www.linkedin.com/in/ray-zhao-kaede11/"
+      >
+        <Image
+          src={linkedin}
+          alt="Linkedin"
+          width={33}
+          height={33}
+          className=""
+        />
+      </Link>
     </div>
   );
 };
