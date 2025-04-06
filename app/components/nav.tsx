@@ -33,20 +33,8 @@ const Nav = () => {
           Contents
         </Link>{" "}
       </div>{" "}
-      <Link className="ml-16" href="/cv">
+      <Link className="ml-8" href="/cv">
         <Image src={cv} alt="CV" width={35} height={35} className="" />
-      </Link>
-      <Link
-        className="ml-4"
-        href="https://www.linkedin.com/in/ray-zhao-kaede11/"
-      >
-        <Image
-          src={linkedin}
-          alt="Linkedin"
-          width={33}
-          height={33}
-          className=""
-        />
       </Link>
     </div>
   );
