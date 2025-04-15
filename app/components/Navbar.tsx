@@ -8,6 +8,10 @@ import {
 import { Bars3Icon, BellIcon, XMarkIcon } from "@heroicons/react/24/outline";
 import { Arimo } from "next/font/google";
 import { usePathname } from "next/navigation";
+import Link from "next/link";
+import Image from "next/image";
+import cv from "../../public/assets/file-text-clean-svgrepo-com.svg";
+
 const ArimoFont = Arimo({
   subsets: ["latin"],
   weight: "500",
@@ -59,13 +63,22 @@ export default function Navbar() {
                     {item.name}
                   </a>
                 ))}
+                <Link className="" href="/cv">
+                  <Image
+                    src={cv}
+                    alt="CV"
+                    width={35}
+                    height={35}
+                    className=""
+                  />
+                </Link>
               </div>
             </div>
           </div>
         </div>
       </div>
 
-      <DisclosurePanel className="sm:hidden">
+      <DisclosurePanel className="sm:hidden flex-col flex">
         <div className="space-y-1 px-2 pt-2 pb-3">
           {navigation.map((item) => (
             <DisclosureButton
@@ -82,8 +95,11 @@ export default function Navbar() {
             >
               {item.name}
             </DisclosureButton>
-          ))}
-        </div>
+          ))}{" "}
+        </div>{" "}
+        <Link className="ml-4" href="/cv">
+          <Image src={cv} alt="CV" width={35} height={35} className="" />
+        </Link>
       </DisclosurePanel>
     </Disclosure>
   );
