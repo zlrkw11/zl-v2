@@ -1,3 +1,4 @@
+"use client";
 import {
   Disclosure,
   DisclosureButton,
@@ -6,6 +7,7 @@ import {
 } from "@headlessui/react";
 import { Bars3Icon, BellIcon, XMarkIcon } from "@heroicons/react/24/outline";
 import { Arimo } from "next/font/google";
+import { usePathname } from "next/navigation";
 const ArimoFont = Arimo({
   subsets: ["latin"],
   weight: "500",
@@ -23,6 +25,7 @@ function classNames(...classes: string[]) {
 }
 
 export default function Navbar() {
+  const pathName = usePathname();
   return (
     <Disclosure as="nav" className={`${ArimoFont.className}`}>
       <div className="mx-auto w-screen px-2 sm:px-6 lg:px-8 bg-gray-200 bg-opacity-55">
@@ -47,9 +50,9 @@ export default function Navbar() {
                     href={item.href}
                     aria-current={item.current ? "page" : undefined}
                     className={classNames(
-                      item.current
+                      pathName === item.href
                         ? "bg-red-900 text-gray-100"
-                        : "text-gray-700 hover:bg-gray-700 hover:text-white",
+                        : "text-gray-700 hover:bg-gray-400 hover:text-white",
                       "rounded-md px-3 py-2 text-sm font-medium"
                     )}
                   >
@@ -71,9 +74,9 @@ export default function Navbar() {
               href={item.href}
               aria-current={item.current ? "page" : undefined}
               className={classNames(
-                item.current
+                pathName === item.href
                   ? "bg-red-900 text-gray-100"
-                  : "text-gray-700 hover:bg-gray-700 hover:text-white",
+                  : "text-gray-700 hover:bg-gray-400 hover:text-white",
                 "block rounded-md px-3 py-2 text-base font-medium"
               )}
             >
