@@ -1,6 +1,8 @@
+"use client";
 import Link from "next/link";
 import { Arimo } from "next/font/google";
 import { Crimson_Text } from "next/font/google";
+import { motion } from "motion/react";
 
 const ArimoFont = Arimo({
   subsets: ["latin"],
@@ -14,7 +16,9 @@ const crimsonFont = Crimson_Text({
 
 const credits = () => {
   return (
-    <div
+    <motion.div
+      initial={{ opacity: 0, y: -50 }}
+      animate={{ opacity: 1, y: 0 }}
       className={`md:w-[800px] m-4 w-[370px] gap-4 items-center flex flex-col ${ArimoFont.className}`}
     >
       <h1
@@ -48,7 +52,7 @@ const credits = () => {
       >
         <p>ericzheng.co.nz</p>
       </Link>
-    </div>
+    </motion.div>
   );
 };
 

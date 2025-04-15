@@ -43,7 +43,7 @@ const Problem = ({ problem, index }: Props) => {
         difficulty === "medium" && "border-l-orange-400"
       } ${
         difficulty === "hard" && "border-l-red-600"
-      } border-l-2 col-span-1 m-1 p-2 gap-2 flex flex-col h-full bg-gray-100 bg-opacity-60 rounded-r-sm`}
+      } border-l-2 col-span-1 m-1 p-2 gap-2 flex flex-col h-full bg-gray-100 bg-opacity-60 rounded-r-sm animate-slide-in-left`}
     >
       <Link
         href={`/contents/leetcode/${id}`}

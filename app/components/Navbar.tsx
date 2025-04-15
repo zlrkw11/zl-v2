@@ -45,7 +45,7 @@ export default function Navbar() {
               />
             </DisclosureButton>
           </div>
-          <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
+          <div className="flex flex-1 sm:items-stretch sm:justify-start">
             <div className="hidden sm:ml-6 sm:block">
               <div className="flex space-x-4">
                 {navigation.map((item) => (
@@ -63,22 +63,16 @@ export default function Navbar() {
                     {item.name}
                   </a>
                 ))}
-                <Link className="" href="/cv">
-                  <Image
-                    src={cv}
-                    alt="CV"
-                    width={35}
-                    height={35}
-                    className=""
-                  />
-                </Link>
               </div>
-            </div>
+            </div>{" "}
+            <Link className="w-8 ml-auto sm:block hidden" href="/cv">
+              <Image src={cv} alt="CV" width={35} height={35} className="" />
+            </Link>
           </div>
         </div>
       </div>
 
-      <DisclosurePanel className="sm:hidden flex-col flex">
+      <DisclosurePanel className="sm:hidden flex-col flex bg-gray-200 bg-opacity-55">
         <div className="space-y-1 px-2 pt-2 pb-3">
           {navigation.map((item) => (
             <DisclosureButton
@@ -97,7 +91,7 @@ export default function Navbar() {
             </DisclosureButton>
           ))}{" "}
         </div>{" "}
-        <Link className="ml-4" href="/cv">
+        <Link className="ml-4 w-8 mb-4" href="/cv">
           <Image src={cv} alt="CV" width={35} height={35} className="" />
         </Link>
       </DisclosurePanel>

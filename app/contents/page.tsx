@@ -1,6 +1,8 @@
+"use client";
 import { Arimo } from "next/font/google";
 import { Crimson_Text } from "next/font/google";
 import Link from "next/link";
+import { motion } from "motion/react";
 
 const ArimoFont = Arimo({
   subsets: ["latin"],
@@ -34,7 +36,9 @@ const Card = ({
 
 const Menu = () => {
   return (
-    <div
+    <motion.div
+      initial={{ opacity: 0, y: -50 }}
+      animate={{ opacity: 1, y: 0 }}
       className={`flex flex-col justify-center md:items-center ${ArimoFont.className} text-gray-700`}
     >
       <div className="md:w-[800px] flex flex-col items-center gap-4">
@@ -50,7 +54,7 @@ const Menu = () => {
         <h1 className="text-lg text-black m-4">
           <span className="text-red-600">./</span>Ground_Level
         </h1>
-        <Card title="Home" description="As what the name says.." link="/" />
+        {/* <Card title="Home" description="As what the name says.." link="/" /> */}
         <Card
           title="About"
           description="A page for the readers to know more about me and the background of this website."
@@ -108,7 +112,7 @@ const Menu = () => {
           </p>
         </Link>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

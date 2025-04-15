@@ -107,6 +107,12 @@ const PatchNotes = () => {
           date="2025/04/01"
           des="Added a new background inspired by Taroj1205. Restyled most of the card-like components on pages: Projects, Contents, LeetCode.
           Implemented animations for certain elements to move when on hover and shifted the aesthetic of the website to be more modern."
+        />{" "}
+        <Note
+          ver="1.1.0"
+          date="2025/04/16"
+          des="Implemented intro animations on all pages using Motion & CSS (Blogs). Created a new navbar with a more sleek look to match the 
+          theme."
         />
       </ul>
     </div>

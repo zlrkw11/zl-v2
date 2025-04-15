@@ -24,7 +24,9 @@ export default function RootLayout({
       <head>
         <link rel="icon" href="/assets/zlnew.ico" sizes="any" />
       </head>
-      <body className={`min-h-screen flex flex-col ${crimsonFont.className}`}>
+      <body
+        className={`min-h-screen flex flex-col ${crimsonFont.className} overflow-x-hidden`}
+      >
         <div className="flex items-center justify-center w-full mb-4">
           <Navbar />
         </div>

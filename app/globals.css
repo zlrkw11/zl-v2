@@ -23,3 +23,18 @@ body {
   background-color: #e53935;
   color: #fff;
 }
+
+@keyframes slide-in-left {
+  0% {
+    transform: translateX(-50%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.animate-slide-in-left {
+  animation: slide-in-left 0.4s ease-in-out forwards;
+}
