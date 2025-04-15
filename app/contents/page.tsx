@@ -54,7 +54,7 @@ const Menu = () => {
         <Card
           title="About"
           description="A page for the readers to know more about me and the background of this website."
-          link="/about"
+          link="/"
         />
         <Card
           title="Projects"
