@@ -24,9 +24,9 @@ body {
   color: #fff;
 }
 
-@keyframes slide-in-left {
+@keyframes slide-down {
   0% {
-    transform: translateX(-50%);
+    transform: translateY(-50%);
     opacity: 0;
   }
   100% {
@@ -35,6 +35,6 @@ body {
   }
 }
 
-.animate-slide-in-left {
-  animation: slide-in-left 0.4s ease-in-out forwards;
+.animate-slide-down {
+  animation: slide-down 0.2s ease-in-out forwards;
 }

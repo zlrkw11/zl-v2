@@ -8,6 +8,7 @@ import lc from "../../../public/assets/leetcode.svg";
 import Image from "next/image";
 import { useRouter, useSearchParams } from "next/navigation";
 import { Suspense } from "react";
+import { motion } from "motion/react";
 // Problem data
 import { problems1 } from "@/data/problems/problems1";
 import { problems2 } from "@/data/problems/problems2";
@@ -38,7 +39,9 @@ const Problem = ({ problem, index }: Props) => {
   const { id, title, label, difficulty } = problem;
   const labelCount = label.length;
   return (
-    <div
+    <motion.div
+      initial={{ opacity: 0, y: -50 }}
+      animate={{ opacity: 1, y: 0 }}
       className={`${difficulty === "easy" && "border-l-green-600"} ${
         difficulty === "medium" && "border-l-orange-400"
       } ${
@@ -89,7 +92,7 @@ const Problem = ({ problem, index }: Props) => {
           </div>
         ))}
       </div>
-    </div>
+    </motion.div>
   );
 };
 
