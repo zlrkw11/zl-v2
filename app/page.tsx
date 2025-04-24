@@ -24,20 +24,20 @@ const About = () => {
         <div className="flex flex-col gap-4">
           <h1
             id="about-title-1"
-            className="text-3xl dark:text-gray-400 font-bold border-b-2 border-b-red-600"
+            className="text-3xl dark:text-neutral-300 font-bold border-b-2 border-b-red-600"
           >
             About me<span className="text-3xl text-red-600">:</span>
           </h1>
 
           <div id="image-section" className="flex flex-col items-center">
             <Image src={me} width={200} height={200} alt="a picture of sona" />
-            <p className={`text-gray-400 ${ArimoFont.className}`}>
+            <p className={`text-neutral-600 ${ArimoFont.className}`}>
               this is not me actually
             </p>
           </div>
           <div>
             <p
-              className={`${ArimoFont.className} text-gray-700 dark:text-gray-400`}
+              className={`${ArimoFont.className} text-gray-700 dark:text-gray-300`}
             >
               Hello, I'm Ray Zhao. a third year compsi student (yea) at the{" "}
               <Link href="https://www.auckland.ac.nz/en.html">
@@ -57,13 +57,13 @@ const About = () => {
         <div className={`flex flex-col gap-4`}>
           <h1
             id="about-title-1"
-            className="text-3xl font-bold border-b-2 border-b-red-600 dark:text-gray-400"
+            className="text-3xl font-bold border-b-2 border-b-red-600 dark:text-neutral-300"
           >
             More about me<span className="text-3xl text-red-600">:</span>
           </h1>
 
           <div
-            className={`flex gap-4 ${ArimoFont.className} text-gray-700 dark:text-gray-400`}
+            className={`flex gap-4 ${ArimoFont.className} text-gray-700 dark:text-gray-300`}
           >
             <div className="flex flex-col gap-4">
               <p>In the software / web industry, I:</p>
@@ -90,31 +90,30 @@ const About = () => {
                 </li>
               </ul>
               <p className="font-bold">Fun facts:</p>
-              <ul className="border-r-4 dark:border-red-500 border-red-600 bg-red-100 dark:bg-red-900 dark:text-gray-400 p-2">
+              <ul className="border-r-4 dark:border-red-500 border-red-600 bg-red-100 dark:bg-red-900 dark:text-gray-300 p-2">
                 <li>
-                  <span className=" text-black dark:text-gray-400">1.</span> my
-                  favourite fruit is watermelon
+                  <span className=" text-black dark:text-gray-300">1.</span> my
+                  favourite anime is Slam Dunk
                 </li>
                 <li>
-                  <span className=" text-black dark:text-gray-400">2.</span>{" "}
+                  <span className=" text-black dark:text-gray-300">2.</span>{" "}
                   still on my way to break my 75kg bench PR
                 </li>
                 <li>
-                  <span className=" text-black dark:text-gray-400">3.</span> I
-                  always wanted to be extremely competitve in a way that so I
-                  could prove myself
+                  <span className=" text-black dark:text-gray-300">3.</span> I
+                  enjoy night walks alone
                 </li>
               </ul>
             </div>
           </div>
         </div>
         <div className="flex flex-col gap-4">
-          <h1 className="text-3xl font-bold border-b-2 border-b-red-600  dark:text-gray-400">
+          <h1 className="text-3xl font-bold border-b-2 border-b-red-600  dark:text-neutral-300">
             Why did I make this website
             <span className="text-3xl text-red-600">:</span>
           </h1>
           <div
-            className={`${ArimoFont.className} text-gray-700 dark:text-gray-400`}
+            className={`${ArimoFont.className} text-gray-700 dark:text-gray-300`}
           >
             I’ve always wanted to create a website that's more than just a
             portfolio for companies to browse — a personal space that reflects
