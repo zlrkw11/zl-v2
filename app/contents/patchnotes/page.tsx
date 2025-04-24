@@ -115,7 +115,8 @@ const PatchNotes = () => {
           date="2025/04/16"
           des="Implemented intro animations on all pages using Motion & CSS (Blogs). Created a new navbar with a more sleek look to match the 
           theme."
-        />
+        />{" "}
+        <Note ver="1.1.1" date="2025/04/24" des="Implemented dark mode." />
       </ul>
     </div>
   );
