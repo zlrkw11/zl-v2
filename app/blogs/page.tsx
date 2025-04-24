@@ -25,7 +25,7 @@ const Blogs = async () => {
       </div>
 
       <p
-        className={`mb-2 md:max-w-[800px] ${ArimoFont.className} dark:text-neutral-400`}
+        className={`mb-2 md:max-w-[800px] ${ArimoFont.className} dark:text-gray-300`}
       >
         I'm not a person who regularly expresses their thoughts. But I do have a
         lot of them going on. I believe that thoughts are a valuable thing

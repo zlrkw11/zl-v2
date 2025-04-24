@@ -39,7 +39,7 @@ const Project = ({
     >
       <h1 className="border-b-2 border-dashed border-b-red-600 flex text-gray-500 text-xl m-2 dark:text-neutral-300">
         {name}
-        <span className="ml-auto text-lg mt-auto text-gray-400 dark:text-neutral-800">
+        <span className="ml-auto text-lg mt-auto text-gray-400 dark:text-neutral-500">
           {time}
         </span>
       </h1>
@@ -53,14 +53,14 @@ const Project = ({
           </li>
         ))}
       </ul>
-      <p className="m-2 border-l-8 border-l-gray-300 dark:border-l-neutral-400 dark:text-neutral-300 p-2 bg-gray-200 dark:bg-neutral-600 rounded-r-sm bg-opacity-50">
+      <p className="m-2 border-l-8 border-l-gray-300 dark:border-l-neutral-300 dark:text-neutral-300 p-2 bg-gray-200 dark:bg-neutral-600 rounded-r-sm bg-opacity-50">
         {des}
       </p>
       <div className="m-2 border-l-8 border-l-gray-300 p-2 bg-gray-200 rounded-r-sm bg-opacity-50 dark:bg-neutral-600">
         <div className="text-black text-nowrap md:flex">
           <p className="dark:text-neutral-300">Github repo:</p>
           <Link
-            className="text-gray-500 dark:text-neutral-400 dark:hover:text-neutral-300 hover:text-red-600 md:ml-2"
+            className="text-gray-500 dark:text-neutral-800 underline dark:hover:text-neutral-400 hover:text-red-600 md:ml-2"
             href={link1}
           >
             {link1}
@@ -70,7 +70,7 @@ const Project = ({
           <div className="text-black md:flex">
             <p className="dark:text-neutral-300">Visit:</p>
             <Link
-              className="text-gray-500 dark:text-neutral-400 dark:hover:text-neutral-300 hover:text-red-600 md:ml-2"
+              className="text-gray-500 dark:text-neutral-800 underline dark:hover:text-neutral-400 hover:text-red-600 md:ml-2"
               href={link2}
             >
               {link2}
