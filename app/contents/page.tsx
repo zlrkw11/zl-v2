@@ -26,7 +26,9 @@ const Card = ({
   return (
     <div className="border-b-2 border-b-red-600 dark:text-neutral-500 p-2 m-2 gap-2 flex flex-col w-[370px] md:min-w-[600px] dark:bg-neutral-700 bg-gray-100 bg-opacity-50 rounded-t-md border-2 dark:border-t-0 dark:border-l-0 dark:border-r-0 dark:border-b-2 transition-transform hover:translate-x-[10px] duration-300 ease-in-out">
       <Link href={link}>
-        <h1 className="hover:text-red-600 dark:text-neutral-300">./{title}</h1>
+        <h1 className="hover:text-red-600 dark:text-neutral-300 dark:hover:text-neutral-400 dark:hover:underline">
+          ./{title}
+        </h1>
       </Link>
 
       <div className="">{description}</div>
