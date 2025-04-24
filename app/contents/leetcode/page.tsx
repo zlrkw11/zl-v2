@@ -46,7 +46,7 @@ const Problem = ({ problem, index }: Props) => {
         difficulty === "medium" && "border-l-orange-400"
       } ${
         difficulty === "hard" && "border-l-red-600"
-      } border-l-2 col-span-1 m-1 p-2 gap-2 flex flex-col h-full bg-gray-100 bg-opacity-60 rounded-r-sm animate-slide-in-left`}
+      } border-l-2 col-span-1 m-1 p-2 gap-2 flex flex-col h-full bg-gray-100 dark:bg-neutral-700 dark:text-neutral-300 bg-opacity-60 rounded-r-sm animate-slide-in-left`}
     >
       <Link
         href={`/contents/leetcode/${id}`}
@@ -86,7 +86,7 @@ const Problem = ({ problem, index }: Props) => {
         {label.map((l, i) => (
           <div
             key={i}
-            className={`bg-gray-200 text-gray-700 rounded-none px-2 md:text-based text-center text-nowrap`}
+            className={`bg-gray-200 text-gray-700 dark:text-neutral-400 dark:bg-neutral-600 rounded-none px-2 md:text-based text-center text-nowrap`}
           >
             {l}
           </div>
@@ -128,7 +128,9 @@ const LeetCode = () => {
     <div className="flex flex-col items-center gap-4">
       <div className="flex gap-2">
         <Image src={lc} width={30} height={30} alt="LeetCode" />
-        <h1 className={`text-2xl flex ${crimsonFont.className} mt-3`}>
+        <h1
+          className={`text-2xl flex ${crimsonFont.className} mt-3 dark:text-neutral-400`}
+        >
           LeetCode Problems
         </h1>
       </div>
@@ -141,7 +143,9 @@ const LeetCode = () => {
         <div className="flex items-center md:w-[800px] w-[370px] mt-4 md:text-lg justify-center">
           <button
             onClick={Prev}
-            className={`mr-8  ${curr === 1 && `text-gray-300`}`}
+            className={`mr-8 dark:text-neutral-400  ${
+              curr === 1 && `text-gray-300 dark:text-neutral-700`
+            } dark:text-neutral-400`}
           >
             -1
           </button>
@@ -150,7 +154,9 @@ const LeetCode = () => {
           </h1>
           <button
             onClick={Next}
-            className={`ml-8 ${curr === totalPages && `text-gray-300`}`}
+            className={`ml-8 dark:text-neutral-400 ${
+              curr === totalPages && `text-gray-300 dark:text-neutral-700`
+            }`}
           >
             +1
           </button>
