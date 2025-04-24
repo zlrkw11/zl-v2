@@ -24,9 +24,9 @@ const About = () => {
         <div className="flex flex-col gap-4">
           <h1
             id="about-title-1"
-            className="text-3xl font-bold border-b-2 border-b-red-600"
+            className="text-3xl dark:text-gray-400 font-bold border-b-2 border-b-red-600"
           >
-            about me<span className="text-3xl text-red-600">:</span>
+            About me<span className="text-3xl text-red-600">:</span>
           </h1>
 
           <div id="image-section" className="flex flex-col items-center">
@@ -36,7 +36,9 @@ const About = () => {
             </p>
           </div>
           <div>
-            <p className={`${ArimoFont.className} text-gray-700`}>
+            <p
+              className={`${ArimoFont.className} text-gray-700 dark:text-gray-400`}
+            >
               Hello, I'm Ray Zhao. a third year compsi student (yea) at the{" "}
               <Link href="https://www.auckland.ac.nz/en.html">
                 <span className="underline hover:text-gray-400">
@@ -55,12 +57,14 @@ const About = () => {
         <div className={`flex flex-col gap-4`}>
           <h1
             id="about-title-1"
-            className="text-3xl font-bold border-b-2 border-b-red-600"
+            className="text-3xl font-bold border-b-2 border-b-red-600 dark:text-gray-400"
           >
-            more about me<span className="text-3xl text-red-600">:</span>
+            More about me<span className="text-3xl text-red-600">:</span>
           </h1>
 
-          <div className={`flex gap-4 ${ArimoFont.className} text-gray-700`}>
+          <div
+            className={`flex gap-4 ${ArimoFont.className} text-gray-700 dark:text-gray-400`}
+          >
             <div className="flex flex-col gap-4">
               <p>In the software / web industry, I:</p>
               <ul className="list-disc pl-6 border-l-4 border-red-600">
@@ -86,34 +90,37 @@ const About = () => {
                 </li>
               </ul>
               <p className="font-bold">Fun facts:</p>
-              <ul className="border-r-4 border-red-600 bg-red-100 p-2">
+              <ul className="border-r-4 dark:border-red-500 border-red-600 bg-red-100 dark:bg-red-900 dark:text-gray-400 p-2">
                 <li>
-                  <span className=" text-black">1.</span> my favourite fruit is
-                  watermelon
+                  <span className=" text-black dark:text-gray-400">1.</span> my
+                  favourite fruit is watermelon
                 </li>
                 <li>
-                  <span className=" text-black">2.</span> still on my way to
-                  break my 75kg bench PR
+                  <span className=" text-black dark:text-gray-400">2.</span>{" "}
+                  still on my way to break my 75kg bench PR
                 </li>
                 <li>
-                  <span className=" text-black">3.</span> I always wanted to be
-                  extremely competitve in a way that so I could prove myself
+                  <span className=" text-black dark:text-gray-400">3.</span> I
+                  always wanted to be extremely competitve in a way that so I
+                  could prove myself
                 </li>
               </ul>
             </div>
           </div>
         </div>
         <div className="flex flex-col gap-4">
-          <h1 className="text-3xl font-bold border-b-2 border-b-red-600">
-            why did I make this website
+          <h1 className="text-3xl font-bold border-b-2 border-b-red-600  dark:text-gray-400">
+            Why did I make this website
             <span className="text-3xl text-red-600">:</span>
           </h1>
-          <div className={`${ArimoFont.className} text-gray-700 `}>
+          <div
+            className={`${ArimoFont.className} text-gray-700 dark:text-gray-400`}
+          >
             I’ve always wanted to create a website that's more than just a
             portfolio for companies to browse — a personal space that reflects
             individuality.<br></br>
             <br></br>{" "}
-            <div className="border-l-8 border-gray-300 p-2 bg-gray-100">
+            <div className="border-l-8 border-gray-300 dark:border-neutral-400 p-2 bg-gray-100 dark:bg-neutral-700">
               I often think back to the early 2000s, when crafting your own
               blogs on simple HTML pages was the norm — a raw, unfiltered form
               of self-expression. Nowadays, it feels like everyone, myself

@@ -1,8 +1,7 @@
 import Footer from "./components/footer";
 import { Crimson_Text } from "next/font/google";
-import Link from "next/link";
-import Nav from "./components/nav";
 import Navbar from "./components/Navbar";
+import ThemeToggle from "./components/ThemeToggle";
 import "./globals.css";
 const crimsonFont = Crimson_Text({
   subsets: ["latin"],
@@ -30,7 +29,10 @@ export default function RootLayout({
         <div className="flex items-center justify-center w-full mb-4">
           <Navbar />
         </div>
-        <div className="items-center flex flex-col">{children}</div>
+        <div className="items-center flex flex-col">
+          <ThemeToggle />
+          {children}
+        </div>
         <Footer />
       </body>
     </html>
