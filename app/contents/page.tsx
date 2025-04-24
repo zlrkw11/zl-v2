@@ -31,7 +31,7 @@ const Card = ({
         </h1>
       </Link>
 
-      <div className="">{description}</div>
+      <div className="dark:text-neutral-400">{description}</div>
     </div>
   );
 };
