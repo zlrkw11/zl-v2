@@ -22,9 +22,9 @@ export default function ThemeToggle() {
   return (
     <button onClick={toggleTheme}>
       {isDark ? (
-        <SunIcon className="size-8 text-neutral-300" />
+        <MoonIcon className="size-8 text-neutral-300" />
       ) : (
-        <MoonIcon className="size-8 text-neutral-400" />
+        <SunIcon className="size-8 text-neutral-400" />
       )}
     </button>
   );
