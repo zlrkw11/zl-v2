@@ -34,13 +34,13 @@ export default function Navbar() {
   const pathName = usePathname();
   return (
     <div className={`${ArimoFont.className} w-full`}>
-      <div className="mx-auto w-full px-2 sm:px-6 lg:px-8 bg-gray-200 dark:bg-neutral-800 bg-opacity-55">
+      <div className="mx-auto w-full px-8 bg-gray-200 dark:bg-neutral-800 bg-opacity-55">
         <div className="relative flex h-16 items-center justify-between">
-          <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
+          <div className="absolute inset-y-0 left-0 flex items-center md:hidden">
             {/* Mobile menu button*/}
             <button
               onClick={toggleMenu}
-              className="group relative inline-flex items-center ml-4 justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white duration-200 focus:ring-2 focus:ring-gray-300 focus:outline-hidden focus:ring-inset"
+              className="group relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 dark:hover:bg-neutral-600 hover:bg-gray-700 hover:text-white duration-200 focus:ring-2 focus:ring-gray-300 focus:outline-hidden focus:ring-inset"
             >
               <span className="absolute -inset-0.5" />
               <span className="sr-only">Open main menu</span>
