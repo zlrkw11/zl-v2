@@ -42,37 +42,44 @@ const Problem = ({ problem, index }: Props) => {
     <motion.div
       initial={{ opacity: 0, y: -50 }}
       animate={{ opacity: 1, y: 0 }}
-      className={`${difficulty === "easy" && "border-l-green-600"} ${
-        difficulty === "medium" && "border-l-orange-400"
+      className={`${
+        difficulty === "easy" && "border-l-green-600 dark:border-l-green-800"
       } ${
-        difficulty === "hard" && "border-l-red-600"
+        difficulty === "medium" &&
+        "border-l-orange-400 dark:border-l-orange-800"
+      } ${
+        difficulty === "hard" && "border-l-red-600 dark:border-l-red-800"
       } border-l-2 col-span-1 m-1 p-2 gap-2 flex flex-col h-full bg-gray-100 dark:bg-neutral-700 dark:text-neutral-300 bg-opacity-60 rounded-r-sm animate-slide-in-left`}
     >
       <Link
         href={`/contents/leetcode/${id}`}
         className="flex justify-between items-center"
       >
-        <h1 className="hover:text-red-600 hover:underline">
+        <h1 className="hover:text-red-600 hover:underline dark:hover:text-neutral-400">
           <span className="font-bold mr-1">{id}.</span>
           {title}
         </h1>
         <div className={`${ArimoFont.className} text-sm`}>
           {difficulty === "easy" && (
-            <div className=" text-green-500 rounded-full">
+            <div className=" text-green-500 rounded-full dark:text-neutral-300">
               <p className="hidden md:inline-block px-4 italic">EASY</p>
-              <p className="md:hidden text-green-600">E</p>
+              <p className="md:hidden text-green-600 dark:text-neutral-300">
+                E
+              </p>
             </div>
           )}{" "}
           {difficulty === "medium" && (
-            <div className=" text-orange-400 rounded-full">
+            <div className=" text-orange-400 rounded-full dark:text-neutral-300">
               <p className="hidden md:inline-block italic px-4">MEDIUM</p>
-              <p className="md:hidden text-orange-400">M</p>
+              <p className="md:hidden text-orange-400 dark:text-neutral-300">
+                M
+              </p>
             </div>
           )}{" "}
           {difficulty === "hard" && (
-            <div className=" text-red-600 rounded-full">
+            <div className=" text-red-600 rounded-full dark:text-neutral-300">
               <p className="hidden md:inline-block italic px-4">HARD</p>
-              <p className="md:hidden  text-red-600">H</p>
+              <p className="md:hidden  text-red-600 dark:text-neutral-300">H</p>
             </div>
           )}
         </div>

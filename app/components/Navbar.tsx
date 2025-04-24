@@ -7,6 +7,8 @@ import { motion } from "motion/react";
 import Link from "next/link";
 import Image from "next/image";
 import cv from "../../public/assets/file-text-clean-svgrepo-com.svg";
+import { DocumentIcon } from "@heroicons/react/16/solid";
+import ThemeToggle from "./ThemeToggle";
 
 const ArimoFont = Arimo({
   subsets: ["latin"],
@@ -32,7 +34,7 @@ export default function Navbar() {
   const pathName = usePathname();
   return (
     <div className={`${ArimoFont.className} w-full`}>
-      <div className="mx-auto w-full px-2 sm:px-6 lg:px-8 bg-gray-200 bg-opacity-55">
+      <div className="mx-auto w-full px-2 sm:px-6 lg:px-8 bg-gray-200 dark:bg-neutral-800 bg-opacity-55">
         <div className="relative flex h-16 items-center justify-between">
           <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
             {/* Mobile menu button*/}
@@ -48,8 +50,8 @@ export default function Navbar() {
               />
             </button>
           </div>
-          <div className="flex flex-1 sm:items-stretch sm:justify-start">
-            <div className="hidden sm:ml-6 sm:block">
+          <div className="flex flex-1 sm:justify-start">
+            <div className="hidden md:flex items-center">
               <div className="flex space-x-4">
                 {navigation.map((item) => (
                   <a
@@ -58,8 +60,8 @@ export default function Navbar() {
                     aria-current={item.current ? "page" : undefined}
                     className={classNames(
                       pathName === item.href
-                        ? "bg-red-900 text-gray-100"
-                        : "text-gray-700 hover:bg-gray-400 hover:text-white",
+                        ? "bg-red-900 text-neutral-100"
+                        : "text-gray-700 dark:text-neutral-500 hover:bg-gray-400 dark:hover:bg-neutral-700 hover:text-white",
                       "rounded-md px-3 py-2 text-sm font-medium"
                     )}
                   >
@@ -68,9 +70,12 @@ export default function Navbar() {
                 ))}
               </div>
             </div>{" "}
-            <Link className="w-8 ml-auto sm:block hidden" href="/cv">
-              <Image src={cv} alt="CV" width={35} height={35} className="" />
-            </Link>
+            <div className="ml-auto md:flex hidden md:gap-4">
+              <ThemeToggle />
+              <Link className="" href="/cv">
+                <DocumentIcon className="size-8 text-center dark:text-neutral-300 text-neutral-400 mt-0.5" />
+              </Link>
+            </div>
           </div>
         </div>
       </div>
@@ -79,9 +84,9 @@ export default function Navbar() {
           initial={{ opacity: 0, y: -45 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.3 }}
-          className="sm:hidden flex-col flex bg-gray-200 bg-opacity-55"
+          className="sm:hidden flex-col flex bg-gray-200 bg-opacity-55 dark:bg-neutral-800"
         >
-          <div className="space-y-1 px-2 pt-2 pb-3 gap-1 flex flex-col">
+          <div className="space-y-1 px-2 pt-2 pb-3 flex flex-col">
             {navigation.map((item) => (
               <Link href={item.href} key={item.name}>
                 <div
@@ -90,7 +95,7 @@ export default function Navbar() {
                   className={classNames(
                     pathName === item.href
                       ? "bg-red-900 text-gray-100"
-                      : "text-gray-700 hover:bg-gray-400 hover:opacity-75 hover:text-white",
+                      : "text-gray-700 dark:text-neutral-500 hover:bg-gray-400 dark:hover:bg-neutral-700  hover:opacity-75 hover:text-white",
                     "block rounded-md px-3 py-2 text-base font-medium"
                   )}
                 >
@@ -99,9 +104,12 @@ export default function Navbar() {
               </Link>
             ))}{" "}
           </div>{" "}
-          <Link className="ml-4 w-8 mb-4" href="/cv">
-            <Image src={cv} alt="CV" width={35} height={35} className="" />
-          </Link>
+          <div className="ml-4 w-8 pb-4 flex">
+            <ThemeToggle />
+            <Link href="/cv">
+              <DocumentIcon className="size-8 ml-2 dark:text-neutral-300 text-neutral-400" />
+            </Link>
+          </div>
         </motion.div>
       )}
     </div>
