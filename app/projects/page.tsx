@@ -34,31 +34,33 @@ const Project = ({
   };
   return (
     <div
-      className={`md:min-w-[730px] max-w-[330px] ${ArimoFont.className} flex flex-col border-l-2 border-l-red-600 bg-gray-100 bg-opacity-45
+      className={`md:min-w-[730px] max-w-[330px] ${ArimoFont.className} flex flex-col border-l-2 border-l-red-600 bg-gray-100 dark:bg-neutral-700 bg-opacity-45
         transition-transform duration-300 hover:translate-y-[-10px] hover:shadow-lg ease-in-out`}
     >
-      <h1 className="border-b-2 border-dashed border-b-red-600 flex text-gray-500 text-xl m-2">
+      <h1 className="border-b-2 border-dashed border-b-red-600 flex text-gray-500 text-xl m-2 dark:text-neutral-300">
         {name}
-        <span className="ml-auto text-lg mt-auto text-gray-400">{time}</span>
+        <span className="ml-auto text-lg mt-auto text-gray-400 dark:text-neutral-800">
+          {time}
+        </span>
       </h1>
       <ul className="md:flex md:gap-2 md:m-2 grid grid-cols-2 m-2">
         {tech.map((s, i) => (
           <li
-            className="border border-gray-300 text-sm md:rounded-full col-span-1 px-2 text-center md:m-0 hover:text-red-600 hover:border-red-600"
+            className="border border-gray-300 dark:border-neutral-400 dark:text-neutral-400 text-sm md:rounded-full col-span-1 px-2 text-center md:m-0 hover:text-red-600 hover:border-red-600"
             key={i}
           >
             {s}
           </li>
         ))}
       </ul>
-      <p className="m-2 border-l-8 border-l-gray-300 p-2 bg-gray-200 rounded-r-sm bg-opacity-50">
+      <p className="m-2 border-l-8 border-l-gray-300 dark:border-l-neutral-400 dark:text-neutral-300 p-2 bg-gray-200 dark:bg-neutral-600 rounded-r-sm bg-opacity-50">
         {des}
       </p>
-      <div className="m-2 border-l-8 border-l-gray-300 p-2 bg-gray-200 rounded-r-sm bg-opacity-50">
+      <div className="m-2 border-l-8 border-l-gray-300 p-2 bg-gray-200 rounded-r-sm bg-opacity-50 dark:bg-neutral-600">
         <div className="text-black text-nowrap md:flex">
-          <p>Github repo:</p>
+          <p className="dark:text-neutral-300">Github repo:</p>
           <Link
-            className="text-gray-500 hover:text-red-600 md:ml-2"
+            className="text-gray-500 dark:text-neutral-400 dark:hover:text-neutral-300 hover:text-red-600 md:ml-2"
             href={link1}
           >
             {link1}
@@ -66,9 +68,9 @@ const Project = ({
         </div>
         {link2 && (
           <div className="text-black md:flex">
-            <p>Visit:</p>
+            <p className="dark:text-neutral-300">Visit:</p>
             <Link
-              className="text-gray-500 hover:text-red-600 md:ml-2"
+              className="text-gray-500 dark:text-neutral-400 dark:hover:text-neutral-300 hover:text-red-600 md:ml-2"
               href={link2}
             >
               {link2}

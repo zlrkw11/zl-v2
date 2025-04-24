@@ -16,12 +16,14 @@ const Note = ({
   des: string;
 }) => {
   return (
-    <li className="border-l-2 border-l-red-600 pl-2 bg-gray-100 py-2 rounded-r-md bg-opacity-35">
+    <li className="border-l-2 border-l-red-600 pl-2 bg-gray-200 dark:bg-neutral-800 py-2 rounded-r-md bg-opacity-35">
       <p className="gap-8 flex">
-        <span className="font-bold italic">ver {ver}</span>
-        <span className="text-gray-500">{date}</span>
+        <span className="font-bold italic dark:text-neutral-300">
+          ver {ver}
+        </span>
+        <span className="text-gray-500 dark:text-neutral-600">{date}</span>
       </p>
-      <p>{des}</p>
+      <p className="dark:text-neutral-500">{des}</p>
     </li>
   );
 };
@@ -30,15 +32,15 @@ const PatchNotes = () => {
     <div
       className={`flex flex-col md:w-[800px] md:m-0 m-4 ${ArimoFont.className} gap-8 text-gray-700`}
     >
-      <h1 className="text-black text-lg">
+      <h1 className="text-black text-lg dark:text-neutral-400">
         <span className="text-red-600">{`[`}</span>Patch_Notes
         <span className="text-red-600">{`]`}</span>
       </h1>
-      <p>
+      <p className="dark:text-neutral-400">
         This page records all the version updates and new features being added
         to this website. For more infomation, please visit the github repo:{" "}
         <Link href={"https://github.com/zlrkw11/zl-v2"}>
-          <span className="text-gray-500 hover:text-red-600 underline">
+          <span className="text-gray-500 dark:hover:text-neutral-400 hover:text-red-600 underline">
             Take me there
           </span>
         </Link>
@@ -113,7 +115,8 @@ const PatchNotes = () => {
           date="2025/04/16"
           des="Implemented intro animations on all pages using Motion & CSS (Blogs). Created a new navbar with a more sleek look to match the 
           theme."
-        />
+        />{" "}
+        <Note ver="1.1.1" date="2025/04/24" des="Implemented dark mode." />
       </ul>
     </div>
   );

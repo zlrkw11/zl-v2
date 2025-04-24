@@ -1,0 +1,31 @@
+"use client";
+import { useEffect, useState } from "react";
+import { SunIcon } from "@heroicons/react/16/solid";
+import { MoonIcon } from "@heroicons/react/16/solid";
+
+export default function ThemeToggle() {
+  const [isDark, setIsDark] = useState(false);
+
+  useEffect(() => {
+    const dark = localStorage.getItem("theme") === "dark";
+    setIsDark(dark);
+    document.documentElement.classList.toggle("dark", dark);
+  }, []);
+
+  const toggleTheme = () => {
+    const newTheme = isDark ? "light" : "dark";
+    localStorage.setItem("theme", newTheme);
+    document.documentElement.classList.toggle("dark", newTheme === "dark");
+    setIsDark(!isDark);
+  };
+
+  return (
+    <button onClick={toggleTheme}>
+      {isDark ? (
+        <SunIcon className="size-8 text-neutral-300" />
+      ) : (
+        <MoonIcon className="size-8 text-neutral-400" />
+      )}
+    </button>
+  );
+}

@@ -24,7 +24,7 @@ const Card = ({
   link: string;
 }) => {
   return (
-    <div className="border-b-2 border-b-red-600 p-2 m-2 gap-2 flex flex-col w-[370px] md:min-w-[600px] bg-gray-100 bg-opacity-50 rounded-t-md border-2 transition-transform hover:translate-x-[10px] duration-300 ease-in-out">
+    <div className="border-b-2 border-b-red-600 dark:text-neutral-400 p-2 m-2 gap-2 flex flex-col w-[370px] md:min-w-[600px] dark:bg-neutral-700 bg-gray-100 bg-opacity-50 rounded-t-md border-2 dark:border-t-0 dark:border-l-0 dark:border-r-0 dark:border-b-2 transition-transform hover:translate-x-[10px] duration-300 ease-in-out">
       <Link href={link}>
         <h1 className="hover:text-red-600 ">./{title}</h1>
       </Link>
@@ -43,16 +43,17 @@ const Menu = () => {
     >
       <div className="md:w-[800px] flex flex-col items-center gap-4">
         <div className={` ${crimsonFont.className} md:min-w-[600px]`}>
-          <h1 className="text-black border-b-2 border-red-600 md:min-w-[600px] w-[370px] text-2xl mb-2">
+          <h1 className="text-black dark:text-neutral-300 border-b-2 border-red-600 md:min-w-[600px] w-[370px] text-2xl mb-2">
             Map
           </h1>
-          <p className="text-black">
+          <p className="text-black dark:text-neutral-400">
             This page is a road map for this website {`:)`}
           </p>
         </div>
 
         <h1 className="text-lg text-black m-4">
-          <span className="text-red-600">./</span>Ground_Level
+          <span className="text-red-600">./</span>
+          <span className="dark:text-neutral-400">Ground_Level</span>
         </h1>
         {/* <Card title="Home" description="As what the name says.." link="/" /> */}
         <Card
@@ -71,7 +72,8 @@ const Menu = () => {
           link="/blogs"
         />
         <h1 className="text-lg text-black m-4">
-          <span className="text-red-600">./</span>B1
+          <span className="text-red-600">./</span>
+          <span className="dark:text-neutral-400">B1</span>
         </h1>
         <Card
           title="LeetCode"
@@ -85,7 +87,8 @@ const Menu = () => {
         />
 
         <h1 className="text-lg text-black m-4">
-          <span className="text-red-600">./</span>External_Links
+          <span className="text-red-600">./</span>
+          <span className="dark:text-neutral-400">External_Links</span>
         </h1>
         <Card
           title="Github"
@@ -98,7 +101,7 @@ const Menu = () => {
           link="https://www.linkedin.com/in/ray-zhao-kaede11/"
         />
       </div>
-      <div className="text-md mt-12 m-2 md:min-w-[600px] w-[370px] flex flex-col gap-4">
+      <div className="text-md mt-12 m-2 md:min-w-[600px] w-[370px] flex flex-col gap-4 dark:text-neutral-400">
         Emails:
         <p className="border-l-2 border-red-600 p-2">Ray040406@gmail.com</p>
         <p className="border-l-2 border-red-600 p-2">
@@ -107,7 +110,7 @@ const Menu = () => {
       </div>
       <div className="flex justify-center mt-4">
         <Link href="/contents/credits">
-          <p className="border-b-2 border-red-600 hover:text-gray-500">
+          <p className="border-b-2 border-red-600 hover:text-gray-500 dark:text-neutral-400 dark:hover:text-neutral-100">
             Credits
           </p>
         </Link>
