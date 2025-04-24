@@ -3,7 +3,7 @@ import { LeetCodeProps } from "@/app/types/types";
 import Link from "next/link";
 import { Arimo } from "next/font/google";
 import { Crimson_Text } from "next/font/google";
-import { useState, useEffect, use } from "react";
+import { useState } from "react";
 import lc from "../../../public/assets/leetcode.svg";
 import Image from "next/image";
 import { useRouter, useSearchParams } from "next/navigation";

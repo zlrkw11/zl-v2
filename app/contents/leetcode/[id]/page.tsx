@@ -10,9 +10,8 @@ export default async function Page({
 }: {
   params: Promise<{ id: string }>;
 }) {
-  const problem = problems.find(
-    async (p) => p.id.toString() === (await params).id
-  );
+  const { id } = await params;
+  const problem = problems.find((p) => p.id.toString() === id);
 
   if (!problem) {
     return <div>Problem not found.</div>;

@@ -61,7 +61,7 @@ export default function Navbar() {
                     className={classNames(
                       pathName === item.href
                         ? "bg-red-900 text-neutral-100"
-                        : "text-gray-700 dark:text-neutral-500 hover:bg-gray-400 dark:hover:bg-neutral-700 hover:text-white",
+                        : "text-gray-700 dark:text-neutral-400 hover:bg-gray-400 dark:hover:bg-neutral-700 hover:text-white",
                       "rounded-md px-3 py-2 text-sm font-medium"
                     )}
                   >
@@ -95,7 +95,7 @@ export default function Navbar() {
                   className={classNames(
                     pathName === item.href
                       ? "bg-red-900 text-gray-100"
-                      : "text-gray-700 dark:text-neutral-500 hover:bg-gray-400 dark:hover:bg-neutral-700  hover:opacity-75 hover:text-white",
+                      : "text-gray-700 dark:text-neutral-400 hover:bg-gray-400 dark:hover:bg-neutral-700  hover:opacity-75 hover:text-white",
                     "block rounded-md px-3 py-2 text-base font-medium"
                   )}
                 >

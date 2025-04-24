@@ -2,8 +2,8 @@
 import { Arimo } from "next/font/google";
 import Link from "next/link";
 import { useState } from "react";
-import Image from "next/image";
-import arrow from "../../public/assets/arrow.svg";
+import { CodeBracketIcon } from "@heroicons/react/16/solid";
+import { WindowIcon } from "@heroicons/react/16/solid";
 import { motion } from "motion/react";
 
 const ArimoFont = Arimo({
@@ -53,12 +53,13 @@ const Project = ({
           </li>
         ))}
       </ul>
-      <p className="m-2 border-l-8 border-l-gray-300 dark:border-l-neutral-300 dark:text-neutral-300 p-2 bg-gray-200 dark:bg-neutral-600 rounded-r-sm bg-opacity-50">
+      <p className="m-2 border-l-8 border-l-gray-300 dark:border-l-neutral-800 dark:text-neutral-300 p-2 bg-gray-200 dark:bg-neutral-600 rounded-r-sm bg-opacity-50">
         {des}
       </p>
-      <div className="m-2 border-l-8 border-l-gray-300 p-2 bg-gray-200 rounded-r-sm bg-opacity-50 dark:bg-neutral-600">
-        <div className="text-black text-nowrap md:flex">
-          <p className="dark:text-neutral-300">Github repo:</p>
+      <div className="m-2 border-l-8 border-l-gray-300 dark:border-l-neutral-800 p-2 bg-gray-200 rounded-r-sm bg-opacity-50 dark:bg-neutral-600">
+        <div className="text-nowrap md:flex">
+          <CodeBracketIcon className="size-6 dark:text-neutral-300 text-black" />
+
           <Link
             className="text-gray-500 dark:text-neutral-800 underline dark:hover:text-neutral-400 hover:text-red-600 md:ml-2"
             href={link1}
@@ -67,8 +68,8 @@ const Project = ({
           </Link>
         </div>
         {link2 && (
-          <div className="text-black md:flex">
-            <p className="dark:text-neutral-300">Visit:</p>
+          <div className="md:flex">
+            <WindowIcon className="size-6 dark:text-neutral-300 text-black" />
             <Link
               className="text-gray-500 dark:text-neutral-800 underline dark:hover:text-neutral-400 hover:text-red-600 md:ml-2"
               href={link2}

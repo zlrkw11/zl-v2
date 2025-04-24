@@ -40,7 +40,7 @@ const PatchNotes = () => {
         This page records all the version updates and new features being added
         to this website. For more infomation, please visit the github repo:{" "}
         <Link href={"https://github.com/zlrkw11/zl-v2"}>
-          <span className="text-gray-500 dark:hover:text-neutral-400 hover:text-red-600 underline">
+          <span className="text-gray-500 dark:text-neutral-500 dark:hover:text-neutral-400 hover:text-red-600 underline">
             Take me there
           </span>
         </Link>
