@@ -84,7 +84,7 @@ export default function Navbar() {
           initial={{ opacity: 0, y: -45 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.3 }}
-          className="flex-col flex bg-gray-200 bg-opacity-55 dark:bg-neutral-800"
+          className="flex-col flex md:hidden bg-gray-200 bg-opacity-55 dark:bg-neutral-800"
         >
           <div className="space-y-1 px-2 pt-2 pb-3 flex flex-col">
             {navigation.map((item) => (
