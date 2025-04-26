@@ -1,5 +1,6 @@
 import { Arimo } from "next/font/google";
 import Link from "next/link";
+import { FolderIcon } from "@heroicons/react/16/solid";
 
 const ArimoFont = Arimo({
   subsets: ["latin"],
@@ -32,9 +33,9 @@ const PatchNotes = () => {
     <div
       className={`flex flex-col md:w-[800px] md:m-0 m-4 ${ArimoFont.className} gap-8 text-gray-700`}
     >
-      <h1 className="text-black text-lg dark:text-neutral-400">
-        <span className="text-red-600">{`[`}</span>Patch_Notes
-        <span className="text-red-600">{`]`}</span>
+      <h1 className="text-black text-lg dark:text-neutral-400 flex gap-2">
+        <FolderIcon className="h-6 w-6 text-gray-400 dark:text-neutral-400 inline-block" />
+        Patch_Notes
       </h1>
       <p className="dark:text-neutral-400">
         This page records all the version updates and new features being added

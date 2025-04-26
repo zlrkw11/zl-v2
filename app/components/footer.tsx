@@ -2,8 +2,6 @@
 import Image from "next/image";
 import Link from "next/link";
 import github from "../../public/assets/gh.svg";
-import styles from "../styles/Home.module.css";
-import { UserIcon } from "@heroicons/react/16/solid";
 const Footer = () => {
   return (
     <div className="flex w-full mt-auto ml-auto justify-center md:justify-end">
@@ -16,7 +14,8 @@ const Footer = () => {
           className={`${styles.moveUpDown} mr-auto`}
         /> */}
         <Link href="https://github.com/zlrkw11">
-          <UserIcon className="size-6 dark:text-neutral-400 text-neutral-700 md:block" />
+          {/* <UserIcon className="size-6 dark:text-neutral-400 text-neutral-700 md:block" /> */}
+          <Image width={30} height={30} src={github} alt="github" />
         </Link>
         <p className="dark:text-neutral-300">Copyright © 2025 zlrkw11</p>
       </div>
