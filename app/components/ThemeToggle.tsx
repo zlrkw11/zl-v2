@@ -24,7 +24,7 @@ export default function ThemeToggle() {
       {isDark ? (
         <MoonIcon className="size-8 text-neutral-300" />
       ) : (
-        <SunIcon className="size-8 text-neutral-400" />
+        <SunIcon className="size-8 text-gray-400" />
       )}
     </button>
   );

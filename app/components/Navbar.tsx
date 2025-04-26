@@ -73,7 +73,7 @@ export default function Navbar() {
             <div className="ml-auto md:flex hidden md:gap-4">
               <ThemeToggle />
               <Link className="" href="/cv">
-                <DocumentIcon className="size-8 text-center dark:text-neutral-300 text-neutral-400 mt-0.5" />
+                <DocumentIcon className="size-8 text-center dark:text-neutral-300 text-gray-400 mt-0.5" />
               </Link>
             </div>
           </div>
