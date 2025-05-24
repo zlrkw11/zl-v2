@@ -68,13 +68,10 @@ const About = () => {
             <div className="flex flex-col gap-4">
               <p>In the software / web industry, I:</p>
               <ul className="list-disc pl-6 border-l-4 border-red-600">
+                <li>want to learn new skills constantly</li>
                 <li>
-                  want to be a dev, not so much of a computer scientist (skill
-                  issue tbh)
-                </li>
-                <li>
-                  am more heavy on the frontend (but secretly I really like
-                  LeetCode and want to do well in algorithm competitions){" "}
+                  am more heavy on the frontend (but I like LeetCode and want to
+                  do well in algorithm competitions){" "}
                   <span>
                     <Link
                       className="text-gray-400 hover:text-gray-300 underline"
@@ -89,20 +86,14 @@ const About = () => {
                   on top of it
                 </li>
               </ul>
-              <p className="font-bold">Fun facts:</p>
-              <ul className="border-r-4 dark:border-red-500 border-red-600 bg-red-100 dark:bg-red-900 dark:text-gray-300 p-2">
-                <li>
-                  <span className=" text-black dark:text-gray-300">1.</span> my
-                  favourite anime is Slam Dunk
-                </li>
-                <li>
-                  <span className=" text-black dark:text-gray-300">2.</span>{" "}
-                  still on my way to break my 75kg bench PR
-                </li>
-                <li>
-                  <span className=" text-black dark:text-gray-300">3.</span> I
-                  enjoy night walks alone
-                </li>
+              <p className="font-bold">Some of my skills:</p>
+              <ul className="list-disc pl-6 border-r-4 dark:border-red-500 border-red-600 bg-red-100 dark:bg-red-900 dark:text-gray-300 p-2">
+                <li>React</li>
+                <li>Next.js</li>
+                <li>Tailwind CSS</li> <li>Express.js</li>
+                <li>Typescript</li>
+                <li>Javascript</li>
+                <li>Python</li>
               </ul>
             </div>
           </div>
