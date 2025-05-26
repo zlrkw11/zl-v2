@@ -67,7 +67,6 @@ const About = () => {
           >
             More about me<span className="text-3xl text-red-600">:</span>
           </h1>
-
           <div
             className={`flex gap-4 ${ArimoFont.className} text-gray-700 dark:text-gray-300`}
           >
@@ -92,7 +91,6 @@ const About = () => {
                   on top of it
                 </li>
               </ul>
-              <ul className="list-disc pl-6 border-r-4 dark:border-red-500 border-red-600 bg-red-100 dark:bg-red-900 dark:text-gray-300 p-2"></ul>{" "}
               <p className="font-bold">Some of my skills:</p>
               <Accordion type="single" collapsible className="w-full">
                 <AccordionItem value="item-1">
@@ -101,12 +99,15 @@ const About = () => {
                     <li>React</li>
                     <li>Next.js</li>
                     <li>Tailwind CSS</li>
+                    <li>HTML</li>
+                    <li>CSS</li>
                   </AccordionContent>
                 </AccordionItem>
                 <AccordionItem value="item-2">
                   <AccordionTrigger>Backend</AccordionTrigger>
                   <AccordionContent>
                     <li>Express.js</li>
+                    <li>TSOA (Typescript Open API)</li>
                   </AccordionContent>
                 </AccordionItem>
                 <AccordionItem value="item-3">
@@ -117,10 +118,14 @@ const About = () => {
                     <li>Python</li>
                   </AccordionContent>
                 </AccordionItem>
-              </Accordion>
+              </Accordion>{" "}
+              {/* here is the quote block */}
+              {/* <ul className="list-disc border-r-4 dark:border-red-500 border-red-700 bg-red-400 dark:bg-red-900 dark:text-gray-300 text-white p-2">
+              </ul>{" "} */}
             </div>
-          </div>
+          </div>{" "}
         </div>
+
         <div className="flex flex-col gap-4">
           <h1 className="text-3xl font-bold border-b-2 border-b-red-600  dark:text-neutral-300">
             Why did I make this website
