@@ -7,6 +7,12 @@ import Nav from "./components/nav";
 import "../app/globals.css";
 import me from "../public/assets/r.jpg";
 import { motion } from "motion/react";
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
 
 const ArimoFont = Arimo({
   subsets: ["latin"],
@@ -39,7 +45,7 @@ const About = () => {
             <p
               className={`${ArimoFont.className} text-gray-700 dark:text-gray-300`}
             >
-              Hello, I'm Ray Zhao. a third year compsi student (yea) at the{" "}
+              Hello, I'm Ray Zhao. a third year compsi student at the{" "}
               <Link href="https://www.auckland.ac.nz/en.html">
                 <span className="underline hover:text-gray-400">
                   University of Auckland
@@ -67,17 +73,17 @@ const About = () => {
           >
             <div className="flex flex-col gap-4">
               <p>In the software / web industry, I:</p>
-              <ul className="list-disc pl-6 border-l-4 border-red-600">
+              <ul className="list-disc pl-6 border-l-4 border-red-600 gap-4 flex flex-col">
                 <li>want to learn new skills constantly</li>
                 <li>
                   am more heavy on the frontend (but I like LeetCode and want to
-                  do well in algorithm competitions){" "}
+                  do well in algorithm competitions)<div></div>
                   <span>
                     <Link
                       className="text-gray-400 hover:text-gray-300 underline"
                       href="/contents/leetcode"
                     >
-                      {`>`} LeetCode Storage Room
+                      {`->`} LeetCode Storage Room
                     </Link>
                   </span>
                 </li>
@@ -86,15 +92,32 @@ const About = () => {
                   on top of it
                 </li>
               </ul>
+              <ul className="list-disc pl-6 border-r-4 dark:border-red-500 border-red-600 bg-red-100 dark:bg-red-900 dark:text-gray-300 p-2"></ul>{" "}
               <p className="font-bold">Some of my skills:</p>
-              <ul className="list-disc pl-6 border-r-4 dark:border-red-500 border-red-600 bg-red-100 dark:bg-red-900 dark:text-gray-300 p-2">
-                <li>React</li>
-                <li>Next.js</li>
-                <li>Tailwind CSS</li> <li>Express.js</li>
-                <li>Typescript</li>
-                <li>Javascript</li>
-                <li>Python</li>
-              </ul>
+              <Accordion type="single" collapsible className="w-full">
+                <AccordionItem value="item-1">
+                  <AccordionTrigger>Frontend</AccordionTrigger>
+                  <AccordionContent>
+                    <li>React</li>
+                    <li>Next.js</li>
+                    <li>Tailwind CSS</li>
+                  </AccordionContent>
+                </AccordionItem>
+                <AccordionItem value="item-2">
+                  <AccordionTrigger>Backend</AccordionTrigger>
+                  <AccordionContent>
+                    <li>Express.js</li>
+                  </AccordionContent>
+                </AccordionItem>
+                <AccordionItem value="item-3">
+                  <AccordionTrigger>Programming Languages:</AccordionTrigger>
+                  <AccordionContent>
+                    <li>Typescript</li>
+                    <li>Javascript</li>
+                    <li>Python</li>
+                  </AccordionContent>
+                </AccordionItem>
+              </Accordion>
             </div>
           </div>
         </div>
