@@ -91,6 +91,7 @@ const About = () => {
                   on top of it
                 </li>
               </ul>
+              <div className="border dark:border-gray-400 opacity-25 md:w-[800px] my-4 border-dashed border-gray-700"></div>
               <p className="font-bold">Some of my skills:</p>
               <Accordion type="single" collapsible className="w-full">
                 <AccordionItem value="item-1">
