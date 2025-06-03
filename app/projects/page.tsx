@@ -91,6 +91,14 @@ const Projects = () => {
       className="flex flex-col justify-center md:w-[800px] items-center text-gray-700 gap-8"
     >
       <Project
+        name="AUSA Web"
+        tech={["NEXT.JS", "TailwindCSS", "TSOA", "React", "Motion"]}
+        des="A mental wellbeing support website made for the Auckland University Students' Association, consists of a
+        fully functional frontend and a complete user registration system. Leading a team of 11."
+        link1="https://github.com/UoaWDCC/ausa"
+        time="IN DEVELOPMENT"
+      />
+      <Project
         name="UASC Web"
         tech={["React", "TailwindCSS", "TypeScript", "Storybook", "Firebase"]}
         des="A fully functional website made for the University of Auckland's Snow Sports Club with a complete user-registration 
