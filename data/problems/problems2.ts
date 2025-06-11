@@ -191,6 +191,30 @@ class Solution:
     link2: "https://github.com/zlrkw11/leetcode/blob/main/greedy/p.55.png",
     link2name: "visualize it!",
   },
+  {
+    id: 53,
+    title: "Maximum Subarray",
+    date: "2025-06-11",
+    difficulty: "medium",
+    label: ["sliding window", "array", "dynamic programming"],
+    code: `from typing import List
+class Solution:
+    def maxSubArray(self, nums: List[int]) -> int:
+       maxSub = nums[0]
+       curr = 0
+       for n in nums:
+           if curr < 0:
+               curr = 0
+           curr += n
+           maxSub = max(maxSub, curr)
+       return maxSub`,
+    texts: `Linear solution, the main idea is to use a variable -- curr to keep track of the current subarray sum, reset it to 0 if it is negative,
+    and update the maxSub variable to be the maximum of itself and curr after each iteration. This way, we can find the maximum subarray sum in O(n) time.`,
+    O: "O(n)",
+    S: "O(1)",
+    link1: "https://leetcode.com/problems/maximum-subarray/",
+    link2: "",
+  },
 ];
 // {
 //     id: ,
