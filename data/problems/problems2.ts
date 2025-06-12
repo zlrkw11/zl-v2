@@ -215,6 +215,33 @@ class Solution:
     link1: "https://leetcode.com/problems/maximum-subarray/",
     link2: "",
   },
+  {
+    id: 11,
+    title: "Container With Most Water",
+    date: "2025-06-13",
+    difficulty: "medium",
+    label: ["array", "2 pointers", "greedy"],
+    code: `from typing import List
+class Solution:
+    def maxArea(self, height: List[int]) -> int:
+        max_area = 0
+        l,r = 0, len(height)-1
+        while l<r:
+            area = min(height[l], height[r])*(r-l)
+            max_area = max(max_area, area)
+            if height[l]<height[r]:
+                l+=1
+            else:
+                r-=1
+        return max_area
+`,
+    texts: `The main idea is to use 2 pointers, one at the start and one at the end of the array. Have a for loop running as long as they don't meet
+    and calculate the area upon each iteration and update the max area. If the left pointer's height is smaller than the right pointer's height, we move the left pointer to the right, otherwise we move the right pointer to the left.`,
+    O: "O(n)",
+    S: "O(1)",
+    link1: "https://leetcode.com/problems/container-with-most-water/",
+    link2: "",
+  },
 ];
 // {
 //     id: ,
