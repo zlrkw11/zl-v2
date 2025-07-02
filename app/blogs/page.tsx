@@ -25,11 +25,12 @@ const Blogs = async () => {
       </div>
 
       <p
-        className={`mb-2 md:max-w-[800px] ${ArimoFont.className} dark:text-gray-300`}
+        className={`mb-2 md:max-w-[800px] ${ArimoFont.className} dark:text-gray-300 text-lg`}
       >
-        I'm not a person who regularly expresses their thoughts. But I do have a
-        lot of them going on. I believe that thoughts are a valuable thing
-        because they are always real. So, I made this page to write them down.
+        While I don’t often voice my thoughts openly, I believe in their
+        value—each one represents a genuine perspective. This page serves as a
+        space to document and share those reflections, offering insight into my
+        thinking and approach.
       </p>
 
       <ul
@@ -38,14 +39,14 @@ const Blogs = async () => {
         {blogs.map((blog: any) => (
           <li
             key={blog.slug}
-            className="transition dark:bg-neutral-600 hover:translate-x-5 duration-300 p-2 border border-l-4 rounded-r-lg border-l-red-600 bg-gray-100 bg-opacity-60 md:min-w-[700px]"
+            className="transition dark:bg-neutral-600 hover:translate-x-10 duration-100 p-2 border-l-4 border-l-red-600 bg-gray-100 bg-opacity-60 md:min-w-[700px]"
           >
             <Link href={`/blogs/${blog.slug}`}>
-              <p className="text-lg text-gray-700 hover:text-red-600 dark:hover:text-neutral-800 dark:text-neutral-300">
+              <p className="text-lg text-gray-700 hover:text-red-600 dark:hover:text-neutral-800 dark:text-neutral-300 w-[240px]">
                 {blog.title}
               </p>
             </Link>
-            <p className="text-gray-400 italic">{blog.date}</p>
+            <p className="text-neutral-400">{blog.date}</p>
           </li>
         ))}
       </ul>
