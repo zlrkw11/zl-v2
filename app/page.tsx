@@ -5,7 +5,7 @@ import Link from "next/link";
 import { Arimo } from "next/font/google";
 import Nav from "./components/nav";
 import "../app/globals.css";
-import me from "../public/assets/r.jpg";
+import me from "../public/assets/1745399851673.jpeg";
 import { motion } from "motion/react";
 import {
   Accordion,
@@ -36,14 +36,22 @@ const About = () => {
           </h1>
 
           <div id="image-section" className="flex flex-col items-center">
-            <Image src={me} width={200} height={200} alt="a picture of sona" />
-            <p className={`text-neutral-600 ${ArimoFont.className}`}>
-              this is not me actually
+            <Image
+              src={me}
+              width={200}
+              height={200}
+              alt="a picture of me"
+              className="rounded-full"
+            />
+            <p
+              className={`text-neutral-400 ${ArimoFont.className} text-sm dark:text-neutral-500`}
+            >
+              taken in 2025.04
             </p>
           </div>
           <div>
             <p
-              className={`${ArimoFont.className} text-gray-700 dark:text-gray-300`}
+              className={`${ArimoFont.className} text-gray-700 dark:text-gray-300 text-lg`}
             >
               Hello, I'm Ray Zhao. a third year compsi student at the{" "}
               <Link href="https://www.auckland.ac.nz/en.html">
