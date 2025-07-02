@@ -118,6 +118,11 @@ const PatchNotes = () => {
           theme."
         />{" "}
         <Note ver="1.1.1" date="2025/04/24" des="Implemented dark mode." />
+        <Note
+          ver="1.1.2"
+          date="2025/07/02"
+          des="Restyled About (Home) page, reworded text sections on About and Blogs page."
+        />
       </ul>
     </div>
   );
