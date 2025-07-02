@@ -46,7 +46,7 @@ const About = () => {
             <p
               className={`text-neutral-400 ${ArimoFont.className} text-sm dark:text-neutral-500`}
             >
-              taken in 2025.04
+              2025.04, Auckland, New Zealand
             </p>
           </div>
           <div>
@@ -59,12 +59,12 @@ const About = () => {
                   University of Auckland
                 </span>
               </Link>{" "}
-              and a self-taught web-developer. I dedicate most of my leisure
-              time to <span className="font-bold">web & software</span>{" "}
-              development, not just for financial gain but because I'm driven by{" "}
-              <span className=" border-b-red-600  border-b-2">passion</span> to
-              create innovative solutions that can make some impact on the world
-              using my skills.
+              and a self-taught web-developer. I dedicate majority of my time to{" "}
+              web & software development, motivated not only by career growth
+              but by a strong passion for building innovative solutions that can
+              make a real impact. Beyond project work, I'm continuously focused
+              on upskilling and expanding my technical capabilities to stay
+              ahead in a fast-evolving industry.
             </p>
           </div>
         </div>
