@@ -5,5 +5,12 @@
     "text": "I learnt some routing from GPT as always, and realised that NEXT.JS sends out its built-in prop: Params to the page.tsx inside of the [slugs] folder (which marks it as a dynamic routing folder). This allows for dynamic routing in Next.js applications.<br><br> Basic logic: reads blog from 'blogs' and get the data of the blog: title, date, text.. Then NEXT uses the .slug property to dynamically create the blogs/blog_1.tsx route. When we load into that new page, it uses the slug property to generate and render the contents shown on the page.",
     "date": "2025/02/24",
     "image": ""
+  },
+  {
+    "title": "Essential Git Commands",
+    "slug": "essential_git_commands",
+    "text": "As I continue building projects, I've come to rely heavily on Git for version control. Learning the right commands helps me move faster and keep my codebase clean and organized. Here are some of the most essential Git commands I use regularly:<br><br><b>git init</b> — Initializes a new Git repository in your project folder.<br><b>git status</b> — Shows the current state of the working directory and staged changes.<br><b>git add .</b> — Stages all changes for the next commit.<br><b>git commit -m \"message\"</b> — Commits staged changes with a message.<br><b>git branch</b> — Lists all branches in your repository.<br><b>git checkout -b branch_name</b> — Creates and switches to a new branch.<br><b>git checkout branch_name</b> — Switches to an existing branch.<br><b>git merge branch_name</b> — Merges another branch into the current branch.<br><b>git pull</b> — Fetches and merges changes from the remote repository.<br><b>git push</b> — Uploads local commits to the remote repository.<br><br>These commands form the foundation of how I manage changes and collaboration across projects. Simple, effective, and reliable.",
+    "date": "2025/07/02",
+    "image": ""
   }
 ]
