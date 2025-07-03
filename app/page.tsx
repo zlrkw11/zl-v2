@@ -120,7 +120,7 @@ const About = () => {
                   </AccordionContent>
                 </AccordionItem>
                 <AccordionItem value="item-3">
-                  <AccordionTrigger>Programming Languages:</AccordionTrigger>
+                  <AccordionTrigger>Programming Languages</AccordionTrigger>
                   <AccordionContent>
                     <li>Typescript</li>
                     <li>Javascript</li>
