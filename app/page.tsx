@@ -53,7 +53,7 @@ const About = () => {
             <p
               className={`${ArimoFont.className} text-gray-700 dark:text-gray-300 text-lg`}
             >
-              Hello, I'm Ray Zhao. a third year compsi student at the{" "}
+              Hello, I'm Ray Zhao. a third year Computer Science student at the{" "}
               <Link href="https://www.auckland.ac.nz/en.html">
                 <span className="underline hover:text-gray-400">
                   University of Auckland
