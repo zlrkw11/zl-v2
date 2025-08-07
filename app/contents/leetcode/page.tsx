@@ -118,7 +118,7 @@ const LeetCode = () => {
 
   const paginatedProblems = allProblems.slice(
     (curr - 1) * numberPerPage,
-    curr * numberPerPage
+    curr * numberPerPage,
   );
 
   const Next = () => {

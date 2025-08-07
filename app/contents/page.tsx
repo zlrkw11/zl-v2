@@ -55,27 +55,27 @@ const Menu = () => {
 
         <h1 className="text-lg text-black m-4">
           <span className="text-red-600">./</span>
-          <span className="dark:text-neutral-400">Ground_Level</span>
+          <span className="dark:text-neutral-400">Level_G</span>
         </h1>
         {/* <Card title="Home" description="As what the name says.." link="/" /> */}
         <Card
-          title="About"
+          title="about"
           description="A page for the readers to know more about me and the background of this website."
           link="/"
         />
         <Card
-          title="Projects"
+          title="projects"
           description="Past projects (web-dev & others) I have built both independently and collaboratively."
           link="/projects"
         />
         <Card
-          title="Personal Blogs"
+          title="blogs"
           description="A free space to express my personal ideas and thoughts."
           link="/blogs"
         />
         <h1 className="text-lg text-black m-4">
           <span className="text-red-600">./</span>
-          <span className="dark:text-neutral-400">B1</span>
+          <span className="dark:text-neutral-400">Level_B1</span>
         </h1>
         <Card
           title="LeetCode"
@@ -83,14 +83,14 @@ const Menu = () => {
           link="/contents/leetcode"
         />
         <Card
-          title="Patch Notes"
+          title="patch_notes"
           description="A page which records all the updates and version changes of this website."
           link="/contents/patchnotes"
         />
 
         <h1 className="text-lg text-black m-4">
           <span className="text-red-600">./</span>
-          <span className="dark:text-neutral-400">External_Links</span>
+          <span className="dark:text-neutral-400">Level_B2</span>
         </h1>
         <Card
           title="Github"

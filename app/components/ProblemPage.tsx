@@ -59,10 +59,10 @@ const ProblemPage = ({ problem }: { problem: any }) => {
             problem.difficulty === "easy"
               ? "text-green-500 border-green-500"
               : problem.difficulty === "medium"
-              ? "text-orange-500 border-orange-500"
-              : problem.difficulty === "hard"
-              ? "text-red-600 border-red-600"
-              : ""
+                ? "text-orange-500 border-orange-500"
+                : problem.difficulty === "hard"
+                  ? "text-red-600 border-red-600"
+                  : ""
           }`}
         >
           {problem.difficulty}

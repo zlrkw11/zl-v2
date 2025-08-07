@@ -1,5 +1,7 @@
 ## Personal website:
+
 includes
+
 - blog system
 - leetcode problems (collected into a library)
 - front end construction combined with unique design
