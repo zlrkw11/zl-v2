@@ -122,6 +122,11 @@ const PatchNotes = () => {
           ver="1.1.2"
           date="2025/07/02"
           des="Restyled About (Home) page, reworded text sections on About and Blogs page."
+        />{" "}
+        <Note
+          ver="1.1.3"
+          date="2025/08/08"
+          des="Spacing issues fixed on Contents page, added new scrollbar. Patched unusual frontend functionalities."
         />
       </ul>
     </div>
