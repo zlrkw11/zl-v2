@@ -24,7 +24,7 @@ const Card = ({
   link: string;
 }) => {
   return (
-    <div className="border-b-2 border-b-red-600 dark:text-neutral-500 p-2 md:m-2 m-4 gap-2 flex flex-col w-[370px] md:min-w-[600px] dark:bg-neutral-700 bg-gray-100 bg-opacity-50 rounded-t-md border-2 dark:border-t-0 dark:border-l-0 dark:border-r-0 dark:border-b-2 transition-transform hover:translate-x-[10px] duration-300 ease-in-out">
+    <div className="border-b-2 border-b-red-600 dark:text-neutral-500 md:m-2 m-4 p-2 gap-2 flex flex-col w-[370px] md:min-w-[600px] dark:bg-neutral-700 bg-gray-100 bg-opacity-50 rounded-t-md border-2 dark:border-t-0 dark:border-l-0 dark:border-r-0 dark:border-b-2 transition-transform hover:translate-x-[10px] duration-300 ease-in-out">
       <Link href={link}>
         <h1 className="hover:text-red-600 dark:text-neutral-300 dark:hover:text-neutral-400 dark:hover:underline">
           ./{title}
@@ -44,8 +44,8 @@ const Menu = () => {
       className={`flex flex-col justify-center md:items-center ${ArimoFont.className} text-gray-700`}
     >
       <div className="md:w-[800px] flex flex-col items-center gap-4">
-        <div className={` ${crimsonFont.className} md:min-w-[600px] m-4`}>
-          <h1 className="text-black dark:text-neutral-300 border-b-2 border-red-600 md:min-w-[600px] w-[370px] text-2xl mb-2 m-4">
+        <div className={` ${crimsonFont.className} md:min-w-[600px]`}>
+          <h1 className="text-black dark:text-neutral-300 border-b-2 border-red-600 md:min-w-[600px] w-[370px] text-2xl mb-2">
             Map
           </h1>
           <p className="text-black dark:text-neutral-400 m-4">
@@ -103,7 +103,7 @@ const Menu = () => {
           link="https://www.linkedin.com/in/ray-zhao-kaede11/"
         />
       </div>
-      <div className="text-md mt-12 md:min-w-[600px] flex flex-col gap-4 dark:text-neutral-400 items-center">
+      <div className="text-md m-10 md:min-w-[600px] flex flex-col gap-4 dark:text-neutral-400 w-[300px]">
         Emails:
         <p className="border-l-2 border-red-600 p-2">Ray040406@gmail.com</p>
         <p className="border-l-2 border-red-600 p-2">
