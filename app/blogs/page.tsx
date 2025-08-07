@@ -39,13 +39,17 @@ const Blogs = async () => {
         {blogs.map((blog: any) => (
           <li
             key={blog.slug}
-            className="transition dark:bg-neutral-600 hover:translate-x-10 duration-100 p-2 border-l-4 border-l-red-600 bg-gray-100 bg-opacity-60 md:min-w-[700px]"
+            className="transition dark:bg-neutral-600 p-2 border-l-4 border-l-red-600 bg-gray-100 bg-opacity-60 md:min-w-[700px]"
           >
-            <Link href={`/blogs/${blog.slug}`}>
-              <p className="text-lg text-gray-700 hover:text-red-600 dark:hover:text-neutral-800 dark:text-neutral-300 w-[240px]">
+            <p className="text-lg text-gray-700 dark:text-neutral-300">
+              <Link
+                className="hover:text-red-600 hover:underline dark:hover:text-neutral-400"
+                href={`/blogs/${blog.slug}`}
+              >
                 {blog.title}
-              </p>
-            </Link>
+              </Link>
+            </p>
+
             <p className="text-neutral-400">{blog.date}</p>
           </li>
         ))}
