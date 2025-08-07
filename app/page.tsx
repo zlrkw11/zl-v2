@@ -83,8 +83,8 @@ const About = () => {
               <ul className="list-disc pl-6 border-l-4 border-red-600 gap-4 flex flex-col">
                 <li>want to learn new skills constantly</li>
                 <li>
-                  am more heavy on the frontend (but I like LeetCode and want to
-                  do well in algorithm competitions)<div></div>
+                  am a full-stack developer currently focused on backend systems
+                  & DevOps with a background in frontend development
                   <span>
                     <Link
                       className="text-gray-400 hover:text-gray-300 underline"
