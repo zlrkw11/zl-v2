@@ -5,7 +5,8 @@ import { useState } from "react";
 import { CodeBracketIcon } from "@heroicons/react/16/solid";
 import { WindowIcon } from "@heroicons/react/16/solid";
 import { motion, px } from "motion/react";
-import Image from "next/image";
+import { ChevronDownIcon } from "@heroicons/react/16/solid";
+import Image, { StaticImageData } from "next/image";
 import colab from "@/public/assets/colab.png";
 const ArimoFont = Arimo({
   subsets: ["latin"],
@@ -28,16 +29,16 @@ const Project = ({
   des: string;
   link1: string;
   link2?: string;
-  image?: string;
+  image?: string | StaticImageData;
   time: string;
 }) => {
-  const [expanded, setExpanded] = useState(false);
+  const [expanded, setExpanded] = useState(true);
   const toggle = () => {
     setExpanded(!expanded);
   };
   return (
     <div
-      className={`${ArimoFont.className} md:max-w-[700px] flex-col border-l-4 border-l-red-600 dark:bg-neutral-700
+      className={`${ArimoFont.className} md:w-[700px] w-[330px] px-4 py-2 flex-col border-l-4 border-l-red-600 dark:bg-neutral-700
         transition-transform duration-300 hover:translate-y-[-10px] shadow-lg ease-in-out`}
     >
       <h1 className="border-b-2 border-dashed border-b-red-600 flex text-gray-500 text-xl m-2 dark:text-neutral-300">
@@ -49,14 +50,21 @@ const Project = ({
       <ul className="flex md:gap-2 m-2">
         {tech.map((s, i) => (
           <li
-            className="border border-gray-300 dark:border-neutral-400 dark:text-neutral-400 text-sm md:rounded-full col-span-1 px-2 text-center md:m-0 hover:text-red-600 hover:border-red-600"
+            className="border border-gray-300 dark:border-neutral-400 dark:text-neutral-400 text-sm md:rounded-full md:col-span-1 px-2 text-center md:m-0 hover:text-red-600 hover:border-red-600"
             key={i}
           >
             {s}
           </li>
         ))}
       </ul>
-      <Image className="m-2" src={image || ""} alt="" />
+      <div>
+        <ChevronDownIcon
+          onClick={toggle}
+          className="w-8 h-8 hover:bg-gray-300 bg-gray-200 duration-300 m-2"
+        />
+      </div>
+      {expanded && <Image className="mx-2 my-4" src={image || ""} alt="" />}
+
       <p className="m-2 border-l-8 border-l-gray-300 dark:border-l-neutral-800 dark:text-neutral-300 p-2 bg-gray-200 dark:bg-neutral-600 rounded-r-sm bg-opacity-50">
         {des}
       </p>
