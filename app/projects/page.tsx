@@ -34,8 +34,8 @@ const Project = ({
   };
   return (
     <div
-      className={`md:min-w-[730px] max-w-[330px] ${ArimoFont.className} flex flex-col border-l-2 border-l-red-600 bg-gray-100 dark:bg-neutral-700 bg-opacity-45
-        transition-transform duration-300 hover:translate-y-[-10px] hover:shadow-lg ease-in-out`}
+      className={`${ArimoFont.className} w-full flex-col border-l-4 border-l-red-600 dark:bg-neutral-700
+        transition-transform duration-300 hover:translate-y-[-10px] shadow-lg ease-in-out`}
     >
       <h1 className="border-b-2 border-dashed border-b-red-600 flex text-gray-500 text-xl m-2 dark:text-neutral-300">
         {name}
@@ -88,7 +88,7 @@ const Projects = () => {
     <motion.div
       initial={{ opacity: 0, y: -50 }}
       animate={{ opacity: 1, y: 0 }}
-      className="flex flex-col justify-center md:w-[800px] items-center text-gray-700 gap-8"
+      className="flex flex-col justify-center items-center text-gray-700 gap-8 m-2"
     >
       <Project
         name="AUSA Web"
