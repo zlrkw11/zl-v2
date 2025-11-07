@@ -5,11 +5,14 @@ import { useState } from "react";
 import { CodeBracketIcon } from "@heroicons/react/16/solid";
 import { WindowIcon } from "@heroicons/react/16/solid";
 import { motion } from "motion/react";
-
+import Image from "next/image";
+import colab from "@/public/assets/colab.png";
 const ArimoFont = Arimo({
   subsets: ["latin"],
   weight: "500",
 });
+
+const images = [colab];
 
 const Project = ({
   name,
@@ -34,7 +37,7 @@ const Project = ({
   };
   return (
     <div
-      className={`${ArimoFont.className} w-full flex-col border-l-4 border-l-red-600 dark:bg-neutral-700
+      className={`${ArimoFont.className} md:max-w-[700px] flex-col border-l-4 border-l-red-600 dark:bg-neutral-700
         transition-transform duration-300 hover:translate-y-[-10px] shadow-lg ease-in-out`}
     >
       <h1 className="border-b-2 border-dashed border-b-red-600 flex text-gray-500 text-xl m-2 dark:text-neutral-300">
@@ -43,7 +46,7 @@ const Project = ({
           {time}
         </span>
       </h1>
-      <ul className="md:flex md:gap-2 md:m-2 grid grid-cols-2 m-2">
+      <ul className="flex md:gap-2 m-2">
         {tech.map((s, i) => (
           <li
             className="border border-gray-300 dark:border-neutral-400 dark:text-neutral-400 text-sm md:rounded-full col-span-1 px-2 text-center md:m-0 hover:text-red-600 hover:border-red-600"
@@ -53,6 +56,7 @@ const Project = ({
           </li>
         ))}
       </ul>
+      <Image src={image || ""} alt="" />
       <p className="m-2 border-l-8 border-l-gray-300 dark:border-l-neutral-800 dark:text-neutral-300 p-2 bg-gray-200 dark:bg-neutral-600 rounded-r-sm bg-opacity-50">
         {des}
       </p>
@@ -91,12 +95,23 @@ const Projects = () => {
       className="flex flex-col justify-center items-center text-gray-700 gap-8 m-2"
     >
       <Project
+        name="Colab"
+        tech={["NEXT.JS", "TailwindCSS", "TSOA", "React", "Motion"]}
+        des="A chemical reagent trading platform with a built-in complete user registration and online order processing & tracking system for all universities across New Zealand.
+        Deployed in vercel and AWS EC2 with Firebase database handling user storage and data operation. Developed with a team of 6."
+        link1="https://github.com/uoa-compsci399-s2-2025/capstone-project-s2-2025-team-2"
+        link2="colab.exchange"
+        time="2025.03 - 2025.08"
+        image={colab}
+      />
+      <Project
         name="AUSA Web"
         tech={["NEXT.JS", "TailwindCSS", "TSOA", "React", "Motion"]}
         des="A mental wellbeing support website made for the Auckland University Students' Association, consists of a
         fully functional frontend and a complete user registration system. Leading a team of 11."
         link1="https://github.com/UoaWDCC/ausa"
         time="IN DEVELOPMENT"
+        image={colab}
       />
       <Project
         name="UASC Web"
