@@ -4,7 +4,7 @@ import Link from "next/link";
 import { useState } from "react";
 import { CodeBracketIcon } from "@heroicons/react/16/solid";
 import { WindowIcon } from "@heroicons/react/16/solid";
-import { motion } from "motion/react";
+import { motion, px } from "motion/react";
 import Image from "next/image";
 import colab from "@/public/assets/colab.png";
 const ArimoFont = Arimo({
@@ -56,7 +56,7 @@ const Project = ({
           </li>
         ))}
       </ul>
-      <Image src={image || ""} alt="" />
+      <Image className="m-2" src={image || ""} alt="" />
       <p className="m-2 border-l-8 border-l-gray-300 dark:border-l-neutral-800 dark:text-neutral-300 p-2 bg-gray-200 dark:bg-neutral-600 rounded-r-sm bg-opacity-50">
         {des}
       </p>
@@ -96,7 +96,15 @@ const Projects = () => {
     >
       <Project
         name="Colab"
-        tech={["NEXT.JS", "TailwindCSS", "TSOA", "React", "Motion"]}
+        tech={[
+          "NEXT.JS",
+          "TailwindCSS",
+          "TSOA",
+          "React",
+          "AWS",
+          "Vercel",
+          "Swagger UI",
+        ]}
         des="A chemical reagent trading platform with a built-in complete user registration and online order processing & tracking system for all universities across New Zealand.
         Deployed in vercel and AWS EC2 with Firebase database handling user storage and data operation. Developed with a team of 6."
         link1="https://github.com/uoa-compsci399-s2-2025/capstone-project-s2-2025-team-2"
