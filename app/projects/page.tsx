@@ -8,6 +8,7 @@ import { motion, px } from "motion/react";
 import { ChevronDownIcon } from "@heroicons/react/16/solid";
 import Image, { StaticImageData } from "next/image";
 import colab from "@/public/assets/colab.png";
+import uasc from "@/public/assets/uasc.png";
 const ArimoFont = Arimo({
   subsets: ["latin"],
   weight: "500",
@@ -38,7 +39,7 @@ const Project = ({
   };
   return (
     <div
-      className={`${ArimoFont.className} md:w-[700px] w-[330px] px-4 py-2 flex-col border-l-4 border-l-red-600 dark:bg-neutral-700
+      className={`${ArimoFont.className} md:w-[700px] w-[330px] px-4 py-2 flex-col border-l-4 border-l-red-600 dark:bg-neutral-700/75
         transition-transform duration-300 hover:translate-y-[-10px] shadow-lg ease-in-out`}
     >
       <h1 className="border-b-2 border-dashed border-b-red-600 flex text-gray-500 text-xl m-2 dark:text-neutral-300">
@@ -65,10 +66,10 @@ const Project = ({
       </div>
       {expanded && <Image className="mx-2 my-4" src={image || ""} alt="" />}
 
-      <p className="m-2 border-l-8 border-l-gray-300 dark:border-l-neutral-800 dark:text-neutral-300 p-2 bg-gray-200 dark:bg-neutral-600 rounded-r-sm bg-opacity-50">
+      <p className="m-2 border-l-8 border-l-gray-300 dark:border-l-red-700 dark:text-neutral-300 p-2 bg-gray-200 dark:bg-neutral-700/50 shadow-md rounded-r-sm bg-opacity-50">
         {des}
       </p>
-      <div className="m-2 border-l-8 border-l-gray-300 dark:border-l-neutral-800 p-2 bg-gray-200 rounded-r-sm bg-opacity-50 dark:bg-neutral-600">
+      <div className="m-2 border-l-8 border-l-gray-300 dark:border-l-red-700/50 p-2 bg-gray-200 rounded-r-sm bg-opacity-50 dark:bg-neutral-600">
         <div className="text-nowrap md:flex">
           <CodeBracketIcon className="size-6 dark:text-neutral-300 text-black" />
 
@@ -119,6 +120,16 @@ const Projects = () => {
         link2="colab.exchange"
         time="2025.03 - 2025.08"
         image={colab}
+      />{" "}
+      <Project
+        name="UASC Web"
+        tech={["React", "TailwindCSS", "TypeScript", "Storybook", "Firebase"]}
+        des="A fully functional website made for the University of Auckland's Snow Sports Club with a complete user-registration 
+        and admin system that can handle large-scale online transfer and bookings with a professional procedure."
+        link1="https://github.com/UoaWDCC/uasc-web"
+        link2="https://uasc.co.nz/"
+        time="2024.04"
+        image={uasc}
       />
       <Project
         name="AUSA Web"
@@ -128,24 +139,6 @@ const Projects = () => {
         link1="https://github.com/UoaWDCC/ausa"
         time="IN DEVELOPMENT"
         image={colab}
-      />
-      <Project
-        name="UASC Web"
-        tech={["React", "TailwindCSS", "TypeScript", "Storybook", "Firebase"]}
-        des="A fully functional website made for the University of Auckland's Snow Sports Club with a complete user-registration 
-        and admin system that can handle large-scale online transfer and bookings with a professional procedure."
-        link1="https://github.com/UoaWDCC/uasc-web"
-        link2="https://uasc.co.nz/"
-        time="2024.04"
-      />
-      <Project
-        name="Personal Portfolio Website"
-        tech={["React", "TailwindCSS", "JavaScript", "CSS"]}
-        des="A portfolio website I have developed (before this one) completely independently using JavaScript and React. Hosted as a static site using
-        Github pages."
-        link1="https://github.com/zlrkw11/portfolio-zl"
-        link2="https://zlrkw11.github.io/portfolio-zl"
-        time="2024.07"
       />
       <Project
         name="Digital Garden"
@@ -164,6 +157,14 @@ const Projects = () => {
         link1="https://github.com/zlrkw11/zl-v2"
         link2="https://rayzhao.it.com/"
         time="2025.02"
+      />{" "}
+      <Project
+        name="Stock Analyzer"
+        tech={["Python", "Git"]}
+        des="A cli based stock analyzer that fetches over 4000 real-time tickers from NAZDAQ. Implemented a modular 
+        structure which accepts plugins for algorithmic assistance. Provides complete analytics with stock price changes in a timeframe that users can choose."
+        link1="https://github.com/zlrkw11/z2x-s"
+        time="2025.02 - 2025.06"
       />
     </motion.div>
   );
