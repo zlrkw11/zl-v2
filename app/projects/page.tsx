@@ -61,7 +61,7 @@ const Project = ({
       <div>
         <ChevronDownIcon
           onClick={toggle}
-          className="w-8 h-8 hover:bg-gray-300 bg-gray-200 duration-300 m-2"
+          className="w-8 h-8 hover:bg-gray-300 bg-gray-200 duration-300 m-2 dark:bg-neutral-500 dark:text-neutral-300"
         />
       </div>
       {expanded && <Image className="mx-2 my-4" src={image || ""} alt="" />}
@@ -69,7 +69,7 @@ const Project = ({
       <p className="m-2 border-l-8 border-l-gray-300 dark:border-l-red-700 dark:text-neutral-300 p-2 bg-gray-200 dark:bg-neutral-700/50 shadow-md rounded-r-sm bg-opacity-50">
         {des}
       </p>
-      <div className="m-2 border-l-8 border-l-gray-300 dark:border-l-red-700/50 p-2 bg-gray-200 shadow-md rounded-r-sm bg-opacity-50 dark:bg-neutral-600">
+      <div className="m-2 border-l-8 border-l-gray-300 dark:border-l-red-700 p-2 bg-gray-200 shadow-md rounded-r-sm bg-opacity-50 dark:bg-neutral-600">
         <div className="md:flex">
           <CodeBracketIcon className="size-6 dark:text-neutral-300 text-gray-500" />
 
