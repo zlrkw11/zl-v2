@@ -48,10 +48,10 @@ const Project = ({
           {time}
         </span>
       </h1>
-      <ul className="flex md:gap-2 m-2">
+      <ul className="md:flex md:gap-2 gap-0.5 m-2 grid grid-cols-3">
         {tech.map((s, i) => (
           <li
-            className="border border-gray-300 dark:border-neutral-400 dark:text-neutral-400 text-sm md:rounded-full md:col-span-1 px-2 text-center md:m-0 hover:text-red-600 hover:border-red-600"
+            className="border-2 border-gray-300 md:text-base duration-300 bg-gray-300/30 dark:border-neutral-400 dark:text-neutral-300 text-xs md:rounded-full px-2 text-center md:m-0 hover:text-red-600 hover:border-red-600"
             key={i}
           >
             {s}
@@ -69,12 +69,12 @@ const Project = ({
       <p className="m-2 border-l-8 border-l-gray-300 dark:border-l-red-700 dark:text-neutral-300 p-2 bg-gray-200 dark:bg-neutral-700/50 shadow-md rounded-r-sm bg-opacity-50">
         {des}
       </p>
-      <div className="m-2 border-l-8 border-l-gray-300 dark:border-l-red-700/50 p-2 bg-gray-200 rounded-r-sm bg-opacity-50 dark:bg-neutral-600">
-        <div className="text-nowrap md:flex">
-          <CodeBracketIcon className="size-6 dark:text-neutral-300 text-black" />
+      <div className="m-2 border-l-8 border-l-gray-300 dark:border-l-red-700/50 p-2 bg-gray-200 shadow-md rounded-r-sm bg-opacity-50 dark:bg-neutral-600">
+        <div className="md:flex">
+          <CodeBracketIcon className="size-6 dark:text-neutral-300 text-gray-500" />
 
           <Link
-            className="text-gray-500 dark:text-neutral-800 underline dark:hover:text-neutral-400 hover:text-red-600 md:ml-2"
+            className="text-gray-500 dark:text-neutral-300 w-40 break-words md:w-auto col-span-2 underline dark:hover:text-neutral-400 hover:text-red-600 md:ml-2"
             href={link1}
           >
             {link1}
@@ -82,9 +82,9 @@ const Project = ({
         </div>
         {link2 && (
           <div className="md:flex">
-            <WindowIcon className="size-6 dark:text-neutral-300 text-black" />
+            <WindowIcon className="size-6 dark:text-neutral-300 text-gray-500" />
             <Link
-              className="text-gray-500 dark:text-neutral-800 underline dark:hover:text-neutral-400 hover:text-red-600 md:ml-2"
+              className="text-gray-500 dark:text-neutral-300 underline w-40 break-words md:w-auto dark:hover:text-neutral-400 hover:text-red-600 md:ml-2"
               href={link2}
             >
               {link2}
