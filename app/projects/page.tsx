@@ -138,7 +138,6 @@ const Projects = () => {
         fully functional frontend and a complete user registration system. Leading a team of 11."
         link1="https://github.com/UoaWDCC/ausa"
         time="IN DEVELOPMENT"
-        image={colab}
       />
       <Project
         name="Digital Garden"
