@@ -242,6 +242,32 @@ class Solution:
     link1: "https://leetcode.com/problems/container-with-most-water/",
     link2: "",
   },
+  {
+    id: 3,
+    title: "Longest Substring Without Repeating Characters",
+    date: "2025-11-17",
+    difficulty: "medium",
+    label: ["sliding window", "set"],
+    code: `class Solution:
+    def lengthOfLongestSubstring(self, s: str) -> int:
+        l = 0
+        charSet = set()
+        res = 0
+        for r in range(len(s)):
+            while s[r] in charSet:
+                charSet.remove(s[l])
+                l+=1
+            charSet.add(s[r])
+            res = max(res, r-l+1)
+        return res`,
+    texts: `This solution uses a sliding window with two pointers to find the length of the longest substring without repeating characters. A set keeps track of the characters currently in the window. The right pointer expands the window, and when a duplicate is found, the left pointer moves forward to remove characters until the duplicate is resolved. 
+    At each step, the window size is updated to maintain the maximum length.`,
+    O: "O(n)",
+    S: "O(min(m,n))",
+    link1:
+      "https://leetcode.com/problems/longest-substring-without-repeating-characters/description/",
+    link2: "",
+  },
 ];
 // {
 //     id: ,
