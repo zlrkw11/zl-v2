@@ -30,28 +30,26 @@ const About = () => {
         <div className="flex flex-col gap-4">
           <h1
             id="about-title-1"
-            className="text-3xl dark:text-neutral-300 font-bold border-b-2 border-b-red-600"
+            className="text-3xl dark:text-neutral-300 border-b-2 border-b-red-600"
           >
-            About me<span className="text-3xl text-red-600">:</span>
+            /about_me<span className="text-3xl text-red-600">:</span>
           </h1>
 
-          <div id="image-section" className="flex flex-col items-center">
+          {/* <div id="image-section" className="flex flex-col items-center">
             <Image
               src={me}
               width={200}
               height={200}
               alt="a picture of me"
-              className="rounded-full"
+              className="rounded-[16px] shadow-lg] mb-2"
             />
-            <p
-              className={`text-neutral-400 ${ArimoFont.className} text-sm dark:text-neutral-500`}
-            >
+            <p className={`text-neutral-700 text-sm dark:text-neutral-500`}>
               2025.04, Auckland, New Zealand
             </p>
-          </div>
+          </div> */}
           <div>
             <p
-              className={`${ArimoFont.className} text-gray-700 dark:text-gray-300 text-lg`}
+              className={`${ArimoFont.className} text-gray-700 dark:text-gray-300`}
             >
               Hello, I'm Ray Zhao. a third year Computer Science student at the{" "}
               <Link href="https://www.auckland.ac.nz/en.html">
@@ -71,32 +69,31 @@ const About = () => {
         <div className={`flex flex-col gap-4`}>
           <h1
             id="about-title-1"
-            className="text-3xl font-bold border-b-2 border-b-red-600 dark:text-neutral-300"
+            className="text-3xl border-b-2 border-b-red-600 dark:text-neutral-300"
           >
-            More about me<span className="text-3xl text-red-600">:</span>
+            /what_i_do<span className="text-3xl text-red-600">:</span>
           </h1>
-          <div
-            className={`flex gap-4 ${ArimoFont.className} text-gray-700 dark:text-gray-300`}
-          >
+          <div className={`flex gap-4 text-gray-700 dark:text-gray-300`}>
             <div className="flex flex-col gap-4">
               <p>In the software / web industry, I:</p>
               <ul className="list-disc pl-6 border-l-4 border-red-600 gap-4 flex flex-col">
                 <li>want to learn new skills constantly</li>
                 <li>
-                  am a full-stack developer currently focused on backend systems
-                  & DevOps with a background in frontend development
-                  <span>
+                  I am a full-stack developer currently focused on backend
+                  systems & DevOps with a background in frontend development
+                  <div>
                     <Link
                       className="text-gray-400 hover:text-gray-300 underline"
                       href="/contents/leetcode"
                     >
-                      {`->`} LeetCode Storage Room
+                      {`->`} /leetcode
                     </Link>
-                  </span>
+                  </div>
                 </li>
                 <li>
-                  learn things from others quite fast and develop something more
-                  on top of it
+                  I strive to build efficient and scalable applications that are
+                  modular and extensible. I often spend a lot of time to
+                  optimize the runtime of the applications I'm building.
                 </li>
               </ul>
               <div className="border dark:border-gray-400 opacity-25 md:w-[800px] my-4 border-dashed border-gray-700"></div>
@@ -134,8 +131,49 @@ const About = () => {
             </div>
           </div>{" "}
         </div>
-
         <div className="flex flex-col gap-4">
+          <h3 className="text-lg dark:text-neutral-300">
+            Things I enjoy outside of coding:
+          </h3>
+
+          <ul className="list-disc pl-6 gap-4 flex flex-col py-2 ">
+            <li>playing video games</li>
+            <li>listening to music</li>
+            <li>reading</li>
+          </ul>
+
+          <div className={`flex flex-col gap-4`}>
+            <h1
+              id="about-title-1"
+              className="text-xl border-b-red-600 border-b-2 dark:text-neutral-300"
+            >
+              /get_in_touch:
+            </h1>
+            <div className="grid grid-cols-3">
+              <p className="col-span-1">ray040406@gmail.com</p>
+              <p className="col-span-1">
+                <Link
+                  className="underline"
+                  href={"https://github.com/zlrkw11"}
+                  target="_blank"
+                >
+                  github
+                </Link>
+              </p>
+              <p className="col-span-1">
+                <Link
+                  className="underline"
+                  href={"https://www.linkedin.com/in/ray-zhao-kaede11/"}
+                  target="_blank"
+                >
+                  linkedin
+                </Link>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        {/* <div className="flex flex-col gap-4">
           <h1 className="text-3xl font-bold border-b-2 border-b-red-600  dark:text-neutral-300">
             Why did I make this website
             <span className="text-3xl text-red-600">:</span>
@@ -160,7 +198,7 @@ const About = () => {
             the internet at its purest, a <span>digital space</span> that’s
             personal, creative, and free.
           </div>
-        </div>
+        </div> */}
       </div>
       {/* <Link href="../about/personal">
         <div className="border-black border-b-2 text-center w-[100px] mt-12 transition hover:border-red-600 hover:text-red-600">
