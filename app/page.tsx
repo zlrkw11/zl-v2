@@ -4,9 +4,9 @@ import Image from "next/image";
 import Link from "next/link";
 import { Arimo } from "next/font/google";
 import Nav from "./components/nav";
-import "../app/globals.css";
 import me from "../public/assets/1745399851673.jpeg";
 import { motion } from "motion/react";
+import "./globals.css";
 import {
   Accordion,
   AccordionContent,
@@ -48,21 +48,19 @@ const About = () => {
             </p>
           </div> */}
           <div>
-            <p
-              className={`${ArimoFont.className} text-gray-700 dark:text-gray-300`}
-            >
-              Hello, I'm Ray Zhao. a third year Computer Science student at the{" "}
+            <p className={`text-gray-700 dark:text-gray-300`}>
+              Hello, I'm Ray Zhao. a Computer Science graduate at the{" "}
               <Link href="https://www.auckland.ac.nz/en.html">
                 <span className="underline hover:text-gray-400">
                   University of Auckland
                 </span>
               </Link>{" "}
-              and a self-taught web-developer. I dedicate majority of my time to{" "}
-              web & software development, motivated not only by career growth
-              but by a strong passion for building innovative solutions that can
-              make a real impact. Beyond project work, I'm continuously focused
-              on upskilling and expanding my technical capabilities to stay
-              ahead in a fast-evolving industry.
+              and a full stack developer. I dedicate majority of my time to web
+              & software development, motivated not only by career growth but by
+              a strong passion for building innovative solutions that can make a
+              real impact. Beyond project work, I'm continuously focused on
+              upskilling and expanding my technical capabilities to stay ahead
+              in a fast-evolving industry.
             </p>
           </div>
         </div>
@@ -100,7 +98,7 @@ const About = () => {
               <p className="font-bold">Some of my skills:</p>
               <Accordion type="single" collapsible className="w-full">
                 <AccordionItem value="item-1">
-                  <AccordionTrigger>Frontend</AccordionTrigger>
+                  <AccordionTrigger>/frontend</AccordionTrigger>
                   <AccordionContent>
                     <li>React</li>
                     <li>Next.js</li>
@@ -110,14 +108,14 @@ const About = () => {
                   </AccordionContent>
                 </AccordionItem>
                 <AccordionItem value="item-2">
-                  <AccordionTrigger>Backend</AccordionTrigger>
+                  <AccordionTrigger>/backend</AccordionTrigger>
                   <AccordionContent>
                     <li>Express.js</li>
                     <li>TSOA (Typescript Open API)</li>
                   </AccordionContent>
                 </AccordionItem>
                 <AccordionItem value="item-3">
-                  <AccordionTrigger>Programming Languages</AccordionTrigger>
+                  <AccordionTrigger>/languages</AccordionTrigger>
                   <AccordionContent>
                     <li>Typescript</li>
                     <li>Javascript</li>
@@ -149,15 +147,17 @@ const About = () => {
             >
               /get_in_touch:
             </h1>
-            <div className="grid grid-cols-3">
-              <p className="col-span-1">ray040406@gmail.com</p>
+            <div className="flex flex-col gap-2">
+              <p className="col-span-1">
+                /email<br></br>&nbsp;&nbsp;&nbsp;&nbsp;/ray040406@gmail.com
+              </p>
               <p className="col-span-1">
                 <Link
                   className="underline"
                   href={"https://github.com/zlrkw11"}
                   target="_blank"
                 >
-                  github
+                  /github
                 </Link>
               </p>
               <p className="col-span-1">
@@ -166,7 +166,7 @@ const About = () => {
                   href={"https://www.linkedin.com/in/ray-zhao-kaede11/"}
                   target="_blank"
                 >
-                  linkedin
+                  /linkedin
                 </Link>
               </p>
             </div>
