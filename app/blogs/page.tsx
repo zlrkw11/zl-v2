@@ -16,9 +16,9 @@ const Blogs = async () => {
 
   return (
     <div
-      className={`flex flex-col md:w-[800px] gap-4 text-gray-700  m-2 animate-slide-down`}
+      className={`flex flex-col w-full items-center gap-4 text-gray-700  m-2 animate-slide-down`}
     >
-      <div className="md:min-w-[700px] flex flex-col justify-start">
+      <div className="md:min-w-[800px] flex flex-col justify-start">
         <h1 className="text-3xl md:min-w-[800px] text-black border-b-red-600 dark:text-neutral-300 border-b-2 mr-auto">
           Blogs:
         </h1>
