@@ -47,7 +47,7 @@ const Menu = () => {
         <h1 className="text-xl text-black mr-auto">
           <span className="dark:text-neutral-400">/App</span>
         </h1>
-        <div className="flex flex-col gap-4 ml-8 text-xl border-l-2 border-red-700 pl-2">
+        <div className="flex flex-col gap-4 ml-8 text-xl border-l-2 border-red-700 pl-2 dark:text-gray-300">
           <Link href="/">
             {" "}
             <div className="hover:underline underline-offset-2">/about</div>
@@ -65,7 +65,7 @@ const Menu = () => {
             {" "}
             <div className="">
               <p className="hover:underline underline-offset-2">/contents</p>
-              <div className="border-l-2 border-red-700 pl-2 ml-8 mt-2">
+              <div className="border-l-2 border-red-700 pl-2 ml-8 mt-2 flex flex-col gap-2">
                 <Link href="/contents/leetcode">
                   {" "}
                   <div className="hover:underline underline-offset-2">
