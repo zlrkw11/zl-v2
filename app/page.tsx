@@ -134,7 +134,7 @@ const About = () => {
             Things I enjoy outside of coding:
           </h3>
 
-          <ul className="list-disc pl-6 gap-4 flex flex-col py-2 ">
+          <ul className="list-disc pl-6 gap-4 flex flex-col py-2 dark:text-neutral-300">
             <li>playing video games</li>
             <li>listening to music</li>
             <li>reading</li>
@@ -147,7 +147,7 @@ const About = () => {
             >
               /get_in_touch:
             </h1>
-            <div className="flex flex-col gap-2">
+            <div className="flex flex-col gap-2 dark:text-neutral-300">
               <p className="col-span-1">
                 /email<br></br>&nbsp;&nbsp;&nbsp;&nbsp;/ray040406@gmail.com
               </p>
