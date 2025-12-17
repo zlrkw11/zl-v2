@@ -41,30 +41,57 @@ const Menu = () => {
     <motion.div
       initial={{ opacity: 0, y: -50 }}
       animate={{ opacity: 1, y: 0 }}
-      className={`flex flex-col justify-center md:items-center text-gray-700`}
+      className={`flex flex-col text-gray-700`}
     >
-      <div className="md:w-[800px] flex flex-col text-lg gap-2">
-        <h1 className="text-lg text-black mr-auto">
-          <span className="text-red-600">/</span>
-          <span className="dark:text-neutral-400">App</span>
+      <div className="w-full h-screen flex flex-col text-lg gap-4 m-8 border-l-2 border-red-700 pl-2">
+        <h1 className="text-xl text-black mr-auto">
+          <span className="dark:text-neutral-400">/App</span>
         </h1>
-        <div className="flex flex-col gap-2 ml-4 underline underline-offset-2">
+        <div className="flex flex-col gap-4 ml-8 text-xl border-l-2 border-red-700 pl-2">
           <Link href="/">
             {" "}
-            <div>/about</div>
+            <div className="hover:underline underline-offset-2">/about</div>
           </Link>
 
-          <Link href="/">
+          <Link href="/projects">
             {" "}
-            <div>/projects</div>
+            <div className="hover:underline underline-offset-2">/projects</div>
           </Link>
-          <Link href="/">
+          <Link href="/blogs">
             {" "}
-            <div>/blogs</div>
+            <div className="hover:underline underline-offset-2">/blogs</div>
           </Link>
-          <Link href="/">
+          <Link href="/contents">
             {" "}
-            <div>/contents</div>
+            <div className="">
+              <p className="hover:underline underline-offset-2">/contents</p>
+              <div className="border-l-2 border-red-700 pl-2 ml-8 mt-2">
+                <Link href="/contents/leetcode">
+                  {" "}
+                  <div className="hover:underline underline-offset-2">
+                    /leetcode
+                  </div>
+                </Link>
+                <Link href="/contents/playlist">
+                  {" "}
+                  <div className="hover:underline underline-offset-2">
+                    /playlist
+                  </div>
+                </Link>
+                <Link href="/contents/patchnotes">
+                  {" "}
+                  <div className="hover:underline underline-offset-2">
+                    /patch_notes
+                  </div>
+                </Link>
+                <Link href="/contents/credits">
+                  {" "}
+                  <div className="hover:underline underline-offset-2">
+                    /credits
+                  </div>
+                </Link>
+              </div>
+            </div>
           </Link>
         </div>
         {/* <Card title="Home" description="As what the name says.." link="/" /> */}

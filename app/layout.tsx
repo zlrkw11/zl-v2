@@ -32,7 +32,7 @@ export default function RootLayout({
         <div className="flex items-center justify-center w-full mb-4">
           <Navbar />
         </div>
-        <div className="items-center flex flex-col">{children}</div>
+        <div className="flex flex-col">{children}</div>
         <Footer />
       </body>
     </html>

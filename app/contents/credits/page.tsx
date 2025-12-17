@@ -49,6 +49,7 @@ const credits = () => {
       <Link
         className="underline text-red-600 hover:text-red-400 text-lg"
         href="https://ericzheng.nz/"
+        target="_blank"
       >
         <p>ericzheng.co.nz</p>
       </Link>
