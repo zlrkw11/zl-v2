@@ -129,6 +129,12 @@ const PatchNotes = () => {
             date="2025/08/08"
             des="Spacing issues fixed on Contents page, added new scrollbar. Patched unusual frontend functionalities."
           />
+          <Note
+            ver="1.1.4"
+            date="2025/12/17"
+            des="Updated the visual of the [About] page and [Contents] page to look more like a folder structure and easier to navigate. Made a 
+            temporary 404 page. Fixed minor layout issues on [Layout.tsx]."
+          />
         </ul>
       </div>
     </div>
