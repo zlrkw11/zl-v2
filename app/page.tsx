@@ -64,7 +64,7 @@ const About = () => {
             </p>
           </div>
         </div>
-        <div className={`flex flex-col gap-4`}>
+        <div className={`flex flex-col gap-4 `}>
           <h1
             id="about-title-1"
             className="text-3xl border-b-2 border-b-red-600 dark:text-neutral-300"
@@ -129,17 +129,50 @@ const About = () => {
             </div>
           </div>{" "}
         </div>
-        <div className="flex flex-col gap-4">
-          <h3 className="text-lg dark:text-neutral-300">
+        <div className="flex flex-col gap-8">
+          <h3 id="about-title-1" className="text-lg dark:text-neutral-300">
             Things I enjoy outside of coding:
           </h3>
-
-          <ul className="list-disc pl-6 gap-4 flex flex-col py-2 dark:text-neutral-300">
+          <ul className="list-disc pl-6 gap-4 flex flex-col dark:text-neutral-300">
             <li>playing video games</li>
             <li>listening to music</li>
             <li>reading</li>
           </ul>
-
+          <div className="flex flex-col">
+            <h1 className="text-3xl border-b-2 border-b-red-600 dark:text-neutral-300">
+              /experiences/work
+              <span className="text-3xl text-red-600">:</span>
+            </h1>
+            <div className="flex flex-col gap-4">
+              <p className="text-gray-700 dark:text-gray-300"></p>
+              <ul className="flex flex-col border-l-4 border-red-600 pl-6 dark:text-neutral-300">
+                <li className="flex items-center gap-3">
+                  <span className="text-red-600 font-mono">
+                    [2023.2-2025.11]
+                  </span>
+                  <span>
+                    -- computer science student at the University of Auckland
+                  </span>
+                </li>{" "}
+                <li className="flex items-center gap-3">
+                  <span className="text-red-600 font-mono">
+                    [2024.2-2024.11]
+                  </span>
+                  <span>-- full stack developer at WDCC</span>
+                </li>
+                <li className="flex items-center gap-3">
+                  <span className="text-red-600 font-mono">
+                    [2025.2-2025.11]
+                  </span>
+                  <span>-- tech lead at WDCC for the AUSA website</span>
+                </li>
+                <li className="flex items-center gap-3">
+                  <span className="text-red-600 font-mono">[-]</span>
+                  <span></span>
+                </li>
+              </ul>
+            </div>
+          </div>{" "}
           <div className={`flex flex-col gap-4`}>
             <h1
               id="about-title-1"
@@ -172,33 +205,6 @@ const About = () => {
             </div>
           </div>
         </div>
-
-        {/* <div className="flex flex-col gap-4">
-          <h1 className="text-3xl font-bold border-b-2 border-b-red-600  dark:text-neutral-300">
-            Why did I make this website
-            <span className="text-3xl text-red-600">:</span>
-          </h1>
-          <div
-            className={`${ArimoFont.className} text-gray-700 dark:text-gray-300`}
-          >
-            I’ve always wanted to create a website that's more than just a
-            portfolio for companies to browse — a personal space that reflects
-            individuality.<br></br>
-            <br></br>{" "}
-            <div className="border-l-8 border-gray-300 dark:border-neutral-400 p-2 bg-gray-100 dark:bg-neutral-700">
-              I often think back to the early 2000s, when crafting your own
-              blogs on simple HTML pages was the norm — a raw, unfiltered form
-              of self-expression. Nowadays, it feels like everyone, myself
-              included, is caught up in the endless doom scroll of Instagram
-              reels.
-            </div>
-            <br></br> I also keep myself away from over-commercialized platforms
-            that are cluttered with Temu ads and unauthorized personal data
-            tracking algorithms. So here it is — a website designed to capture
-            the internet at its purest, a <span>digital space</span> that’s
-            personal, creative, and free.
-          </div>
-        </div> */}
       </div>
       {/* <Link href="../about/personal">
         <div className="border-black border-b-2 text-center w-[100px] mt-12 transition hover:border-red-600 hover:text-red-600">

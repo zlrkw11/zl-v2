@@ -24,33 +24,43 @@ const Blogs = async () => {
         </h1>
       </div>
 
-      <p
+      {/* <p
         className={`mb-2 md:max-w-[800px] ${ArimoFont.className} dark:text-gray-300 text-lg`}
       >
         While I don’t often voice my thoughts openly, I believe in their
         value—each one represents a genuine perspective. This page serves as a
         space to document and share those reflections, offering insight into my
         thinking and approach.
-      </p>
+      </p> */}
 
-      <ul
-        className={`gap-2 flex flex-col ${ArimoFont.className} md:min-w-[700px]`}
-      >
+      <ul className={`gap-2 flex flex-col  md:min-w-[800px]`}>
+        <h1 className="text-xl">/all</h1>
+        <h1 className="text-xl">[{blogs.length}]</h1>
         {blogs.map((blog: any) => (
-          <li
-            key={blog.slug}
-            className="transition dark:bg-neutral-600 p-2 border-l-4 border-l-red-600 bg-gray-100 bg-opacity-60 md:min-w-[700px]"
-          >
-            <p className="text-lg text-gray-700 dark:text-neutral-300">
-              <Link
-                className="hover:text-red-600 hover:underline dark:hover:text-neutral-400"
-                href={`/blogs/${blog.slug}`}
-              >
-                {blog.title}
-              </Link>
-            </p>
+          // <li
+          //   key={blog.slug}
+          //   className="transition dark:bg-neutral-600 p-2 border-l-4 border-l-red-600 bg-gray-100 bg-opacity-60 md:min-w-[700px]"
+          // >
+          //   <p className="text-lg text-gray-700 dark:text-neutral-300">
+          //     <Link
+          //       className="hover:text-red-600 hover:underline dark:hover:text-neutral-400"
+          //       href={`/blogs/${blog.slug}`}
+          //     >
+          //       {blog.title}
+          //     </Link>
+          //   </p>
 
-            <p className="text-neutral-400">{blog.date}</p>
+          //   <p className="text-neutral-400">{blog.date}</p>
+          // </li>
+
+          <li key={blog.slug} className="mr-auto ">
+            <Link href={`/blogs/${blog.slug}`}>
+              <div className="flex gap-2">
+                <p className={`text-lg ${ArimoFont.className}`}>{`>`}</p>
+
+                <p className="underline underline-offset-2">{blog.title}</p>
+              </div>
+            </Link>
           </li>
         ))}
       </ul>
