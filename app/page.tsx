@@ -26,7 +26,7 @@ const About = () => {
       animate={{ opacity: 1, y: 0 }}
       className="flex flex-col items-center m-4 justify-center "
     >
-      <div className="flex flex-col md:w-[1000px] gap-8">
+      <div className="flex flex-col md:w-[1000px] m-2 gap-8">
         <div className="flex flex-col gap-4">
           <h1
             className={`text-xl border-b-2 border-b-red-600 dark:text-gray-200 font-mono`}
