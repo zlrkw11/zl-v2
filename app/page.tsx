@@ -29,7 +29,7 @@ const About = () => {
       <div className="flex flex-col md:w-[1000px] gap-8">
         <div className="flex flex-col gap-4">
           <h1
-            className={`text-xl dark:text-neutral-300 border-b-2 border-b-red-600 font-mono`}
+            className={`text-xl border-b-2 border-b-red-600 dark:text-gray-200 font-mono`}
           >
             /about_zl<span className="text-xl text-red-600">:</span>
           </h1>
@@ -209,11 +209,13 @@ const About = () => {
                 </li>
               </ul>
               <div className="border dark:border-gray-400 opacity-25 md:w-[1000px] my-4 border-dashed border-gray-700"></div>
-              <p className="font-mono text-sm font-bold">/skills:</p>
+              <p className="font-mono text-sm font-bold dark:text-gray-200">
+                /skills:
+              </p>
               <Accordion
                 type="multiple"
                 defaultValue={["item-1", "item-2", "item-3"]}
-                className="w-full"
+                className="w-full dark:text-gray-200"
               >
                 <AccordionItem value="item-3">
                   <AccordionTrigger>/techstack</AccordionTrigger>
