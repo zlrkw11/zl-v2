@@ -218,6 +218,18 @@ const About = () => {
                 <AccordionItem value="item-3">
                   <AccordionTrigger>/techstack</AccordionTrigger>
                   <AccordionContent>
+                    <div className="mb-4 pb-2 border-b border-gray-300 dark:border-gray-600">
+                      <p className="font-mono text-xs text-gray-500 dark:text-gray-400">
+                        <span className="text-red-600">//</span>{" "}
+                        <span className="text-red-600">[+]</span> language,{" "}
+                        <span className="text-red-600">[^]</span> framework,{" "}
+                        <span className="text-red-600">[/]</span> DevOps
+                        technology, <span className="text-red-600">[*]</span>{" "}
+                        DevOps related skills,{" "}
+                        <span className="text-red-600">[-]</span> package
+                        manager
+                      </p>
+                    </div>
                     <ul className="flex flex-col gap-2 pl-0 list-none font-mono text-sm">
                       <li className="flex items-center gap-2">
                         <span className="text-red-600">[+]</span>
@@ -225,17 +237,17 @@ const About = () => {
                       </li>{" "}
                       <li className="flex items-center gap-2 pl-8">
                         <span className="">----</span>
-                        <span className="text-red-600">[+]</span>
+                        <span className="text-red-600">[^]</span>
                         <span>Typescript Open Api (TSOA)</span>
                       </li>{" "}
                       <li className="flex items-center gap-2 pl-8">
                         <span className="">----</span>
-                        <span className="text-red-600">[+]</span>
+                        <span className="text-red-600">[^]</span>
                         <span>Next.js</span>
                       </li>{" "}
                       <li className="flex items-center gap-2 pl-8">
                         <span className="">----</span>
-                        <span className="text-red-600">[+]</span>
+                        <span className="text-red-600">[^]</span>
                         <span>React</span>
                       </li>{" "}
                       <li className="flex items-center gap-2">
@@ -244,7 +256,7 @@ const About = () => {
                       </li>
                       <li className="flex items-center gap-2 pl-8">
                         <span className="">----</span>
-                        <span className="text-red-600">[+]</span>
+                        <span className="text-red-600">[^]</span>
                         <span>Express.js</span>
                       </li>{" "}
                       <li className="flex items-center gap-2">
@@ -257,7 +269,7 @@ const About = () => {
                       </li>
                       <li className="flex items-center gap-2 pl-8">
                         <span className="">----</span>
-                        <span className="text-red-600">[+]</span>
+                        <span className="text-red-600">[^]</span>
                         <span>JAX-RS --[cs331]</span>
                       </li>{" "}
                       <li className="flex items-center gap-2">
@@ -266,7 +278,7 @@ const About = () => {
                       </li>
                       <li className="flex items-center gap-2 pl-8">
                         <span className="">----</span>
-                        <span className="text-red-600">[+]</span>
+                        <span className="text-red-600">[^]</span>
                         <span>ASP.NET --[cs335]</span>
                       </li>{" "}
                       <li className="flex items-center gap-2">
@@ -293,13 +305,29 @@ const About = () => {
                         <span>cloudflare</span>
                       </li>{" "}
                       <li className="flex items-center gap-2">
-                        <span className="text-red-600">[-]</span>
+                        <span className="">--</span>
+                        <span className="text-red-600">[/]</span>
                         <span>GitHub</span>
                       </li>{" "}
                       <li className="flex items-center gap-2 pl-10">
                         <span className="">----</span>
                         <span className="text-red-600">[*]</span>
                         <span>GitHub actions</span>
+                      </li>{" "}
+                      <li className="flex items-center gap-2">
+                        <span className=""></span>
+                        <span className="text-red-600">[-]</span>
+                        <span>PNPM</span>
+                      </li>{" "}
+                      <li className="flex items-center gap-2 pl-8">
+                        <span className="">----</span>
+                        <span className="text-red-600">[*]</span>
+                        <span>CI-CD pipeline</span>
+                      </li>{" "}
+                      <li className="flex items-center gap-2 pl-8">
+                        <span className="">----</span>
+                        <span className="text-red-600">[*]</span>
+                        <span>env</span>
                       </li>{" "}
                     </ul>
                   </AccordionContent>
