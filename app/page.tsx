@@ -26,13 +26,12 @@ const About = () => {
       animate={{ opacity: 1, y: 0 }}
       className="flex flex-col items-center m-4 justify-center "
     >
-      <div className="flex flex-col md:w-[800px] gap-8">
+      <div className="flex flex-col md:w-[1000px] gap-8">
         <div className="flex flex-col gap-4">
           <h1
-            id="about-title-1"
-            className="text-3xl dark:text-neutral-300 border-b-2 border-b-red-600"
+            className={`text-xl dark:text-neutral-300 border-b-2 border-b-red-600 ${ArimoFont.className}`}
           >
-            /about_me<span className="text-3xl text-red-600">:</span>
+            /about_zl<span className="text-xl text-red-600">:</span>
           </h1>
 
           {/* <div id="image-section" className="flex flex-col items-center">
@@ -48,8 +47,10 @@ const About = () => {
             </p>
           </div> */}
           <div>
-            <p className={`text-gray-700 dark:text-gray-300`}>
-              Hello, I'm Ray Zhao. a Computer Science graduate at the{" "}
+            <p
+              className={`text-gray-700 dark:text-gray-300 ${ArimoFont.className}`}
+            >
+              Hello, I'm Ray --aka(zlrkw11). a computer science graduate at the{" "}
               <Link href="https://www.auckland.ac.nz/en.html">
                 <span className="underline hover:text-gray-400">
                   University of Auckland
@@ -67,12 +68,14 @@ const About = () => {
         <div className={`flex flex-col gap-4 `}>
           <h1
             id="about-title-1"
-            className="text-3xl border-b-2 border-b-red-600 dark:text-neutral-300"
+            className={`text-xl border-b-2 border-b-red-600 dark:text-neutral-300 ${ArimoFont.className}`}
           >
-            /what_i_do<span className="text-3xl text-red-600">:</span>
+            /facts<span className="text-xl text-red-600">:</span>
           </h1>
-          <div className={`flex gap-4 text-gray-700 dark:text-gray-300`}>
-            <div className="flex flex-col gap-4">
+          <div
+            className={`flex text-gray-700 dark:text-gray-300 ${ArimoFont.className}`}
+          >
+            <div className="flex flex-col gap-1">
               <p>In the software / web industry, I:</p>
               <ul className="list-disc pl-6 border-l-4 border-red-600 gap-4 flex flex-col">
                 <li>want to learn new skills constantly</li>
@@ -94,8 +97,8 @@ const About = () => {
                   optimize the runtime of the applications I'm building.
                 </li>
               </ul>
-              <div className="border dark:border-gray-400 opacity-25 md:w-[800px] my-4 border-dashed border-gray-700"></div>
-              <p className="font-bold">Some of my skills:</p>
+              <div className="border dark:border-gray-400 opacity-25 md:w-[1000px] my-4 border-dashed border-gray-700"></div>
+              <p className="font-bold">/skills:</p>
               <Accordion type="single" collapsible className="w-full">
                 <AccordionItem value="item-1">
                   <AccordionTrigger>/frontend</AccordionTrigger>
