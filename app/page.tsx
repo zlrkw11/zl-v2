@@ -349,9 +349,9 @@ const About = () => {
             <div className="flex flex-col gap-4 font-mono">
               <p className="text-gray-700 dark:text-gray-300"></p>
               <ul className="flex flex-col border-l-4 border-red-600 pl-6 dark:text-neutral-300">
-                <li className="flex items-center gap-3">
+                <li className="md:flex items-center gap-3">
                   <span className="text-red-600 ">[2023.2-2025.11]</span>
-                  <span>-- student [BsC: Computer Science]</span>
+                  <span>student [BsC: Computer Science]</span>
                   <span>- University of Auckland</span>
                   <span className="text-red-600">(graduated)</span>
                 </li>{" "}
@@ -359,14 +359,14 @@ const About = () => {
                   <span className="text-red-600 font-mono">
                     [2024.2-2024.11]
                   </span>
-                  <span>-- full stack developer</span>{" "}
+                  <span>full stack developer</span>{" "}
                   <span>---- Web Development and Consulting Club (WDCC)</span>
                 </li>
                 <li className="flex items-center gap-3">
                   <span className="text-red-600 font-mono">
                     [2025.2-2025.11]
                   </span>
-                  <span>-- tech lead</span>
+                  <span>tech lead</span>
                   <span>
                     --------------- Web Development and Consulting Club (WDCC)
                   </span>
