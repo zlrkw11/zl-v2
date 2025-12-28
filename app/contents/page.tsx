@@ -43,7 +43,7 @@ const Menu = () => {
       animate={{ opacity: 1, y: 0 }}
       className={`flex flex-col text-gray-700`}
     >
-      <div className="w-full h-screen flex flex-col text-lg gap-4 m-8 border-l-2 border-red-700 pl-2">
+      <div className="w-full h-screen flex flex-col text-lg gap-4 m-8 border-l-2 border-red-700 pl-2 font-mono">
         <h1 className="text-xl text-black mr-auto">
           <span className="dark:text-neutral-400">/App</span>
         </h1>

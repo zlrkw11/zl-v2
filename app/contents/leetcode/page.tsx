@@ -42,7 +42,7 @@ const Problem = ({ problem, index }: Props) => {
     <motion.div
       initial={{ opacity: 0, y: -50 }}
       animate={{ opacity: 1, y: 0 }}
-      className={`${
+      className={`font-mono ${
         difficulty === "easy" && "border-l-green-600 dark:border-l-green-800"
       } ${
         difficulty === "medium" &&
@@ -59,10 +59,10 @@ const Problem = ({ problem, index }: Props) => {
           <span className="font-bold mr-1">{id}.</span>
           {title}
         </h1>
-        <div className={`${ArimoFont.className} text-sm`}>
+        <div className={`font-mono text-sm`}>
           {difficulty === "easy" && (
             <div className=" text-green-500 rounded-full dark:text-neutral-300">
-              <p className="hidden md:inline-block px-4 italic">EASY</p>
+              <p className="hidden md:inline-block px-4">EASY</p>
               <p className="md:hidden text-green-600 dark:text-neutral-300">
                 E
               </p>
@@ -70,7 +70,7 @@ const Problem = ({ problem, index }: Props) => {
           )}{" "}
           {difficulty === "medium" && (
             <div className=" text-orange-400 rounded-full dark:text-neutral-300">
-              <p className="hidden md:inline-block italic px-4">MEDIUM</p>
+              <p className="hidden md:inline-block px-4">MEDIUM</p>
               <p className="md:hidden text-orange-400 dark:text-neutral-300">
                 M
               </p>
@@ -78,7 +78,7 @@ const Problem = ({ problem, index }: Props) => {
           )}{" "}
           {difficulty === "hard" && (
             <div className=" text-red-600 rounded-full dark:text-neutral-300">
-              <p className="hidden md:inline-block italic px-4">HARD</p>
+              <p className="hidden md:inline-block px-4">HARD</p>
               <p className="md:hidden  text-red-600 dark:text-neutral-300">H</p>
             </div>
           )}
@@ -93,7 +93,7 @@ const Problem = ({ problem, index }: Props) => {
         {label.map((l, i) => (
           <div
             key={i}
-            className={`bg-gray-200 text-gray-700 dark:text-neutral-400 dark:bg-neutral-600 rounded-none px-2 md:text-based text-center text-nowrap`}
+            className={`font-mono bg-gray-200 text-gray-700 dark:text-neutral-400 dark:bg-neutral-600 rounded-none px-2 md:text-based text-center text-nowrap`}
           >
             {l}
           </div>
@@ -118,7 +118,7 @@ const LeetCode = () => {
 
   const paginatedProblems = allProblems.slice(
     (curr - 1) * numberPerPage,
-    curr * numberPerPage,
+    curr * numberPerPage
   );
 
   const Next = () => {
@@ -133,16 +133,16 @@ const LeetCode = () => {
 
   return (
     <div className="flex flex-col items-center gap-4">
-      <div className="flex gap-2">
-        <Image src={lc} width={30} height={30} alt="LeetCode" />
+      <div className="flex gap-4 items-center">
+        <Image src={lc} width={20} height={20} alt="LeetCode" />
         <h1
-          className={`text-2xl flex ${crimsonFont.className} mt-3 dark:text-neutral-400`}
+          className={`text-lg font-mono text-gray-800 flex dark:text-neutral-400`}
         >
-          LeetCode Problems
+          zl's leetcode archive
         </h1>
       </div>
       <div
-        className={`${ArimoFontThick.className} md:w-[800px] w-[370px] grid grid-cols-1 gap-2 items-center`}
+        className={`md:w-[800px] w-[370px] grid grid-cols-1 gap-2 items-center`}
       >
         {paginatedProblems.map((problem, i) => (
           <Problem key={problem.id} problem={problem} index={i} />
