@@ -37,8 +37,8 @@ const ProblemPage = ({ problem }: { problem: any }) => {
   };
 
   return (
-    <div className="flex flex-col items-center m-4 gap-6">
-      <div className="flex flex-col md:w-[1000px] gap-6 font-mono">
+    <div className="flex flex-col items-center m-4 gap-6 ">
+      <div className="flex flex-col md:w-[1000px] w-[300px] gap-6 font-mono">
         {/* Header section */}
         <div className="flex flex-col gap-2 border-b-2 border-red-600 pb-2">
           <div className="flex items-center gap-4 flex-wrap">
@@ -54,9 +54,7 @@ const ProblemPage = ({ problem }: { problem: any }) => {
             <span className="text-lg text-gray-900 dark:text-gray-200">
               {problem.title}
             </span>
-            <span
-              className={`text-sm font-semibold ${getDifficultyColor()}`}
-            >
+            <span className={`text-sm font-semibold ${getDifficultyColor()}`}>
               [{problem.difficulty.toUpperCase()}]
             </span>
           </div>
@@ -129,7 +127,9 @@ const ProblemPage = ({ problem }: { problem: any }) => {
           {problem.link2 && (
             <div className="flex items-center gap-2">
               <span className="text-red-600">[+]</span>
-              <span className="text-red-600">{problem.link2name || "reference"}</span>
+              <span className="text-red-600">
+                {problem.link2name || "reference"}
+              </span>
               <span className="text-gray-600 dark:text-gray-400">:</span>{" "}
               <Link
                 href={problem.link2}
