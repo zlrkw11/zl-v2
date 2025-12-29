@@ -19,7 +19,7 @@ const Blogs = async () => {
       className={`flex flex-col w-full items-center gap-4 text-gray-700  m-2 animate-slide-down`}
     >
       <div className="md:min-w-[800px] flex flex-col justify-start">
-        <h1 className="text-3xl md:min-w-[800px] text-black border-b-red-600 dark:text-neutral-300 border-b-2 mr-auto">
+        <h1 className="text-3xl md:min-w-[800px] text-black border-b-red-600 dark:text-gray-200 border-b-2 mr-auto">
           Blogs:
         </h1>
       </div>
@@ -33,9 +33,13 @@ const Blogs = async () => {
         thinking and approach.
       </p> */}
 
-      <ul className={`gap-2 flex flex-col  md:min-w-[800px]`}>
+      <ul className={`gap-2 flex flex-col dark:text-gray-200 md:min-w-[800px]`}>
         <h1 className="text-xl">/all</h1>
         <h1 className="text-xl">[{blogs.length}]</h1>
+        <h1 className="text-2xl">
+          This page is currently under construction. Need to remake the entire
+          page.
+        </h1>
         {blogs.map((blog: any) => (
           // <li
           //   key={blog.slug}
