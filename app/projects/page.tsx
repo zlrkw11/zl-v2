@@ -47,9 +47,9 @@ const Project = ({
           {tech.map((t, i) => (
             <li
               key={i}
-              className="flex items-center gap-1 text-sm border border-gray-300 dark:border-gray-600 px-2 py-1"
+              className="flex items-center gap-1 text-sm border shadow-md border-gray-300 dark:border-gray-600 px-2 py-1"
             >
-              <span className="text-red-600">[+]</span>
+              <span className="text-red-600">[^]</span>
               <span className="text-gray-900 dark:text-gray-200">{t}</span>
             </li>
           ))}
@@ -116,6 +116,22 @@ const Project = ({
             </Link>
           </div>
         )}
+      </div>
+
+      <div className="flex items-center gap-2 pt-2 border-t border-gray-300 dark:border-gray-700">
+        <span className="text-red-600">$</span>
+        <Link
+          href={`/projects/${name.toLowerCase().replace(/\s+/g, "_")}`}
+          className="group flex items-center gap-2 text-sm text-gray-900 dark:text-gray-200 hover:text-red-600 dark:hover:text-red-500 transition-all duration-200"
+        >
+          <span className="text-red-600 group-hover:translate-x-1 transition-transform duration-200 inline-block">
+            →
+          </span>
+          <span className="font-semibold">read_more()</span>
+          <span className="text-gray-500 dark:text-gray-400 group-hover:text-red-600 dark:group-hover:text-red-500 transition-colors">
+            // explore details
+          </span>
+        </Link>
       </div>
     </div>
   );
