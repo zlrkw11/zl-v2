@@ -1,100 +1,135 @@
 "use client";
-import { Arimo } from "next/font/google";
-import { Crimson_Text } from "next/font/google";
 import Link from "next/link";
 import { motion } from "motion/react";
-
-const ArimoFont = Arimo({
-  subsets: ["latin"],
-  weight: "500",
-});
-
-const crimsonFont = Crimson_Text({
-  subsets: ["latin"],
-  weight: "400",
-});
-
-// const Card = ({
-//   title,
-//   description,
-//   link,
-// }: {
-//   title: string;
-//   description: string;
-//   link: string;
-// }) => {
-//   return (
-//     <div className="dark:text-neutral-500 md:m-2 m-4 p-2 gap-2 flex flex-col w-[370px] md:min-w-[600px] ">
-//       <Link href={link}>
-//         <h1 className="hover:text-red-600 dark:text-neutral-300 dark:hover:text-neutral-400 dark:hover:underline">
-//           ./{title}
-//         </h1>
-//       </Link>
-
-//       <div className="dark:text-neutral-400">{description}</div>
-//     </div>
-//   );
-// };
+import { usePathname } from "next/navigation";
 
 const Menu = () => {
+  const pathname = usePathname();
+
+  const isActive = (path: string) => pathname === path;
+
   return (
     <motion.div
       initial={{ opacity: 0, y: -50 }}
       animate={{ opacity: 1, y: 0 }}
-      className={`flex flex-col text-gray-700`}
+      className="flex flex-col items-center m-4 gap-6"
     >
-      <div className="w-full h-screen flex flex-col text-lg gap-4 m-8 border-l-2 border-red-700 pl-2 font-mono">
-        <h1 className="text-xl text-black mr-auto">
-          <span className="dark:text-neutral-400">/App</span>
-        </h1>
-        <div className="flex flex-col gap-4 ml-8 text-xl border-l-2 border-red-700 pl-2 dark:text-gray-300">
-          <Link href="/">
-            {" "}
-            <div className="hover:underline underline-offset-2">/about</div>
-          </Link>
+      <div className="flex flex-col md:w-[1000px] gap-6 font-mono">
+        <div className="flex flex-col gap-2 border-b-2 border-red-600 pb-2">
+          <h1 className="text-xl text-gray-900 dark:text-gray-200">
+            /contents
+            <span className="text-red-600">:</span>
+          </h1>
+          <p className="text-sm text-gray-500 dark:text-gray-400">
+            <span className="text-red-600">//</span> Site navigation map
+          </p>
+        </div>
 
-          <Link href="/projects">
-            {" "}
-            <div className="hover:underline underline-offset-2">/projects</div>
-          </Link>
-          <Link href="/blogs">
-            {" "}
-            <div className="hover:underline underline-offset-2">/blogs</div>
-          </Link>
-          <Link href="/contents">
-            {" "}
-            <div className="">
-              <p className="hover:underline underline-offset-2">/contents</p>
-              <div className="border-l-2 border-red-700 pl-2 ml-8 mt-2 flex flex-col gap-2">
-                <Link href="/contents/leetcode">
-                  {" "}
-                  <div className="hover:underline underline-offset-2">
-                    /leetcode
-                  </div>
+        <div className="flex flex-col gap-1 text-sm text-gray-900 dark:text-gray-200">
+          <div className="flex items-center gap-2">
+            <span className="text-red-600">/</span>
+            <span className="text-gray-500 dark:text-gray-400">root</span>
+          </div>
+
+          <div className="flex flex-col gap-1 ml-4">
+            <Link
+              href="/"
+              className={`flex items-center gap-2 hover:text-red-600 dark:hover:text-red-500 transition-colors ${
+                isActive("/") ? "text-red-600 font-semibold" : ""
+              }`}
+            >
+              <span className="text-gray-500 dark:text-gray-400">├──</span>
+              <span className="text-red-600">/about</span>
+            </Link>
+
+            <Link
+              href="/projects"
+              className={`flex items-center gap-2 hover:text-red-600 dark:hover:text-red-500 transition-colors ${
+                isActive("/projects") ? "text-red-600 font-semibold" : ""
+              }`}
+            >
+              <span className="text-gray-500 dark:text-gray-400">├──</span>
+              <span className="text-red-600">/projects</span>
+            </Link>
+
+            <Link
+              href="/blogs"
+              className={`flex items-center gap-2 hover:text-red-600 dark:hover:text-red-500 transition-colors ${
+                isActive("/blogs") ? "text-red-600 font-semibold" : ""
+              }`}
+            >
+              <span className="text-gray-500 dark:text-gray-400">├──</span>
+              <span className="text-red-600">/blogs</span>
+            </Link>
+
+            {/* Level 1: Contents (with children) */}
+            <div className="flex flex-col gap-1">
+              <div
+                className={`flex items-center gap-2 ${
+                  pathname.startsWith("/contents")
+                    ? "text-red-600 font-semibold"
+                    : ""
+                }`}
+              >
+                <span className="text-gray-500 dark:text-gray-400">└──</span>
+                <span className="text-red-600">/contents</span>
+              </div>
+
+              {/* Level 2: Contents Children */}
+              <div className="flex flex-col gap-1 ml-6">
+                <Link
+                  href="/contents/leetcode"
+                  className={`flex items-center gap-2 hover:text-red-600 dark:hover:text-red-500 transition-colors ${
+                    isActive("/contents/leetcode")
+                      ? "text-red-600 font-semibold"
+                      : ""
+                  }`}
+                >
+                  <span className="text-gray-500 dark:text-gray-400">├──</span>
+                  <span className="text-red-600">/leetcode</span>
                 </Link>
-                <Link href="/contents/playlist">
-                  {" "}
-                  <div className="hover:underline underline-offset-2">
-                    /playlist
-                  </div>
+
+                <Link
+                  href="/contents/patchnotes"
+                  className={`flex items-center gap-2 hover:text-red-600 dark:hover:text-red-500 transition-colors ${
+                    isActive("/contents/patchnotes")
+                      ? "text-red-600 font-semibold"
+                      : ""
+                  }`}
+                >
+                  <span className="text-gray-500 dark:text-gray-400">├──</span>
+                  <span className="text-red-600">/patchnotes</span>
                 </Link>
-                <Link href="/contents/patchnotes">
-                  {" "}
-                  <div className="hover:underline underline-offset-2">
-                    /patch_notes
-                  </div>
-                </Link>
-                <Link href="/contents/credits">
-                  {" "}
-                  <div className="hover:underline underline-offset-2">
-                    /credits
-                  </div>
+
+                <Link
+                  href="/contents/credits"
+                  className={`flex items-center gap-2 hover:text-red-600 dark:hover:text-red-500 transition-colors ${
+                    isActive("/contents/credits")
+                      ? "text-red-600 font-semibold"
+                      : ""
+                  }`}
+                >
+                  <span className="text-gray-500 dark:text-gray-400">└──</span>
+                  <span className="text-red-600">/credits</span>
                 </Link>
               </div>
             </div>
-          </Link>
+          </div>
         </div>
-        {/* <Card title="Home" description="As what the name says.." link="/" /> */}
+
+        <div className="flex flex-col gap-2 pt-4 border-t border-gray-300 dark:border-gray-700">
+          <div className="text-xs text-gray-500 dark:text-gray-400">
+            <span className="text-red-600">//</span> Tree structure navigation
+          </div>
+          <div className="text-xs text-gray-500 dark:text-gray-400 flex items-center gap-4">
+            <span>
+              <span className="text-red-600">├──</span> branch
+            </span>
+            <span>
+              <span className="text-red-600">└──</span> leaf
+            </span>
+          </div>
+        </div>
       </div>
     </motion.div>
   );
