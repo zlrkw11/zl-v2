@@ -136,6 +136,11 @@ const PatchNotes = () => {
               ver="1.1.4"
               date="2025/12/17"
               des="Updated the visual of the [About] page and [Contents] page to look more like a folder structure and easier to navigate. Made a temporary 404 page. Fixed minor layout issues on [Layout.tsx]."
+            />{" "}
+            <Note
+              ver="1.1.5"
+              date="2026/1/13"
+              des="Refactored the [Blog] page (detail page), [Leetcode] library and detail page, [Projects] page to fit the theme of the rest of the website better."
             />
           </ul>
         </div>
