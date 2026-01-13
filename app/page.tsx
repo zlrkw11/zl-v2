@@ -65,7 +65,9 @@ const About = () => {
               <p>
                 <span className="text-red-600">name</span>
                 <span className="text-gray-600 dark:text-gray-400">:</span>{" "}
-                <span className="text-black dark:text-gray-200">"Ray"</span>
+                <span className="text-black dark:text-gray-200">
+                  "Ray Zhao"
+                </span>
                 <span className="text-gray-500 dark:text-gray-400">,</span>
               </p>
               <p>
@@ -176,14 +178,6 @@ const About = () => {
                     <span className="text-black dark:text-gray-200">
                       "full stack development"
                     </span>
-                    <div className="mt-1">
-                      <Link
-                        className="text-black dark:text-gray-200 underline hover:text-gray-600 dark:hover:text-gray-400"
-                        href="/contents/leetcode"
-                      >
-                        <span className="text-red-600">→</span> /leetcode
-                      </Link>
-                    </div>
                   </span>
                 </li>
                 <li className="flex items-start gap-2">
@@ -274,6 +268,11 @@ const About = () => {
                         <span className="text-red-600">[^]</span>
                         <span>JAX-RS --[cs331]</span>
                       </li>{" "}
+                      <li className="flex items-center gap-2 pl-8">
+                        <span className="">----</span>
+                        <span className="text-red-600">[^]</span>
+                        <span>SpringBoot</span>
+                      </li>{" "}
                       <li className="flex items-center gap-2">
                         <span className="text-red-600">[+]</span>
                         <span>C#</span>
@@ -304,7 +303,7 @@ const About = () => {
                       <li className="flex items-center gap-2">
                         <span className="">--</span>
                         <span className="text-red-600">[/]</span>
-                        <span>cloudflare</span>
+                        <span>Cloudflare</span>
                       </li>{" "}
                       <li className="flex items-center gap-2">
                         <span className="">--</span>
@@ -335,6 +334,14 @@ const About = () => {
                   </AccordionContent>
                 </AccordionItem>
               </Accordion>{" "}
+              <div className="mt-4">
+                <Link
+                  className="px-3 py-1 border border-gray-300 dark:border-neutral-600 rounded transition-colors text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-neutral-700 hover:border-red-600 dark:hover:border-red-400"
+                  href="/contents/leetcode"
+                >
+                  <span className="text-red-600">→</span> /leetcode_library
+                </Link>
+              </div>
               {/* here is the quote block */}
               {/* <ul className="list-disc border-r-4 dark:border-red-500 border-red-700 bg-red-400 dark:bg-red-900 dark:text-gray-300 text-white p-2">
               </ul>{" "} */}
