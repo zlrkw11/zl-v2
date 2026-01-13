@@ -268,6 +268,42 @@ class Solution:
       "https://leetcode.com/problems/longest-substring-without-repeating-characters/description/",
     link2: "",
   },
+  {
+    id: 643,
+    title: "Maximum Average Subarray I (v.2)",
+    date: "2026-01-13",
+    difficulty: "easy",
+    label: ["array", "sliding window"],
+    code: `class Solution:
+    def findMaxAverage(self, nums: list[int], k: int) -> float:
+        if k > len(nums):
+            return 0
+        i = 0
+        j = k
+
+        curr_sum = sum(nums[:k])
+        max_sum = curr_sum
+        while j < len(nums):
+            curr_sum += nums[j]
+            curr_sum -= nums[i]
+            print(curr_sum)
+            max_sum = max(curr_sum, max_sum)
+            j+=1
+            i+=1
+
+        return max_sum/k
+
+s = Solution()
+print(s.findMaxAverage([1,2,3,4,5], 2))
+`,
+    texts: `A very typical sliding window problem. I used a while loop to go through the right side (extending the window),
+    adding the new number on the right and take out the old number from the left while keeping track of the max sum.`,
+    O: "O(N)",
+    S: "O(1)",
+    link1:
+      "https://leetcode.com/problems/maximum-average-subarray-i/description/",
+    link2: "",
+  },
 ];
 // {
 //     id: ,
