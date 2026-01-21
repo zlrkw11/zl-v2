@@ -97,20 +97,8 @@ const Menu = () => {
                       : ""
                   }`}
                 >
-                  <span className="text-gray-500 dark:text-gray-400">├──</span>
-                  <span className="text-red-600">/patchnotes</span>
-                </Link>
-
-                <Link
-                  href="/contents/credits"
-                  className={`flex items-center gap-2 hover:text-red-600 dark:hover:text-red-500 transition-colors ${
-                    isActive("/contents/credits")
-                      ? "text-red-600 font-semibold"
-                      : ""
-                  }`}
-                >
                   <span className="text-gray-500 dark:text-gray-400">└──</span>
-                  <span className="text-red-600">/credits</span>
+                  <span className="text-red-600">/patchnotes</span>
                 </Link>
               </div>
             </div>
