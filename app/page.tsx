@@ -77,14 +77,6 @@ const About = () => {
                 <span className="text-gray-500 dark:text-gray-400">,</span>
               </p>
               <p>
-                <span className="text-red-600">role</span>
-                <span className="text-gray-600 dark:text-gray-400">:</span>{" "}
-                <span className="text-black dark:text-gray-200">
-                  "full stack developer / software engineer"
-                </span>
-                <span className="text-gray-500 dark:text-gray-400">,</span>
-              </p>
-              <p>
                 <span className="text-red-600">education</span>
                 <span className="text-gray-600 dark:text-gray-400">:</span>{" "}
                 <span className="text-black dark:text-gray-200">
@@ -107,7 +99,7 @@ const About = () => {
                 <span className="text-red-600">bio</span>
                 <span className="text-gray-600 dark:text-gray-400">:</span>{" "}
                 <span className="text-black dark:text-gray-200">
-                  "I dedicate majority of my time to web & software development,
+                  "I dedicate majority of my time to web & software development in the fintech space,
                   motivated not only by career growth but by a strong passion
                   for building innovative solutions that can make a real impact.
                   Beyond project work, I'm continuously focused on upskilling
@@ -142,12 +134,12 @@ const About = () => {
                 <li className="flex items-start gap-2">
                   <span className="text-red-600">[1]</span>
                   <span>
-                    <span className="text-red-600">favourite techstack</span>
+                    <span className="text-red-600">most proficient techstack</span>
                     <span className="text-gray-600 dark:text-gray-400">
                       :
                     </span>{" "}
                     <span className="text-black dark:text-gray-200">
-                      "Typescript, Next.js, TSOA"
+                      "Go, gRPC, Python, Typescript, Next.js, RESTful API"
                     </span>
                   </span>
                 </li>
@@ -159,7 +151,7 @@ const About = () => {
                       :
                     </span>{" "}
                     <span className="text-black dark:text-gray-200">
-                      "full-stack developer"
+                      "developer / day trader"
                     </span>
                     <span className="text-gray-500 dark:text-gray-400">,</span>{" "}
                     <span className="text-red-600">focus</span>
@@ -167,8 +159,8 @@ const About = () => {
                       :
                     </span>{" "}
                     <span className="text-black dark:text-gray-200">
-                      "service API endpoints, business logic, functional
-                      components, DevOps"
+                      "algorithms, system architecture design, microservices, RESTful API endpoints, functional
+                      components, agentic automation"
                     </span>
                     <span className="text-gray-500 dark:text-gray-400">,</span>{" "}
                     <span className="text-red-600">background</span>
@@ -188,7 +180,7 @@ const About = () => {
                       :
                     </span>{" "}
                     <span className="text-black dark:text-gray-200">
-                      "build apps that are clean, modular and act like a plugin
+                      "build algorithm/service tools that are modular and operates with plugin built in microservices
                       where you can evolve it constantly."
                     </span>
                     <span className="text-gray-500 dark:text-gray-400">,</span>{" "}
@@ -218,6 +210,7 @@ const About = () => {
                       <p className="font-mono text-xs text-gray-500 dark:text-gray-400">
                         <span className="text-red-600">//</span>{" "}
                         <span className="text-red-600">[+]</span> language,{" "}
+                        <span className="text-red-600">[#]</span> core skill,{" "}
                         <span className="text-red-600">[^]</span> framework,{" "}
                         <span className="text-red-600">[/]</span> DevOps
                         technology, <span className="text-red-600">[*]</span>{" "}
@@ -227,6 +220,25 @@ const About = () => {
                       </p>
                     </div>
                     <ul className="flex flex-col gap-2 pl-0 list-none font-mono text-sm">
+                        <li className="flex items-center gap-2">
+                        <span className="text-red-600">[+]</span>
+                        <span>GO</span>
+                      </li>{" "}
+                      <li className="flex items-center gap-2 pl-8">
+                        <span className="">----</span>
+                        <span className="text-red-600">[^]</span>
+                        <span>gRPC microservices & protobuf</span>
+                      </li>{" "}
+                      <li className="flex items-center gap-2 pl-8">
+                        <span className="">----</span>
+                        <span className="text-red-600">[#]</span>
+                        <span>system architecture design</span>
+                      </li>{" "}
+                      <li className="flex items-center gap-2 pl-8">
+                        <span className="">----</span>
+                        <span className="text-red-600">[#]</span>
+                        <span>Concurrency (goroutines, channels, sync primititves)</span>
+                      </li>{" "}
                       <li className="flex items-center gap-2">
                         <span className="text-red-600">[+]</span>
                         <span>Typescript</span>
@@ -356,26 +368,31 @@ const About = () => {
             <div className="flex flex-col gap-4 font-mono">
               <p className="text-gray-700 dark:text-gray-300"></p>
               <ul className="flex flex-col border-l-4 border-red-600 pl-6 dark:text-neutral-300">
+                 <li className="md:flex items-center gap-3">
+                  <span className="italic ">[2026.2-2026.5]</span>
+                  <span>software engineering intern</span>
+                  <span>------- Caruso</span>
+                </li>{" "}
                 <li className="md:flex items-center gap-3">
-                  <span className="text-red-800 ">[2023.2-2025.11]</span>
+                  <span className="italic">[2023.2-2025.11]</span>
                   <span>student [BsC: Computer Science]</span>
-                  <span>- University of Auckland</span>
+                  <span>-- University of Auckland</span>
                   <span className="text-red-700 font-bold">(graduated)</span>
                 </li>{" "}
                 <li className="flex items-center gap-3">
-                  <span className="text-red-800 font-mono">
+                  <span className="italic">
                     [2024.2-2024.11]
                   </span>
                   <span>full stack developer</span>{" "}
-                  <span>---- Web Development and Consulting Club (WDCC)</span>
+                  <span>------------- Web Development and Consulting Club (WDCC)</span>
                 </li>
                 <li className="flex items-center gap-3">
-                  <span className="text-red-800 font-mono">
+                  <span className="italic">
                     [2025.2-2025.11]
                   </span>
                   <span>tech lead</span>
                   <span>
-                    --------------- Web Development and Consulting Club (WDCC)
+                    ------------------------ Web Development and Consulting Club (WDCC)
                   </span>
                 </li>
                 {/* <li className="flex items-center gap-3">
